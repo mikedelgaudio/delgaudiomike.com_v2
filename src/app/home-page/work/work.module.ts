@@ -1,14 +1,17 @@
 import { NgModule } from '@angular/core';
-import { WorkComponent } from './work.component';
 import { CommonModule } from '@angular/common';
+import { WorkComponent } from './work.component';
 
 
 @NgModule({
-    imports: [CommonModule],
-    exports: [WorkComponent],
-    declarations: [WorkComponent],
-    providers: [],
- })
- 
- export class WorkModule {
- }
+  declarations: [
+      WorkComponent
+  ],
+  imports: [
+      CommonModule
+  ],
+  exports: [
+      WorkComponent
+  ]
+})
+export class WorkModule { }

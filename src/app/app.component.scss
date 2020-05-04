@@ -1,3 +1,44 @@
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 300;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 1px;
+    transition: ease-in-out 0.5s;
+    word-wrap: break-word;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+    ::-webkit-scrollbar { 
+        display: none;  /* Safari and Chrome */
+    }
+}
+
+header {
+    min-height: 100vh;
+  }
+
+
+.vertical-center{
+position: absolute;
+top:50%;
+left: 50%;
+transform:translate(-50%, -50%);
+-webkit-transform:translate(-50%, -50%);
+}
+
+.vertical-bottom{
+position: absolute;
+top:99%;
+left: 50%;
+transform:translate(-50%, -90%);
+-webkit-transform:translate(-50%, -90%);
+}
+
+
+
+
+
 .section {
     width: 1280px;
     max-width: 100%;

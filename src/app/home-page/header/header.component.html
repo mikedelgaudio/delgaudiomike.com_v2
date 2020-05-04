@@ -1,1 +1,23 @@
-<p>header works!</p>
+<header>
+
+    <div class="vertical-center box-container">
+      <div class="d-flex">
+        <div class="col d-flex align-items-center">
+          <div class="profile-img user shadow-lg">
+            <!--add logic to utilize placeholder img if no img found-->
+            </div>
+        </div>
+        <div class="col">
+          <h1 class="display-3 retroshadow stocki-heading m-0 p-0">Mike<br>DelGaudio</h1>
+          <p class=" m-0 p-0">Computer Science Student<br>Full Stack Developer<span>&nbsp;</span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="vertical-bottom above-particle" [style.visibility]="!scrolled ? 'visible' : 'hidden'">
+      <div class="arrow bounce">
+        <a class="fa fa-chevron-down fa-2x text-white scroller"></a>
+      </div>
+    </div>
+
+</header>

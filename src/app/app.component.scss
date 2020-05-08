@@ -86,12 +86,20 @@ transform:translate(-50%, -90%);
     font-size: 160px;
     font-weight: 800;
     letter-spacing: -0.02em;
-    text-align: left;
+
     z-index: 10;
     position: relative;
     line-height: 0.3em;
     pointer-events: none;
     flex: 1 100%
+}
+
+.section-header-left{
+    text-align: left;
+}
+
+.section-header-right{
+    text-align: right;
 }
 
 @media (max-width: 600px) {
@@ -166,7 +174,6 @@ transform:translate(-50%, -90%);
 .grid-item-button {
     position: absolute;
     top: 0;
-    right: 20px;
     padding: 17px 20px;
     background-color: #000;
     color: #fff;
@@ -176,6 +183,14 @@ transform:translate(-50%, -90%);
     transform: scaleY(0) translateZ(0);
     transition: transform 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
     font-family: Inter,Source Sans Pro,Helvetica Neue,Arial,sans-serif
+}
+
+.grid-item-button-left{
+    left: 20px;
+}
+
+.grid-item-button-right{
+    right: 20px;
 }
 
 .grid-item:hover .grid-item-button {
@@ -197,6 +212,24 @@ transform:translate(-50%, -90%);
 }
 
 
+@media screen and (max-width: 1399px){
+    .display-2{
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .display-2{
+        font-size: 3.5rem;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .display-2{
+        font-size: 2.5rem;
+    }
+}
+
 @media screen and (max-width : 576px){
     h2{
       font-size: 1.25rem;
@@ -207,8 +240,8 @@ transform:translate(-50%, -90%);
     h6{
       font-size: 0.5rem;
     }
-    .display-3{
-      font-size: 2.5rem;
+    .display-2{
+      font-size: 2rem;
     }
 
   }

@@ -5,11 +5,13 @@ import { AppComponent } from './app.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { HomePageModule } from './home-page/home-page.module';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavigationComponent
+    NavigationComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

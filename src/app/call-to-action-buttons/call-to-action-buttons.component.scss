@@ -1,7 +1,7 @@
 .fixed-button {
-  background-color: #4890bf;
-  color: #ffffff;
-  border: none;
+  background-color: transparent;
+  color: #4890bf;
+  border: 1px solid #4890bf;
   outline: none;
   position: fixed;
   bottom: 0px;
@@ -12,11 +12,20 @@
   border-radius: 30px;
   box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.5);
 }
+
 .fixed-button:hover {
   cursor: pointer;
+  background-color: #4890bf;
+  color: #ffffff;
 }
 
-@keyframes wobble {
+@media screen and (max-width: 767px) {
+  .fixed-button {
+    display: none;
+  }
+}
+
+@keyframes bouncer {
   16.65% {
     -webkit-transform: translateY(8px);
     -ms-transform: translateY(8px);
@@ -49,7 +58,7 @@
   }
 }
 
-.wobble {
+.bouncer {
   -webkit-animation-name: wobble;
   animation-name: wobble;
   -webkit-animation-duration: 1s;

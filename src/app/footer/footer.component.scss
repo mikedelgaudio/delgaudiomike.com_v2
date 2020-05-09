@@ -23,7 +23,7 @@ footer a {
   color: #737373;
 }
 footer a:hover {
-  color: #3366cc;
+  color: #6a99bc;
   text-decoration: none;
 }
 .footer-links {
@@ -39,7 +39,7 @@ footer a:hover {
 .footer-links a:active,
 .footer-links a:focus,
 .footer-links a:hover {
-  color: #3366cc;
+  color: #6a99bc;
   text-decoration: none;
 }
 .footer-links.inline li {
@@ -118,19 +118,26 @@ footer .social-icons a {
   font-size: 14px;
 }
 .social-icons a.github:hover {
-  background-color: #4c6ef5;
+  background-color: #494f57;
 }
 .social-icons a.twitter:hover {
-  background-color: #00aced;
+  background-color: #48cfff;
 }
 .social-icons a.linkedin:hover {
   background-color: #007bb6;
 }
 
-@media (max-width: 767px) {
+.mobile {
+  display: none !important;
+}
+
+@media screen and (max-width: 767px) {
   .social-icons li.title {
     display: block;
     margin-right: 0;
     font-weight: 600;
+  }
+  .mobile {
+    display: block !important;
   }
 }

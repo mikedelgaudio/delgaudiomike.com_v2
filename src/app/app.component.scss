@@ -3,7 +3,6 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-weight: 300;
-    font-family: 'Courier New', Courier, monospace;
     letter-spacing: 1px;
     transition: ease-in-out 0.5s;
     word-wrap: break-word;
@@ -17,6 +16,7 @@
 
 html{
     min-width: 320px!important;
+    background-color: black;
 }
 
 header {

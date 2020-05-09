@@ -6,12 +6,14 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { HomePageModule } from './home-page/home-page.module';
 import { FooterComponent } from './footer/footer.component';
+import { CallToActionButtonsComponent } from './call-to-action-buttons/call-to-action-buttons.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
-    FooterComponent
+    FooterComponent,
+    CallToActionButtonsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,16 +1,15 @@
 .arrow {
-    text-align: center;
-    margin: 8% 0;
-    opacity: .7;
-    cursor: pointer;
+  text-align: center;
+  margin: 8% 0;
+  opacity: 0.7;
+  cursor: pointer;
 }
 .bounce {
-    -moz-animation: bounce 2s infinite;
-    -webkit-animation: bounce 2s infinite;
-    animation: bounce 2s infinite;
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
 }
 
-  
 /*Profile Picture*/
 .user {
   display: block;
@@ -31,32 +30,88 @@
   background-image: url("../../../assets/mike.jpg");
 }
 
-header{
+header {
   background: url("../../../assets/1.jpg") center center / cover no-repeat fixed;
 }
 
-.box-container{
+.box-container {
   background-color: rgba(255, 255, 255, 0.9);
- 
+
   padding: 2rem;
   min-width: 65%;
   max-width: 65%;
   max-height: 80%;
 }
 
-h1{
+h1 {
   padding-bottom: 2rem;
 }
 
-  
 @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-      transform: translateY(0);
-    }
-    40% {
-      transform: translateY(-30px);
-    }
-    60% {
-      transform: translateY(-15px);
-    }
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+/*Blinking Cursor Idea*/
+.blinking-cursor {
+  font-weight: 100;
+
+  color: #000;
+  word-spacing: -2px;
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes blink {
+  from,
+  to {
+    color: transparent;
+  }
+  50% {
+    color: #000;
+  }
+}
+
+@-moz-keyframes blink {
+  from,
+  to {
+    color: transparent;
+  }
+  50% {
+    color: #000;
+  }
+}
+
+@-webkit-keyframes blink {
+  from,
+  to {
+    color: transparent;
+  }
+  50% {
+    color: #000;
+  }
+}
+
+@-o-keyframes blink {
+  from,
+  to {
+    color: transparent;
+  }
+  50% {
+    color: #000;
+  }
 }

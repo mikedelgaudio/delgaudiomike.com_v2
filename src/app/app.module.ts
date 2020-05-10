@@ -6,7 +6,9 @@ import { NavigationComponent } from "./navigation/navigation.component";
 import { HomePageModule } from "./home-page/home-page.module";
 import { FooterComponent } from "./footer/footer.component";
 import { CallToActionButtonsComponent } from "./call-to-action-buttons/call-to-action-buttons.component";
-import { ResumeModule } from "./resume-page/resume-page.module";
+import { ResumePageModule } from "./resume-page/resume-page.module";
+import { CreativeWorkPageComponent } from "./creative-work-page/creative-work-page.component";
+import { CreativeWorkPageModule } from "./creative-work-page/creative-work-page.module";
 
 @NgModule({
   declarations: [
@@ -14,8 +16,15 @@ import { ResumeModule } from "./resume-page/resume-page.module";
     NavigationComponent,
     FooterComponent,
     CallToActionButtonsComponent,
+    CreativeWorkPageComponent,
   ],
-  imports: [BrowserModule, HomePageModule, ResumeModule, AppRoutingModule],
+  imports: [
+    BrowserModule,
+    HomePageModule,
+    ResumePageModule,
+    CreativeWorkPageModule,
+    AppRoutingModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

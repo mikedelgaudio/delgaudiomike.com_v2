@@ -7,4 +7,4 @@ import { ResumePageComponent } from "./resume-page.component";
   imports: [CommonModule],
   exports: [],
 })
-export class ResumeModule {}
+export class ResumePageModule {}

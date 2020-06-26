@@ -7,7 +7,7 @@ import { CreativeWorkPageComponent } from './creative-work-page/creative-work-pa
 const routes: Routes = [
   { path: "", component: HomePageComponent },
   { path: "resume", component: ResumePageComponent },
-  { path: "creative-work", component: CreativeWorkPageComponent}
+  { path: "creative-work", component: CreativeWorkPageComponent},
   { path: "**", component: HomePageComponent },
 ];
 

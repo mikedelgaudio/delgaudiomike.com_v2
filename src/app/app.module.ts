@@ -16,7 +16,7 @@ import { CreativeWorkPageModule } from "./creative-work-page/creative-work-page.
     NavigationComponent,
     FooterComponent,
     CallToActionButtonsComponent,
-    CreativeWorkPageComponent,
+  
   ],
   imports: [
     BrowserModule,

@@ -17,11 +17,15 @@ html {
 	background-color: black;
 }
 
+body {
+	background-color: #fafafa;
+}
+
 header {
 	min-height: 100vh;
 }
 
-.vertical-center {
+.vertical-center-center {
 	position: absolute;
 	top: 50%;
 	left: 50%;

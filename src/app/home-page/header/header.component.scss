@@ -1,117 +1,148 @@
 .arrow {
-  text-align: center;
-  margin: 8% 0;
-  opacity: 0.7;
-  cursor: pointer;
+	text-align: center;
+	margin: 8% 0;
+	opacity: 0.7;
+	cursor: pointer;
 }
 .bounce {
-  -moz-animation: bounce 2s infinite;
-  -webkit-animation: bounce 2s infinite;
-  animation: bounce 2s infinite;
+	-moz-animation: bounce 2s infinite;
+	-webkit-animation: bounce 2s infinite;
+	animation: bounce 2s infinite;
+}
+
+.text-black {
+	color: black;
+}
+
+.vertical-center {
+	position: relative;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+}
+
+.header-text {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, 15%);
+	-webkit-transform: translate(-50%, 15%);
+}
+
+header {
+	background-color: beige;
 }
 
 /*Profile Picture*/
 .user {
-  display: block;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  border: 5px solid #000;
+	display: block;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	border: 5px solid #000;
 
-  margin-left: auto;
-  margin-right: auto;
+	margin-left: auto;
+	margin-right: auto;
 
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
 }
 .profile-img {
-  /*this must change dynamically?*/
-  background-image: url("../../../assets/mike.jpg");
+	/*this must change dynamically?*/
+	background-image: url("../../../assets/mike.jpg");
 }
 
-header {
-  background: url("../../../assets/1.jpg") center center / cover no-repeat fixed;
+.header-mike {
+	background-image: url("../../../assets/mike_high_bandwidth_trans.png");
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+	filter: grayscale(100%);
+	background-repeat: no-repeat;
+	//background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	height: 45vh;
 }
 
 .box-container {
-  background-color: rgba(255, 255, 255, 0.9);
+	background-color: rgba(255, 255, 255, 0.9);
 
-  padding: 2rem;
-  min-width: 65%;
-  max-width: 65%;
-  max-height: 80%;
+	padding: 2rem;
+	min-width: 65%;
+	max-width: 65%;
+	max-height: 80%;
 }
 
 h1 {
-  padding-bottom: 2rem;
+	padding-bottom: 2rem;
 }
 
 @keyframes bounce {
-  0%,
-  20%,
-  50%,
-  80%,
-  100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-30px);
-  }
-  60% {
-    transform: translateY(-15px);
-  }
+	0%,
+	20%,
+	50%,
+	80%,
+	100% {
+		transform: translateY(0);
+	}
+	40% {
+		transform: translateY(-30px);
+	}
+	60% {
+		transform: translateY(-15px);
+	}
 }
 
 /*Blinking Cursor Idea*/
 .blinking-cursor {
-  font-weight: 100;
+	font-weight: 100;
 
-  color: #000;
-  word-spacing: -2px;
-  -webkit-animation: 1s blink step-end infinite;
-  -moz-animation: 1s blink step-end infinite;
-  -ms-animation: 1s blink step-end infinite;
-  -o-animation: 1s blink step-end infinite;
-  animation: 1s blink step-end infinite;
+	color: #000;
+	word-spacing: -2px;
+	-webkit-animation: 1s blink step-end infinite;
+	-moz-animation: 1s blink step-end infinite;
+	-ms-animation: 1s blink step-end infinite;
+	-o-animation: 1s blink step-end infinite;
+	animation: 1s blink step-end infinite;
 }
 
 @keyframes blink {
-  from,
-  to {
-    color: transparent;
-  }
-  50% {
-    color: #000;
-  }
+	from,
+	to {
+		color: transparent;
+	}
+	50% {
+		color: #000;
+	}
 }
 
 @-moz-keyframes blink {
-  from,
-  to {
-    color: transparent;
-  }
-  50% {
-    color: #000;
-  }
+	from,
+	to {
+		color: transparent;
+	}
+	50% {
+		color: #000;
+	}
 }
 
 @-webkit-keyframes blink {
-  from,
-  to {
-    color: transparent;
-  }
-  50% {
-    color: #000;
-  }
+	from,
+	to {
+		color: transparent;
+	}
+	50% {
+		color: #000;
+	}
 }
 
 @-o-keyframes blink {
-  from,
-  to {
-    color: transparent;
-  }
-  50% {
-    color: #000;
-  }
+	from,
+	to {
+		color: transparent;
+	}
+	50% {
+		color: #000;
+	}
 }

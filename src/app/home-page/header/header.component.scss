@@ -10,28 +10,17 @@
 	animation: bounce 2s infinite;
 }
 
-.text-black {
-	color: black;
-}
-
-.vertical-center {
-	position: relative;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	-webkit-transform: translate(-50%, -50%);
-}
-
 .header-text {
 	position: absolute;
 	left: 50%;
 	top: 50%;
-	transform: translate(-50%, 15%);
-	-webkit-transform: translate(-50%, 15%);
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	width: max-content;
 }
 
 header {
-	background-color: beige;
+	background-color: black;
 }
 
 /*Profile Picture*/
@@ -55,14 +44,23 @@ header {
 }
 
 .header-mike {
-	background-image: url("../../../assets/mike_high_bandwidth_trans.png");
-	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-	filter: grayscale(100%);
+	background-image: url("../../../assets/mike_trans.png");
 	background-repeat: no-repeat;
 	//background-attachment: fixed;
 	background-size: cover;
 	background-position: center;
-	height: 45vh;
+	height: 100vh;
+}
+
+.mike-pic-container {
+	display: flex;
+
+	justify-content: flex-end;
+}
+
+.mike-pic {
+	max-height: 100vh;
+	margin-top: 3rem;
 }
 
 .box-container {

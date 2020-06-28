@@ -32,6 +32,12 @@
 	}
 }
 
+@media screen and (max-width: 767px) {
+	.mobile-friendly-spacer {
+		padding-top: 2rem;
+	}
+}
+
 .paddles {
 }
 .paddle {

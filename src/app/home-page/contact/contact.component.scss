@@ -1,0 +1,22 @@
+@import "../../globals.scss";
+.list-group-item {
+	background-color: transparent;
+	font-size: 1.7rem;
+}
+
+.list-group-item:hover {
+	text-decoration: none;
+}
+
+.github:hover {
+	color: $github-color;
+}
+.email:hover {
+	color: $email-color;
+}
+.youtube:hover {
+	color: $youtube-color;
+}
+.linkedin:hover {
+	color: $linkedin-color;
+}

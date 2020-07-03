@@ -1,3 +1,5 @@
+@import "../globals.scss";
+
 footer {
 	background-color: #000;
 	padding: 45px 0 20px;
@@ -118,16 +120,16 @@ footer .social-icons a {
 	font-size: 14px;
 }
 .social-icons a.github:hover {
-	background-color: #494f57;
+	background-color: $github-color;
 }
 .social-icons a.email:hover {
-	background-color: #48cfff;
+	background-color: $email-color;
 }
 .social-icons a.youtube:hover {
-	background-color: #ff0000;
+	background-color: $youtube-color;
 }
 .social-icons a.linkedin:hover {
-	background-color: #007bb6;
+	background-color: $linkedin-color;
 }
 
 .mobile {

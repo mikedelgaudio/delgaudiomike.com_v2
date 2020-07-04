@@ -11,6 +11,9 @@
   margin-bottom: 20px;
   border-radius: 30px;
   box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.5);
+  i{
+    display: none;
+  }
 }
 
 .fixed-button:hover {
@@ -20,9 +23,21 @@
 }
 
 @media screen and (max-width: 767px) {
-  .fixed-button {
-    display: none;
+
+  .fixed-button{
+
+    width: 50px;
+    span{
+      display: none;
+    }
+    i{
+      display: block;
+    }
   }
+
+
+  
+
 }
 
 @keyframes bouncer {

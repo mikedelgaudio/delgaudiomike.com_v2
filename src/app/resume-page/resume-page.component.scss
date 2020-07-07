@@ -1,8 +1,15 @@
 .resume-container {
-  height: 100vh;
+	height: 100vh;
 }
 
 embed {
-  min-width: 100%;
-  min-height: 100%;
+	min-width: 100%;
+	min-height: 100%;
+}
+
+.pt-8 {
+	padding-top: 6rem;
+}
+a {
+	text-decoration: underline;
 }

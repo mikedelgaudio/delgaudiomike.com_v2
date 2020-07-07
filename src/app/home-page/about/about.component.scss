@@ -5,9 +5,9 @@
 .menu-wrapper {
 	position: relative;
 	max-width: 100%;
-	height: 100px; // hide the scroll bar
+	//height: 100px; // hide the scroll bar
 	margin-top: 2rem;
-	border: 1px solid black;
+	//border: 1px solid black;
 	overflow-x: hidden;
 	overflow-y: hidden;
 }
@@ -29,6 +29,8 @@
 		outline: 1px dotted gray;
 		padding: 1em;
 		box-sizing: border-box;
+		align-items: center;
+		//display: flex;
 	}
 }
 

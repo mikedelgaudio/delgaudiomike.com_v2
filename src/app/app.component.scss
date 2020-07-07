@@ -64,6 +64,23 @@ a.anchor {
 	visibility: hidden;
 }
 
+.wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.badge {
+	display: inline-block;
+	min-width: 1em; /* em unit */
+	padding: 0.3em; /* em unit */
+	border-radius: 50%;
+	font-size: 2rem;
+	text-align: center;
+	background: #1779ba;
+	color: #fefefe;
+}
+
 .section {
 	width: 1280px;
 	max-width: 100%;

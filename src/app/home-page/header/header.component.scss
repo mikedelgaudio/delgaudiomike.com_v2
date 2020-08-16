@@ -1,130 +1,182 @@
-.arrow {
-	text-align: center;
-	margin: 8% 0;
-	opacity: 0.7;
-	cursor: pointer;
-}
-.bounce {
-	-moz-animation: bounce 2s infinite;
-	-webkit-animation: bounce 2s infinite;
-	animation: bounce 2s infinite;
+/* .ocean {
+  height: 5%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #015871;
 }
 
+.wave {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x;
+  position: absolute;
+  top: -198px;
+  width: 6400px;
+  height: 198px;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
+}
+
+.wave:nth-of-type(2) {
+  top: -175px;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite, swell 7s ease -1.25s infinite;
+  opacity: 1;
+}
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
+}
+
+@keyframes swell {
+  0%,
+  100% {
+    transform: translate3d(0, -25px, 0);
+  }
+  50% {
+    transform: translate3d(0, 5px, 0);
+  }
+} */
+
 .header-text {
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	-webkit-transform: translate(-50%, -50%);
-	width: max-content;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
 }
 
 header {
-	background-color: black;
+  background-color: black;
 }
 
 .mike-pic-container {
-	display: flex;
-
-	justify-content: flex-end;
-}
-
-@media screen and (max-width: 767px) {
-	.mike-pic-container {
-		justify-content: center;
-	}
-	.mike-pic {
-		filter: brightness(50%);
-	}
-
-	.display-3 {
-		font-size: 4rem;
-	}
-
-	//For iPhone 5
-	.header-text {
-		transform: translate(-50%, -200%);
-		-webkit-transform: translate(-50%, -200%);
-	}
-	//For normal devices
-	@media screen and (min-width: 360px) {
-		.header-text {
-			transform: translate(-50%, -250%);
-			-webkit-transform: translate(-50%, -250%);
-		}
-	}
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
 }
 
 .mike-pic {
-	max-height: 100vh;
-	margin-top: 3rem;
+  object-fit: cover;
+  object-position: center right;
+  width: 30rem;
+  height: 30rem;
+  border-radius: 50%;
+  margin: 20px;
+}
+
+@media screen and (max-width: 1199px) {
+  .mike-pic {
+    width: 20rem;
+    height: 20rem;
+  }
+  .header-text {
+    .display-1 {
+      font-size: 3rem;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mike-pic-container,
+  .header-text {
+    justify-content: center;
+  }
+  .header-text {
+    align-items: flex-start;
+    padding-bottom: 10rem;
+  }
+
+  .mike-pic-container {
+    align-items: flex-end;
+    .mike-pic {
+      width: 15rem;
+      height: 15rem;
+    }
+  }
+}
+
+.arrow {
+  text-align: center;
+  margin: 8% 0;
+  opacity: 0.7;
+  cursor: pointer;
+}
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
 }
 
 @keyframes bounce {
-	0%,
-	20%,
-	50%,
-	80%,
-	100% {
-		transform: translateY(0);
-	}
-	40% {
-		transform: translateY(-30px);
-	}
-	60% {
-		transform: translateY(-15px);
-	}
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
 }
 
 /*Blinking Cursor Idea*/
 .blinking-cursor {
-	font-weight: 100;
+  font-weight: 100;
 
-	color: #000;
-	word-spacing: -2px;
-	-webkit-animation: 1s blink step-end infinite;
-	-moz-animation: 1s blink step-end infinite;
-	-ms-animation: 1s blink step-end infinite;
-	-o-animation: 1s blink step-end infinite;
-	animation: 1s blink step-end infinite;
+  color: #fff;
+  word-spacing: -2px;
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
 }
 
 @keyframes blink {
-	from,
-	to {
-		color: transparent;
-	}
-	50% {
-		color: #000;
-	}
+  from,
+  to {
+    color: transparent;
+  }
+  50% {
+    color: #fff;
+  }
 }
 
 @-moz-keyframes blink {
-	from,
-	to {
-		color: transparent;
-	}
-	50% {
-		color: #000;
-	}
+  from,
+  to {
+    color: transparent;
+  }
+  50% {
+    color: #fff;
+  }
 }
 
 @-webkit-keyframes blink {
-	from,
-	to {
-		color: transparent;
-	}
-	50% {
-		color: #000;
-	}
+  from,
+  to {
+    color: transparent;
+  }
+  50% {
+    color: #fff;
+  }
 }
 
 @-o-keyframes blink {
-	from,
-	to {
-		color: transparent;
-	}
-	50% {
-		color: #000;
-	}
+  from,
+  to {
+    color: transparent;
+  }
+  50% {
+    color: #fff;
+  }
 }

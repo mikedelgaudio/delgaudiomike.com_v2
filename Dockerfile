@@ -10,4 +10,4 @@ RUN ng build --prod
 FROM httpd:alpine
 RUN rm -r /usr/local/apache2/htdocs/*
 COPY --from=build ./usr/src/app/dist/delgaudiomike/ /usr/local/apache2/htdocs/
-COPY ./httpd.conf /usr/local/apache2/conf/httpd.conf
+COPY ./conf/httpd.conf /usr/local/apache2/conf/httpd.conf

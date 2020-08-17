@@ -1,5 +1,5 @@
 <a class="anchor" id="about"></a>
-<div class="section grid-items grid-items-feature-first grid-items-peak pt-6">
+<div class="section grid-items grid-items-feature-first grid-items-peak pt-5">
   <h2 class="section-header section-header-left">about.</h2>
 
   <div class="grid-item post-preview" style="background-color: #f1f1f1;">
@@ -44,6 +44,13 @@
             <span class="badge badge-pill badge-primary">Primary</span>
           </div>
         </li>
+
+        <li class="item" *ngFor="let skill of skills">
+          <div class="badge-container">
+            <span class="badge" style="background-color: {{ skill.skillColor }}">{{ skill.skillName }}</span>
+          </div>
+        </li>
+
         <li class="item">2</li>
         <li class="item">3</li>
         <li class="item">4</li>
@@ -54,12 +61,16 @@
         <li class="item">3</li>
         <li class="item">4</li>
         <li class="item">5</li>
+        <li class="item">2</li>
+        <li class="item">3</li>
+        <li class="item">4</li>
+        <li class="item">5</li>
         <li class="item">6</li>
       </ul>
 
       <div class="paddles">
-        <button class="left-paddle paddle hidden">Left</button>
-        <button class="right-paddle paddle">Right</button>
+        <button class="left-paddle paddle hidden"><i class="fas fa-arrow-left"></i></button>
+        <button class="right-paddle paddle"><i class="fas fa-arrow-right"></i></button>
       </div>
     </div>
   </div>

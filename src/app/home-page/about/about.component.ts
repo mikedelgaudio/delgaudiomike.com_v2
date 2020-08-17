@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { ListOfSkills, Skill } from "../../models/skill";
 
 declare var $: any;
 
@@ -9,6 +10,8 @@ declare var $: any;
 })
 export class AboutComponent implements OnInit {
   constructor() {}
+
+  public skills: Skill[] = ListOfSkills;
 
   ngOnInit(): void {
     this.scroller();

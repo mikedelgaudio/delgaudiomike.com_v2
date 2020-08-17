@@ -5,14 +5,14 @@ import { AppComponent } from "./app.component";
 import { NavigationComponent } from "./navigation/navigation.component";
 import { HomePageModule } from "./home-page/home-page.module";
 import { FooterComponent } from "./footer/footer.component";
-import { CallToActionButtonsComponent } from "./call-to-action-buttons/call-to-action-buttons.component";
 import { CreativeWorkPageModule } from "./creative-work-page/creative-work-page.module";
 import { AppErrorHandler } from "./errors/app-error-handler";
 import { TypesOfErrorsModule } from "./errors/types-of-errors.module";
+import { SharedModule } from "./shared/shared.module";
 
 @NgModule({
-  declarations: [AppComponent, NavigationComponent, FooterComponent, CallToActionButtonsComponent],
-  imports: [BrowserModule, HomePageModule, CreativeWorkPageModule, AppRoutingModule, TypesOfErrorsModule],
+  declarations: [AppComponent, NavigationComponent, FooterComponent],
+  imports: [BrowserModule, HomePageModule, CreativeWorkPageModule, AppRoutingModule, TypesOfErrorsModule, SharedModule],
   providers: [{ provide: ErrorHandler, useClass: AppErrorHandler }],
   bootstrap: [AppComponent],
 })

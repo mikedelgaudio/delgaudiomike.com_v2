@@ -1,277 +1,296 @@
 @import "./globals.scss";
 * {
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	font-weight: 300;
-	letter-spacing: 1px;
-	transition: ease-in-out 0.5s;
-	word-wrap: break-word;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 300;
+  letter-spacing: 1px;
+  transition: ease-in-out 0.5s;
+  word-wrap: break-word;
 }
 
 html {
-	min-width: 320px !important;
-	background-color: #000;
+  min-width: 320px !important;
+  background-color: #000;
 }
 
 body {
-	background-color: #fafafa;
+  background-color: #fafafa;
 }
 
 a {
-	color: inherit;
+  color: inherit;
 }
 
 a:hover {
-	color: inherit;
+  color: inherit;
 }
 
 header {
-	min-height: 100vh;
+  min-height: 100vh;
 }
 
 .text-black {
-	color: black !important;
+  color: black;
+}
+.text-hue {
+  background-image: $hue;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: hue 10s infinite linear;
+}
+
+.github:hover {
+  color: $github-color;
+}
+.email:hover {
+  color: $email-color;
+}
+.youtube:hover {
+  color: $youtube-color;
+}
+.linkedin:hover {
+  color: $linkedin-color;
 }
 
 .grow {
-	transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .grow:hover {
-	transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .vertical-center-center {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	-webkit-transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
 }
 
 .vertical-bottom {
-	position: absolute;
-	top: 99%;
-	left: 50%;
-	transform: translate(-50%, -90%);
-	-webkit-transform: translate(-50%, -90%);
+  position: absolute;
+  top: 99%;
+  left: 50%;
+  transform: translate(-50%, -90%);
+  -webkit-transform: translate(-50%, -90%);
 }
 
 a.anchor {
-	display: block;
-	position: relative;
-	top: -50px;
-	visibility: hidden;
+  display: block;
+  position: relative;
+  top: -50px;
+  visibility: hidden;
 }
 
 .wrapper {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .badge {
-	display: inline-block;
-	min-width: 1em; /* em unit */
-	padding: 0.3em; /* em unit */
-	border-radius: 50%;
-	font-size: 2rem;
-	text-align: center;
-	background: #1779ba;
-	color: #fefefe;
+  display: inline-block;
+  min-width: 1em; /* em unit */
+  padding: 0.3em; /* em unit */
+  border-radius: 50%;
+  font-size: 2rem;
+  text-align: center;
+  background: #1779ba;
+  color: #fefefe;
 }
 
 .section {
-	width: 1280px;
-	max-width: 100%;
-	overflow: hidden;
-	box-sizing: border-box;
-	margin: 0 auto 0;
-	padding: 2.5rem 3.75rem;
+  width: 1280px;
+  max-width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin: 0 auto 0;
+  padding: 2.5rem 3.75rem;
 }
 
 @media all and (max-width: 900px) {
-	.section {
-		padding-right: 30px;
-		padding-left: 30px;
-	}
+  .section {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
 }
 
 .grid-items-feature-first .grid-item:nth-of-type(1) {
-	flex: 1 100%;
+  flex: 1 100%;
 }
 
 .grid-items {
-	display: flex;
-	flex-flow: row wrap;
+  display: flex;
+  flex-flow: row wrap;
 }
 
 .grid-item:hover .grid-item-bg {
-	transform: scale3D(1.04, 1.04, 1);
+  transform: scale3D(1.04, 1.04, 1);
 }
 
 .grid-item:hover .grid-item-button-label {
-	transform: translateY(0);
-	opacity: 1;
+  transform: translateY(0);
+  opacity: 1;
 }
 
 .section-header {
-	font-size: 160px;
-	font-weight: 00;
-	letter-spacing: -0.02em;
-	z-index: 10;
-	position: relative;
-	line-height: 0.3em;
-	pointer-events: none;
-	flex: 1 100%;
+  font-size: 160px;
+  font-weight: 00;
+  letter-spacing: -0.02em;
+  z-index: 10;
+  position: relative;
+  line-height: 0.3em;
+  pointer-events: none;
+  flex: 1 100%;
 }
 
 .section-header-left {
-	text-align: left;
+  text-align: left;
 }
 
 .section-header-right {
-	text-align: right;
+  text-align: right;
 }
 
 @media (max-width: 600px) {
-	.section-header {
-		font-size: 18vw;
-	}
+  .section-header {
+    font-size: 18vw;
+  }
 }
 
 @media all and (max-width: 900px) {
-	.grid-item {
-		padding-left: 35px;
-		padding-right: 35px;
-	}
+  .grid-item {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
 }
 
 @media all and (max-width: 800px) {
-	.grid-item {
-		flex: 1 100%;
-	}
+  .grid-item {
+    flex: 1 100%;
+  }
 }
 
 @media all and (max-width: 600px) {
-	.grid-item {
-		padding-left: 30px;
-		padding-right: 30px;
-	}
+  .grid-item {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
 @media all and (max-width: 520px) {
-	.grid-item {
-		padding-left: 20px;
-		padding-right: 20px;
-	}
+  .grid-item {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .grid-item:hover {
-	color: black;
+  color: black;
 }
 
 .grid-item:hover .grid-item-header {
-	transform: translate3D(0, -6px, 0);
+  transform: translate3D(0, -6px, 0);
 }
 
 .grid-item:hover .grid-item-divider {
-	transform: scaleX(1) translate3D(0, 6px, 0);
+  transform: scaleX(1) translate3D(0, 6px, 0);
 }
 
 .grid-item:hover .case-item-content {
-	transform: translate3D(0, 6px, 0);
+  transform: translate3D(0, 6px, 0);
 }
 
 .grid-item:hover .grid-item-text {
-	transform: translate3D(0, 8px, 0);
+  transform: translate3D(0, 8px, 0);
 }
 
 .grid-item {
-	flex: 1 50%;
-	padding: 50px 50px 60px;
-	min-height: 500px;
-	box-sizing: border-box;
-	position: relative;
-	overflow: hidden;
-	flex-direction: column;
-	justify-content: center;
-	display: flex;
-	text-align: center;
-	text-decoration: none;
+  flex: 1 50%;
+  padding: 50px 50px 60px;
+  min-height: 500px;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  text-decoration: none;
 }
 
 .grid-item-button {
-	position: absolute;
-	top: 0;
-	padding: 17px 20px;
-	background-color: #000;
+  position: absolute;
+  top: 0;
+  padding: 17px 20px;
+  background-color: #000;
 
-	font-size: 13px;
-	transform-origin: 0 0;
-	will-change: transform, opacity;
-	transform: scaleY(0) translateZ(0);
-	transition: transform 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+  font-size: 13px;
+  transform-origin: 0 0;
+  will-change: transform, opacity;
+  transform: scaleY(0) translateZ(0);
+  transition: transform 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .grid-item-button-left {
-	left: 20px;
+  left: 20px;
 }
 
 .grid-item-button-right {
-	right: 20px;
+  right: 20px;
 }
 
 .grid-item:hover .grid-item-button {
-	transform: scaleY(1) translateZ(0);
-	transition: transform 0.35s cubic-bezier(0.19, 1, 0.22, 1);
+  transform: scaleY(1) translateZ(0);
+  transition: transform 0.35s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 @media (hover: none) {
-	.grid-item:link .grid-item-button {
-		opacity: 0;
-	}
+  .grid-item:link .grid-item-button {
+    opacity: 0;
+  }
 }
 
 .grid-item-button-label {
-	transform: translateY(-15px);
-	transition: transform 0.35s cubic-bezier(0.19, 1, 0.22, 1) 0.1s, opacity 0.35s cubic-bezier(0.19, 1, 0.22, 1) 0.1s;
-	display: block;
-	opacity: 0;
+  transform: translateY(-15px);
+  transition: transform 0.35s cubic-bezier(0.19, 1, 0.22, 1) 0.1s, opacity 0.35s cubic-bezier(0.19, 1, 0.22, 1) 0.1s;
+  display: block;
+  opacity: 0;
 }
 .grid-item-button-label:hover {
-	color: #fff !important;
+  color: #fff !important;
 }
 
 @media screen and (max-width: 1399px) {
-	.display-2 {
-		font-size: 4rem;
-	}
+  .display-2 {
+    font-size: 4rem;
+  }
 }
 
 @media screen and (max-width: 1200px) {
-	.display-2 {
-		font-size: 3.5rem;
-	}
+  .display-2 {
+    font-size: 3.5rem;
+  }
 }
 
 @media screen and (max-width: 992px) {
-	.display-2 {
-		font-size: 2.5rem;
-	}
+  .display-2 {
+    font-size: 2.5rem;
+  }
 }
 
 @media screen and (max-width: 576px) {
-	h2 {
-		font-size: 1.25rem;
-	}
-	h4 {
-		font-size: 1rem;
-	}
-	h6 {
-		font-size: 0.5rem;
-	}
-	.display-2 {
-		font-size: 2rem;
-	}
+  h2 {
+    font-size: 1.25rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  h6 {
+    font-size: 0.5rem;
+  }
+  .display-2 {
+    font-size: 2rem;
+  }
 }

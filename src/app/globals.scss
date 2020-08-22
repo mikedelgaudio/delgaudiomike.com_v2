@@ -4,3 +4,13 @@ $github-color: #494f57;
 $email-color: #48cfff;
 $youtube-color: #ff0000;
 $linkedin-color: #007bb6;
+$hue: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}

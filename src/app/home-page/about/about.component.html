@@ -1,26 +1,26 @@
 <a class="anchor" id="about"></a>
-<div class="section grid-items grid-items-feature-first grid-items-peak pt-6" >
-	<h2 class="section-header section-header-left">about.</h2>
+<div class="section grid-items grid-items-feature-first grid-items-peak pt-5">
+  <h2 class="section-header section-header-left">about.</h2>
 
-	<div class="grid-item post-preview" style="background-color: #f1f1f1;">
-		<div class="row align-items-center">
-			<div class="col-md-6">
-				<h4 class="text-black text-left">
-					I’m a co-op computer science student at Stevens Institute of Technology in Hoboken, NJ. Primarily, I focus on
-					front-end development and dev-ops. Occasionally, I do like to utilize Java and come up with some neat
-					applications in my free time.
-				</h4>
-				<h5 class="text-black text-right font-weight-light">Hoboken, NJ</h5>
-				<h5 class="text-black text-right font-weight-light">Bachelor of Science in Computer Science</h5>
-				<h5 class="text-black text-right font-weight-light">Expected Graduation in May 2023</h5>
-				<div class="d-flex justify-content-end">
-					<button type="button" class="btn btn-lg grow btn-outline-info">
-						Let's Work Together <i class="far fa-paper-plane"></i>
-					</button>
-				</div>
-			</div>
-			<div class="col-md-6 mobile-friendly-spacer">
-				<!-- <div class="school-logo">
+  <div class="grid-item post-preview" style="background-color: #f1f1f1;">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h4 class="text-black text-left">
+          I’m a co-op computer science student at Stevens Institute of Technology in Hoboken, NJ. Primarily, I focus on
+          front-end development and dev-ops. Occasionally, I do like to utilize Java and come up with some neat
+          applications in my free time.
+        </h4>
+        <h5 class="text-black text-right font-weight-light">Hoboken, NJ</h5>
+        <h5 class="text-black text-right font-weight-light">Bachelor of Science in Computer Science</h5>
+        <h5 class="text-black text-right font-weight-light">Expected Graduation in May 2023</h5>
+        <div class="d-flex justify-content-end">
+          <button type="button" class="btn btn-lg grow btn-outline-info">
+            Let's Work Together <i class="far fa-paper-plane"></i>
+          </button>
+        </div>
+      </div>
+      <div class="col-md-6 mobile-friendly-spacer">
+        <!-- <div class="school-logo">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54 86">
             <path
               d="M39.766 1.863l12.371 12.383v12.321l-20.881.001V20.46h-7.63v12.216l16.134.001L52.132 45.05l.005 26.715-12.379 12.372H15.113L2.745 71.765V59.442l20.881.001-.005 6.107h7.63V51.265l-16.134-.001L2.746 38.89 2.71 14.267 15.14 1.876l24.626-.013M40.538 0h-.773L15.138.013h-.769l-.545.543L1.395 12.948l-.549.547.001.775.037 24.623.001.77.544.544L13.8 52.581l.546.546h.772l14.271.001v10.559h-3.904l.004-4.243.002-1.864h-1.864l-20.882-.001H.882v14.957l.545.545 12.368 12.373.547.546H40.53l.545-.545 12.379-12.373.546-.546v-.772l-.005-26.715v-.771l-.545-.545-12.373-12.372-.545-.545h-.771l-14.271-.001v-8.491h3.905V28.432h1.863l20.881-.001h1.862V13.475l-.545-.545L41.084.547 40.538 0z"
@@ -33,30 +33,45 @@
           </svg>
         </div> -->
 
-				<img class="img-fluid" src="../../../assets/memoji_mike.png" />
-			</div>
-		</div>
+        <img class="img-fluid" src="../../../assets/memoji_mike.png" />
+      </div>
+    </div>
 
-		<div class="menu-wrapper">
-			<ul class="menu">
-				<li class="item"><span class="badge badge-pill badge-primary">Primary</span></li>
-				<li class="item">2</li>
-				<li class="item">3</li>
-				<li class="item">4</li>
-				<li class="item">5</li>
-				<li class="item">6</li>
-				<li class="item">1</li>
-				<li class="item">2</li>
-				<li class="item">3</li>
-				<li class="item">4</li>
-				<li class="item">5</li>
-				<li class="item">6</li>
-			</ul>
+    <div class="menu-wrapper">
+      <ul class="menu">
+        <li class="item">
+          <div class="badge-container">
+            <span class="badge badge-pill badge-primary">Primary</span>
+          </div>
+        </li>
 
-			<div class="paddles">
-				<button class="left-paddle paddle hidden">Left</button>
-				<button class="right-paddle paddle">Right</button>
-			</div>
-		</div>
-	</div>
+        <li class="item" *ngFor="let skill of skills">
+          <div class="badge-container">
+            <span class="badge" style="background-color: {{ skill.skillColor }}">{{ skill.skillName }}</span>
+          </div>
+        </li>
+
+        <li class="item">2</li>
+        <li class="item">3</li>
+        <li class="item">4</li>
+        <li class="item">5</li>
+        <li class="item">6</li>
+        <li class="item">1</li>
+        <li class="item">2</li>
+        <li class="item">3</li>
+        <li class="item">4</li>
+        <li class="item">5</li>
+        <li class="item">2</li>
+        <li class="item">3</li>
+        <li class="item">4</li>
+        <li class="item">5</li>
+        <li class="item">6</li>
+      </ul>
+
+      <div class="paddles">
+        <button class="left-paddle paddle hidden"><i class="fas fa-arrow-left"></i></button>
+        <button class="right-paddle paddle"><i class="fas fa-arrow-right"></i></button>
+      </div>
+    </div>
+  </div>
 </div>

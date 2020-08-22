@@ -37,40 +37,11 @@
       </div>
     </div>
 
-    <div class="menu-wrapper">
-      <ul class="menu">
-        <li class="item">
-          <div class="badge-container">
-            <span class="badge badge-pill badge-primary">Primary</span>
-          </div>
-        </li>
-
-        <li class="item" *ngFor="let skill of skills">
-          <div class="badge-container">
-            <span class="badge" style="background-color: {{ skill.skillColor }}">{{ skill.skillName }}</span>
-          </div>
-        </li>
-
-        <li class="item">2</li>
-        <li class="item">3</li>
-        <li class="item">4</li>
-        <li class="item">5</li>
-        <li class="item">6</li>
-        <li class="item">1</li>
-        <li class="item">2</li>
-        <li class="item">3</li>
-        <li class="item">4</li>
-        <li class="item">5</li>
-        <li class="item">2</li>
-        <li class="item">3</li>
-        <li class="item">4</li>
-        <li class="item">5</li>
-        <li class="item">6</li>
-      </ul>
-
-      <div class="paddles">
-        <button class="left-paddle paddle hidden"><i class="fas fa-arrow-left"></i></button>
-        <button class="right-paddle paddle"><i class="fas fa-arrow-right"></i></button>
+    <div class="slider">
+      <div class="slide-track">
+        <div class="slide" *ngFor="let skill of skills">
+          <span class="badge" style="background-color: {{ skill.skillColor }}">{{ skill.skillName }}</span>
+        </div>
       </div>
     </div>
   </div>

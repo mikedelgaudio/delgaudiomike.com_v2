@@ -14,7 +14,7 @@
         <h5 class="text-black text-right font-weight-light">Bachelor of Science in Computer Science</h5>
         <h5 class="text-black text-right font-weight-light">Expected Graduation in May 2023</h5>
         <div class="d-flex justify-content-end">
-          <button type="button" class="btn btn-lg grow btn-outline-info">
+          <button type="button" class="btn btn-lg grow btn-dark">
             Let's Work Together <i class="far fa-paper-plane"></i>
           </button>
         </div>
@@ -36,13 +36,9 @@
         <img class="img-fluid" src="../../../assets/memoji_mike.png" />
       </div>
     </div>
-
-    <div class="slider">
-      <div class="slide-track">
-        <div class="slide" *ngFor="let skill of skills">
-          <span class="badge" style="background-color: {{ skill.skillColor }}">{{ skill.skillName }}</span>
-        </div>
+    <div class="row justify-content-center parent-badge-container">
+      <div class="badge-container" *ngFor="let skill of skills">
+        <span class="badge" style="background-color: {{ skill.skillColor }}">{{skill.skillName}}</span>
       </div>
     </div>
   </div>
-</div>

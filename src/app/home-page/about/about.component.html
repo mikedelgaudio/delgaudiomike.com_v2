@@ -1,4 +1,4 @@
-<a class="anchor" id="about"></a>
+<a class="anchor pt-5" id="about"></a>
 <div class="section grid-items grid-items-feature-first grid-items-peak pt-5">
   <h2 class="section-header section-header-left">about.</h2>
 
@@ -14,7 +14,7 @@
         <h5 class="text-black text-right font-weight-light">Bachelor of Science in Computer Science</h5>
         <h5 class="text-black text-right font-weight-light">Expected Graduation in May 2023</h5>
         <div class="d-flex justify-content-end">
-          <button type="button" class="btn btn-lg grow btn-outline-info">
+          <button type="button" class="btn btn-lg grow btn-dark">
             Let's Work Together <i class="far fa-paper-plane"></i>
           </button>
         </div>
@@ -36,42 +36,9 @@
         <img class="img-fluid" src="../../../assets/memoji_mike.png" />
       </div>
     </div>
-
-    <div class="menu-wrapper">
-      <ul class="menu">
-        <li class="item">
-          <div class="badge-container">
-            <span class="badge badge-pill badge-primary">Primary</span>
-          </div>
-        </li>
-
-        <li class="item" *ngFor="let skill of skills">
-          <div class="badge-container">
-            <span class="badge" style="background-color: {{ skill.skillColor }}">{{ skill.skillName }}</span>
-          </div>
-        </li>
-
-        <li class="item">2</li>
-        <li class="item">3</li>
-        <li class="item">4</li>
-        <li class="item">5</li>
-        <li class="item">6</li>
-        <li class="item">1</li>
-        <li class="item">2</li>
-        <li class="item">3</li>
-        <li class="item">4</li>
-        <li class="item">5</li>
-        <li class="item">2</li>
-        <li class="item">3</li>
-        <li class="item">4</li>
-        <li class="item">5</li>
-        <li class="item">6</li>
-      </ul>
-
-      <div class="paddles">
-        <button class="left-paddle paddle hidden"><i class="fas fa-arrow-left"></i></button>
-        <button class="right-paddle paddle"><i class="fas fa-arrow-right"></i></button>
+    <div class="row justify-content-center parent-badge-container">
+      <div class="badge-container" *ngFor="let skill of skills">
+        <span class="badge" style="background-color: {{ skill.skillColor }}">{{skill.skillName}}</span>
       </div>
     </div>
   </div>
-</div>

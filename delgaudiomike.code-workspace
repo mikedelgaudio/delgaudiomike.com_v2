@@ -10,6 +10,8 @@
     "editor.codeActionsOnSave": null,
     "editor.formatOnSave": true,
     "editor.parameterHints.enabled": true,
-    "editor.trimAutoWhitespace": true
+    "editor.trimAutoWhitespace": true,
+    "terminal.integrated.automationShell.linux": "",
+    "terminal.integrated.fontFamily": "Meslo LG M DZ for Powerline"
   }
 }

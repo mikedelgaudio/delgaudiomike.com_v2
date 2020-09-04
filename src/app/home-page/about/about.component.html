@@ -2,7 +2,7 @@
 <div class="section grid-items grid-items-feature-first grid-items-peak pt-5">
   <h2 class="section-header section-header-left">about.</h2>
 
-  <div class="grid-item post-preview" style="background-color: #f4f4f9;">
+  <div class="grid-item post-preview" style="background-color: #f4f4f9">
     <div class="row align-items-center">
       <div class="col-md-6">
         <h4 class="text-black text-left">
@@ -37,8 +37,15 @@
       </div>
     </div>
     <div class="row justify-content-center parent-badge-container">
+      <div class="vertical-bottom above-particle">
+        <div class="arrow bounce">
+          <a class="fa fa-chevron-down fa-2x sscroller"></a>
+        </div>
+      </div>
       <div class="badge-container" *ngFor="let skill of skills">
-        <span class="badge" style="background-color: #586f7c;">{{ skill.skillName }}</span>
+        <span class="badge" style="border: 6px solid {{ skill.color }}; color: {{ skill.color }};">{{
+          skill.name
+        }}</span>
       </div>
     </div>
   </div>

@@ -16,16 +16,11 @@
   }
 }
 
-.badge-container {
-  padding: 0.5rem 2rem;
-}
-
 .bounce {
   -moz-animation: bounce 2s infinite;
   -webkit-animation: bounce 2s infinite;
   animation: bounce 2s infinite;
 }
-
 @keyframes bounce {
   0%,
   20%,
@@ -40,4 +35,7 @@
   60% {
     transform: translateY(-15px);
   }
+}
+.badge-container {
+  padding: 0.5rem 2rem;
 }

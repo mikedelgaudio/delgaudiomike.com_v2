@@ -9,10 +9,21 @@ import { CreativeWorkPageModule } from "./creative-work-page/creative-work-page.
 import { AppErrorHandler } from "./errors/app-error-handler";
 import { TypesOfErrorsModule } from "./errors/types-of-errors.module";
 import { SharedModule } from "./shared/shared.module";
+import { CodeProjectsPageModule } from "./code-projects-page/code-projects-page.module";
+import { WorkExperiencePageModule } from "./work-experience-page/work-experience-page.module";
 
 @NgModule({
   declarations: [AppComponent, NavigationComponent, FooterComponent],
-  imports: [BrowserModule, HomePageModule, CreativeWorkPageModule, AppRoutingModule, TypesOfErrorsModule, SharedModule],
+  imports: [
+    BrowserModule,
+    HomePageModule,
+    CreativeWorkPageModule,
+    WorkExperiencePageModule,
+    AppRoutingModule,
+    TypesOfErrorsModule,
+    SharedModule,
+    CodeProjectsPageModule,
+  ],
   providers: [{ provide: ErrorHandler, useClass: AppErrorHandler }],
   bootstrap: [AppComponent],
 })

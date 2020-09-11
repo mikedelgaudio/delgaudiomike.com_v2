@@ -17,3 +17,8 @@ h1 {
   font-weight: bold;
   color: $off-white;
 }
+.card-group {
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+}

@@ -1,0 +1,29 @@
+<article class="project" style="background-color: {{ bgColor }}; color: {{ textColor }}">
+  <div class="card-block">
+    <div class="d-flex flex-wrap pt-2">
+      <div class="col-md-6 col-12">
+        <h2>{{ heading }}</h2>
+      </div>
+      <div class="col-md-6 col-12 d-flex align-content-center justify-content-end pt-3">
+        <a href="{{ srcUrl }}" [ngClass]="srcUrl.length > 0 ? '' : 'disabled'" target="_blank" rel="noreferrer">
+          <div [ngClass]="srcUrl.length > 0 ? 'src-good' : 'src-bad'">
+            <i class="fas" [ngClass]="srcUrl.length > 0 ? 'fa-link' : 'fa-lock'"></i>
+          </div>
+        </a>
+      </div>
+    </div>
+    <hr class="mt-0" />
+    <div class="d-flex flex-wrap">
+      <div class="col-md-6 col-12">
+        <div>
+          <h5>
+            {{ description }}
+          </h5>
+        </div>
+      </div>
+      <div class="col-md-6 col-12 d-flex justify-content-center align-content-center">
+        <img src="{{ asset }}" alt="{{ assetAlt }}" />
+      </div>
+    </div>
+  </div>
+</article>

@@ -1,0 +1,38 @@
+$light-blue: #a8dadc;
+$dark-blue: #1d3557;
+$off-white: #f1faee;
+$mid-blue: #457b9d;
+$off-red: #e63946;
+
+.main {
+  background-color: $dark-blue;
+  // background: url("../../assets/152560.svg") no-repeat;
+  // background-size: 153%;
+  // -webkit-box-pack: center;
+  // justify-content: center;
+  // background-position: right 40% center;
+}
+
+.container {
+  padding-top: 4rem;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  color: $off-white;
+}
+.card-group {
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 960px) {
+  h1 {
+    font-size: 3rem;
+  }
+  i {
+    display: none;
+  }
+}

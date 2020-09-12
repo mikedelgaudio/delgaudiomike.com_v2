@@ -1,17 +1,16 @@
 import { Component, OnInit, Input } from "@angular/core";
-declare var $: any;
 
 @Component({
-	selector: "app-navigation",
-	templateUrl: "./navigation.component.html",
-	styleUrls: ["./navigation.component.scss"],
+  selector: "app-navigation",
+  templateUrl: "./navigation.component.html",
+  styleUrls: ["./navigation.component.scss"],
 })
 export class NavigationComponent implements OnInit {
-	@Input("smoothScroll") smoothScroll: Function;
+  @Input("smoothScroll") smoothScroll: Function;
 
-	constructor() {}
+  constructor() {}
 
-	ngOnInit(): void {
-		this.smoothScroll();
-	}
+  ngOnInit(): void {
+    this.smoothScroll();
+  }
 }

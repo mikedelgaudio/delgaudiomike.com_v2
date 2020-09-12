@@ -1,17 +1,17 @@
 export interface Skill {
-  skillName: string;
-  skillColor: string;
+  name: string;
+  color: string;
 }
 
 export const ListOfSkills: Skill[] = [
-  { skillName: "Angular", skillColor: "#be0e2d" },
-  { skillName: "HTML", skillColor: "#de4c26" },
-  { skillName: "SCSS", skillColor: "#c96395" },
-  { skillName: "Python", skillColor: "#336d9c" },
-  { skillName: "JavaScript", skillColor: "#dcc314" },
-  { skillName: "Bash", skillColor: "#2b3337" },
-  { skillName: "Docker", skillColor: "#0698e6" },
-  { skillName: "Node.js", skillColor: "#3d873d" },
-  { skillName: "Java", skillColor: "#5283a2" },
-  { skillName: "Bootstrap", skillColor: "#553b7c" },
+  { name: "Angular", color: "#be0e2d" },
+  { name: "HTML", color: "#de4c26" },
+  { name: "SCSS", color: "#c96395" },
+  { name: "Python", color: "#336d9c" },
+  { name: "JavaScript", color: "#8C7B07" },
+  { name: "Bash", color: "#2b3337" },
+  { name: "Docker", color: "#0698e6" },
+  { name: "Node.js", color: "#3d873d" },
+  { name: "Java", color: "#5283a2" },
+  { name: "Bootstrap", color: "#553b7c" },
 ];

@@ -76,21 +76,24 @@ $disabled-dark: #4d4d4d;
   @media screen and (max-width: 768px) {
     .src-good,
     .src-bad {
-      top: -3rem;
+      top: -1.2rem;
+    }
+    h2 {
+      font-size: 2rem;
     }
   }
 
   @media screen and (max-width: 540px) {
     .src-good,
     .src-bad {
-      right: -1.9rem;
+      right: -0.5rem;
     }
-    .src-bad:before {
-      content: "";
-    }
+    // .src-bad:before {
+    //   content: "";
+    // }
 
-    .src-good:before {
-      content: "";
-    }
+    // .src-good:before {
+    //   content: "";
+    // }
   }
 }

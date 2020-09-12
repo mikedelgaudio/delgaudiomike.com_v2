@@ -4,6 +4,6 @@ export interface Project {
   asset: string;
   assetAlt: string;
   srcUrl?: string;
-  bgColor: string;
-  textColor: string;
+  bgColor?: string;
+  textColor?: string;
 }

@@ -22,3 +22,12 @@ h1 {
   display: flex;
   flex-wrap: wrap;
 }
+
+@media screen and (max-width: 960px) {
+  h1 {
+    font-size: 3rem;
+  }
+  i {
+    display: none;
+  }
+}

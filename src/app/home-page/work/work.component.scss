@@ -1,7 +1,7 @@
 .personal-projects {
   background-color: #89a6ae;
 
-  background-image: url("../../../assets/6.jpg");
+  //background-image: url("../../../assets/6.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -11,7 +11,7 @@
 .work-expereince {
   background-color: #caac95;
 
-  background-image: url("../../../assets/4.jpg");
+  // background-image: url("../../../assets/4.jpg");
 
   background-size: cover;
   background-position: bottom;
@@ -19,7 +19,7 @@
 
 .creative-projects {
   background-color: #586f7c;
-  background-image: url("../../../assets/5.jpg");
+  // background-image: url("../../../assets/5.jpg");
   background-size: cover;
 }
 
@@ -38,10 +38,11 @@
 }
 .grid-item:hover {
   //color: #dc9075;
-  text-decoration-color: #93efff;
+  text-decoration-color: #fafafa;
 }
 .grid-item-button {
-  background-color: #93efff;
+  background-color: #fafafa;
+  color: #000;
 }
 
 .grid-item-text {

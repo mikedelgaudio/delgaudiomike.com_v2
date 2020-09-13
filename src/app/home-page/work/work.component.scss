@@ -21,8 +21,13 @@
 
 .creative-projects {
   background-color: #586f7c;
-  // background-image: url("../../../assets/5.jpg");
-  background-size: cover;
+  background: url("../../../assets/creative-work-banner.svg") no-repeat;
+
+  -webkit-box-pack: center;
+  justify-content: center;
+
+  background-position: right;
+  background-size: 350%;
 }
 
 .grid-item {
@@ -62,6 +67,10 @@
   }
 
   .personal-projects {
+    background-size: 100%;
+    background-position: right 40% center;
+  }
+  .creative-projects {
     background-size: 100%;
     background-position: right 40% center;
   }

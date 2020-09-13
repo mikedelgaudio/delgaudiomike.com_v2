@@ -13,20 +13,20 @@
 .work-expereince {
   background-color: #caac95;
 
-  // background-image: url("../../../assets/4.jpg");
-
-  background-size: cover;
-  background-position: bottom;
-}
-
-.creative-projects {
-  background-color: #586f7c;
-  background: url("../../../assets/creative-work-banner.svg") no-repeat;
+  background: url("../../../assets/work-exp-banner.svg") no-repeat;
 
   -webkit-box-pack: center;
   justify-content: center;
 
   background-position: right;
+  background-size: 350%;
+}
+
+.creative-projects {
+  background-color: #586f7c;
+  background: url("../../../assets/creative-work-banner.svg") no-repeat;
+  -webkit-box-pack: center;
+  justify-content: center;
   background-size: 350%;
 }
 
@@ -63,7 +63,7 @@
   }
 
   .grid-item-header {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   .personal-projects {
@@ -72,7 +72,18 @@
   }
   .creative-projects {
     background-size: 100%;
-    background-position: right 40% center;
+    background-position: top -5% center;
+  }
+
+  .work-expereince {
+    background-size: 100%;
+    background-position: center;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .grid-item-header {
+    font-size: 4rem;
   }
 }
 

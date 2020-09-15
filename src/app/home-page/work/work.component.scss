@@ -1,35 +1,40 @@
 .personal-projects {
   background-color: #89a6ae;
 
-  background-image: url("../../../assets/6.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background: url("../../../assets/Untitled-1.svg") no-repeat;
+
+  -webkit-box-pack: center;
+  justify-content: center;
+
+  background-position: right;
+  background-size: 350%;
 }
 
 .work-expereince {
   background-color: #caac95;
 
-  background-image: url("../../../assets/4.jpg");
+  background: url("../../../assets/work-exp-banner.svg") no-repeat;
 
-  background-size: cover;
-  background-position: bottom;
+  -webkit-box-pack: center;
+  justify-content: center;
+
+  background-position: right;
+  background-size: 350%;
 }
 
 .creative-projects {
   background-color: #586f7c;
-  background-image: url("../../../assets/5.jpg");
-  background-size: cover;
+  background: url("../../../assets/creative-work-banner.svg") no-repeat;
+  -webkit-box-pack: center;
+  justify-content: center;
+  background-size: 350%;
 }
 
 .grid-item {
   border: 5px solid #f4f4f9;
 }
 .grid-item:nth-child(2) {
-  border-top: none;
-  border-left: none;
-  border-right: none;
+  border: 0;
 }
 
 .grid-item-header {
@@ -37,11 +42,11 @@
   font-weight: 600;
 }
 .grid-item:hover {
-  //color: #dc9075;
-  text-decoration-color: #93efff;
+  text-decoration-color: #000;
 }
 .grid-item-button {
-  background-color: #93efff;
+  background-color: #000;
+  color: #fff;
 }
 
 .grid-item-text {
@@ -58,10 +63,30 @@
   }
 
   .grid-item-header {
+    font-size: 3rem;
+  }
+
+  .personal-projects {
+    background-size: 100%;
+    background-position: right 40% center;
+  }
+  .creative-projects {
+    background-size: 100%;
+    background-position: top -5% center;
+  }
+
+  .work-expereince {
+    background-size: 100%;
+    background-position: center;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .grid-item-header {
     font-size: 4rem;
   }
 }
 
 h1 {
-  color: white;
+  color: #000;
 }

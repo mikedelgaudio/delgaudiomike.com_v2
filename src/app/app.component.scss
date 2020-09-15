@@ -49,7 +49,7 @@ html {
 }
 
 body {
-  background-color: #fafafa;
+  background-color: $app-background;
 }
 
 a {
@@ -109,17 +109,6 @@ a.anchor {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.badge {
-  display: inline-block;
-  min-width: 1em; /* em unit */
-  padding: 0.3em; /* em unit */
-  border-radius: 50%;
-  font-size: 2rem;
-  text-align: center;
-  background: #1779ba;
-  color: #fefefe;
 }
 
 .section {
@@ -208,10 +197,6 @@ a.anchor {
   }
 }
 
-.grid-item:hover {
-  color: black;
-}
-
 .grid-item:hover .grid-item-header {
   transform: translate3D(0, -6px, 0);
 }
@@ -281,6 +266,7 @@ a.anchor {
   transition: transform 0.35s cubic-bezier(0.19, 1, 0.22, 1) 0.1s, opacity 0.35s cubic-bezier(0.19, 1, 0.22, 1) 0.1s;
   display: block;
   opacity: 0;
+  font-weight: 500;
 }
 .grid-item-button-label:hover {
   color: #fff !important;

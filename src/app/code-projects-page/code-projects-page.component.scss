@@ -4,6 +4,7 @@ $off-white: #fafafa;
 $mid-blue: #457b9d;
 $off-red: #e63946;
 $light-green: #9ef1de;
+$dark-green: #16221f;
 
 .main {
   background-color: $off-white;
@@ -16,7 +17,7 @@ $light-green: #9ef1de;
 h1 {
   font-size: 4rem;
   font-weight: bold;
-  color: #000;
+  color: $dark-green;
 }
 .card-group {
   display: -webkit-flex;

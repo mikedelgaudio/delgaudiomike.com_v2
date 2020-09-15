@@ -1,0 +1,18 @@
+.container {
+  padding-top: 4rem;
+  height: 100vh;
+}
+.content {
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  position: absolute;
+}
+
+img {
+  height: 100px;
+  width: auto;
+}
+
+//SVG Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>

@@ -1,25 +1,27 @@
 <nav class="navbar fixed-top navbar-dark bg-darken desktop" id="page-top">
-	<ul class="">
-		<li><a routerLink="/" fragment="home">Home</a></li>
-		<li><a routerLink="/" fragment="about">About</a></li>
-		<li><a routerLink="/" fragment="work">Work</a></li>
-		<li><a routerLink="/" fragment="contact">Contact</a></li>
-	</ul>
+  <ul class="">
+    <li><a routerLink="/" fragment="home" class="home-heading">Mike DelGaudio</a></li>
+    <li><a routerLink="/" fragment="about">About</a></li>
+    <li><a routerLink="/" fragment="work">Work</a></li>
+    <li><a routerLink="/" fragment="contact">Contact</a></li>
+  </ul>
 </nav>
 
+<!--refactor to use only once-->
+
 <nav role="navigation" class="mobile fixed-top">
-	<div id="menuToggle">
-		<input type="checkbox" />
+  <div id="menuToggle">
+    <input type="checkbox" />
 
-		<span></span>
-		<span></span>
-		<span></span>
+    <span></span>
+    <span></span>
+    <span></span>
 
-		<ul id="menu">
-			<a routerLink="/" fragment="home"><li>Home</li></a>
-			<a routerLink="/" fragment="about"><li>About</li></a>
-			<a routerLink="/" fragment="work"><li>Work</li></a>
-			<a routerLink="/" fragment="contact"><li>Contact</li></a>
-		</ul>
-	</div>
+    <ul id="menu">
+      <a routerLink="/" fragment="home"><li class="home-heading">Mike DelGaudio</li></a>
+      <a routerLink="/" fragment="about"><li>About</li></a>
+      <a routerLink="/" fragment="work"><li>Work</li></a>
+      <a routerLink="/" fragment="contact"><li>Contact</li></a>
+    </ul>
+  </div>
 </nav>

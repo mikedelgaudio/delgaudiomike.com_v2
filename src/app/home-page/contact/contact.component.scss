@@ -12,22 +12,20 @@
 }
 
 .drop-shadow {
-  background-image: url("../../../assets/nyc.jpg");
-  background-color: #000000;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background: url("../../../assets/nyc.svg") no-repeat, black;
+  background-size: 100%;
+  background-position: bottom;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1140px) {
   .drop-shadow {
-    background-attachment: initial;
+    background-size: 200%;
+    background-position: bottom right;
   }
 }
 
 .bg {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .section-header {

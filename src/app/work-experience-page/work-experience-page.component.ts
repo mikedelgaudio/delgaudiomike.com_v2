@@ -1,6 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { Project } from "src/app/models/projects/project";
-import { ListOfWorkExperience } from "src/app/models/projects/work-experience";
+import { ListOfWorkExperience } from "src/app/models/experience/work-experience";
 
 @Component({
   selector: "app-work-experience-page",

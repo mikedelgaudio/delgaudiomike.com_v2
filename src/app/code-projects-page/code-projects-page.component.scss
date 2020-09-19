@@ -4,10 +4,12 @@ $off-white: #fafafa;
 $mid-blue: #457b9d;
 $off-red: #e63946;
 $light-green: #9ef1de;
-$dark-green: #16221f;
 
 .main {
   background-color: $off-white;
+  background: url("../../assets/code-projects/code-projects-bg.svg") no-repeat;
+  background-size: 100%;
+  background-position: right 40% center;
 }
 
 .container {
@@ -17,7 +19,6 @@ $dark-green: #16221f;
 h1 {
   font-size: 4rem;
   font-weight: bold;
-  color: $dark-green;
 }
 .card-group {
   display: -webkit-flex;
@@ -31,5 +32,9 @@ h1 {
   }
   i {
     display: none;
+  }
+  .main {
+    background-size: 380%;
+    background-position: top;
   }
 }

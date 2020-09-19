@@ -1,12 +1,6 @@
-$light-blue: #a8dadc;
-$dark-blue: #1d3557;
-$off-white: #fafafa;
-$mid-blue: #457b9d;
-$off-red: #e63946;
-$light-green: #9ef1de;
-
+@import "../globals.scss";
 .main {
-  background-color: $off-white;
+  background-color: $app-background;
   background: url("../../assets/code-projects/code-projects-bg.svg") no-repeat;
   background-size: 100%;
   background-position: right 40% center;

@@ -16,6 +16,7 @@ export class ExperienceCardComponent implements OnInit {
   @Input("endDate") endDate: string;
   @Input("location") location: string;
   @Input("jobTitle") jobTitle: string;
+  @Input("skills") skills: Array<string>;
 
   constructor() {}
 

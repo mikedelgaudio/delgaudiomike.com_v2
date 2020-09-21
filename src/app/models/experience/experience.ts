@@ -1,12 +1,13 @@
 export interface Experience {
   heading: string;
-  description?: string;
+  description: string;
   asset: string;
   assetAlt: string;
   bgColor?: string;
   textColor?: string;
-  startDate?: string;
-  endDate?: string;
-  location?: string;
-  jobTitle?: string;
+  startDate: string;
+  endDate: string;
+  location: string;
+  jobTitle: string;
+  skills: Array<string>;
 }

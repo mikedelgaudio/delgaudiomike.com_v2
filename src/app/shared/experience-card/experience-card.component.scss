@@ -4,8 +4,8 @@
   margin-bottom: 2rem;
   padding: 2rem 0.5rem;
   min-height: 25rem;
-  background-color: #fafafa;
-  box-shadow: inset 0px 0px 8px 0px #0000005c;
+  background-color: #fafafade;
+
   h2 {
     font-size: 3rem;
     font-weight: 500;
@@ -19,6 +19,7 @@
     width: 100%;
     max-width: 500px;
     object-fit: contain;
+    border-radius: 10px;
   }
 
   div.text-center {

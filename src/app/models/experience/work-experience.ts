@@ -11,6 +11,16 @@ export const ListOfWorkExperience: Experience[] = [
       "Created a responsive website with roommate to access any given stock by pulling financial data from company SEC Filings. Through the use of an API, financial data is called for, then used a variety of calculations to produce a score.",
     asset: "../../../assets/work-experience/cp.jpg",
     assetAlt: "",
-    skills: ["Angular", "CSS"],
+  },
+  {
+    heading: "U.S. SDNY Probation",
+    location: "New York City, NY",
+    startDate: "June 2019",
+    endDate: "August 2019",
+    jobTitle: "Web Developer",
+    description:
+      "Created a responsive website with roommate to access any given stock by pulling financial data from company SEC Filings. Through the use of an API, financial data is called for, then used a variety of calculations to produce a score.",
+    asset: "../../../assets/work-experience/cp.jpg",
+    assetAlt: "",
   },
 ];

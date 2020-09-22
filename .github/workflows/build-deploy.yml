@@ -25,6 +25,8 @@ jobs:
         run: |
           npm install
           npm run build
+          rm -rf node_modules
+          rm -rf src
           ls -l
 
       - name: 📂 Sync files

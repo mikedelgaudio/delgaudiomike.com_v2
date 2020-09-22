@@ -32,4 +32,4 @@ jobs:
           protocol: ftps
           port: 21
           security: loose
-          local-dir: ./dist/delgaudiomike/
+          local-dir: ./e2e/

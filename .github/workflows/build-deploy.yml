@@ -4,6 +4,9 @@ on:
     branches:
       - develop
       - master
+  pull_request:
+    branches:
+      - develop
 
 jobs:
   web-deploy:
@@ -22,6 +25,7 @@ jobs:
         run: |
           npm install
           npm run build
+          ls -l
 
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@beta-v4
@@ -32,4 +36,4 @@ jobs:
           protocol: ftps
           port: 21
           security: loose
-          local-dir: ./e2e/
+          #local-dir: ./dist/delgaudiomike

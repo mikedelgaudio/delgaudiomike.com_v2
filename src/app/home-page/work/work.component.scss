@@ -1,30 +1,21 @@
 .personal-projects {
-  background-color: #89a6ae;
-
-  background: url("../../../assets/Untitled-1.svg") no-repeat;
-
+  background: url("../../../assets/code-projects/code-projects-banner.svg") no-repeat;
   -webkit-box-pack: center;
   justify-content: center;
-
   background-position: right;
   background-size: 350%;
 }
 
 .work-expereince {
-  background-color: #caac95;
-
-  background: url("../../../assets/work-exp-banner.svg") no-repeat;
-
+  background: url("../../../assets/work-experience/work-exp-banner.svg") no-repeat;
   -webkit-box-pack: center;
   justify-content: center;
-
   background-position: right;
   background-size: 350%;
 }
 
 .creative-projects {
-  background-color: #586f7c;
-  background: url("../../../assets/creative-work-banner.svg") no-repeat;
+  background: url("../../../assets/creative-work/creative-work-banner.svg") no-repeat;
   -webkit-box-pack: center;
   justify-content: center;
   background-size: 350%;
@@ -76,7 +67,7 @@
   }
 
   .work-expereince {
-    background-size: 100%;
+    background-size: 200%;
     background-position: center;
   }
 }

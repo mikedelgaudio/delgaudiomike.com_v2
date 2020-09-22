@@ -1,0 +1,31 @@
+.experience {
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 2rem;
+  padding: 2rem 0.5rem;
+  min-height: 25rem;
+  background-color: #fafafade;
+
+  h2 {
+    font-size: 3rem;
+    font-weight: 500;
+    font-variant: all-petite-caps;
+  }
+  h5 {
+    font-weight: 300;
+  }
+  img {
+    height: auto;
+    width: 100%;
+    max-width: 500px;
+    object-fit: contain;
+    border-radius: 10px;
+  }
+
+  div.text-center {
+    p {
+      font-weight: 500;
+      margin: 0;
+    }
+  }
+}

@@ -37,7 +37,6 @@
 html {
   min-width: 320px !important;
   background-color: #000;
-
   scrollbar-face-color: #646464;
   scrollbar-base-color: #646464;
   scrollbar-3dlight-color: #646464;
@@ -109,6 +108,13 @@ a.anchor {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.badge {
+  font-size: 1rem;
+  padding: 1rem;
+  border-radius: 60px;
+  background-color: transparent;
 }
 
 .section {

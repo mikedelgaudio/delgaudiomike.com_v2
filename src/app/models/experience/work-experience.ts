@@ -13,7 +13,7 @@ export const ListOfWorkExperience: Experience[] = [
     assetAlt: "Code Backsplash",
   },
   {
-    heading: "Stevens Institue of Technology",
+    heading: "Stevens Institute of Technology",
     location: "Hoboken, NJ",
     startDate: "August 2019",
     endDate: "Decemember 2019",

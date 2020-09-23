@@ -25,8 +25,6 @@ jobs:
         run: |
           npm install
           npm run build
-          rm -rf node_modules
-          rm -rf src
 
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@beta-v4
@@ -37,4 +35,4 @@ jobs:
           protocol: ftps
           port: 21
           security: loose
-          #local-dir: ./dist/delgaudiomike
+          local-dir: ./dist/delgaudiomike

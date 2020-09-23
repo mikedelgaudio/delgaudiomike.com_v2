@@ -31,8 +31,8 @@ jobs:
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@beta-v4
         with:
-          server: cpanel-box5430.bluehost.com
-          username: deploy@delgaudiomike.com
+          server: ${{ secrets.FTPS_SERVER }}
+          username: ${{ secrets.FTPS_USER }}
           password: ${{ secrets.FTPS_PASSWORD }}
           protocol: ftps
           port: 21

@@ -27,7 +27,6 @@ jobs:
           npm run build
           rm -rf node_modules
           rm -rf src
-          ls -l
 
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@beta-v4

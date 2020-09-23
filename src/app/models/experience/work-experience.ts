@@ -8,9 +8,20 @@ export const ListOfWorkExperience: Experience[] = [
     endDate: "Present",
     jobTitle: "Application & Software Developer",
     description:
-      "Created a responsive website with roommate to access any given stock by pulling financial data from company SEC Filings. Through the use of an API, financial data is called for, then used a variety of calculations to produce a score.",
-    asset: "../../../assets/work-experience/cp.jpg",
-    assetAlt: "",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque laoreet semper velit nec porta. Nam mauris dolor, fermentum nec varius ac, interdum quis lectus. Nullam lacus felis, feugiat in ligula nec, vulputate sodales augue. Maecenas quis accumsan elit. Morbi tristique risus eu urna congue, consequat semper justo aliquet. Aenean blandit arcu enim, sit amet rutrum ante commodo id. ",
+    asset: "../../../assets/work-experience/colgate.jpg",
+    assetAlt: "Code Backsplash",
+  },
+  {
+    heading: "Stevens Institute of Technology",
+    location: "Hoboken, NJ",
+    startDate: "August 2019",
+    endDate: "Decemember 2019",
+    jobTitle: "Peer Tutor",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque laoreet semper velit nec porta. Nam mauris dolor, fermentum nec varius ac, interdum quis lectus. Nullam lacus felis, feugiat in ligula nec, vulputate sodales augue. Maecenas quis accumsan elit. Morbi tristique risus eu urna congue, consequat semper justo aliquet. Aenean blandit arcu enim, sit amet rutrum ante commodo id. ",
+    asset: "../../../assets/work-experience/stevens.jpg",
+    assetAlt: "Stevens Campus",
   },
   {
     heading: "U.S. SDNY Probation",
@@ -19,8 +30,8 @@ export const ListOfWorkExperience: Experience[] = [
     endDate: "August 2019",
     jobTitle: "Web Developer",
     description:
-      "Created a responsive website with roommate to access any given stock by pulling financial data from company SEC Filings. Through the use of an API, financial data is called for, then used a variety of calculations to produce a score.",
-    asset: "../../../assets/work-experience/cp.jpg",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque laoreet semper velit nec porta. Nam mauris dolor, fermentum nec varius ac, interdum quis lectus. Nullam lacus felis, feugiat in ligula nec, vulputate sodales augue. Maecenas quis accumsan elit. Morbi tristique risus eu urna congue, consequat semper justo aliquet. Aenean blandit arcu enim, sit amet rutrum ante commodo id. ",
+    asset: "../../../assets/work-experience/courts.jpg",
     assetAlt: "",
   },
 ];

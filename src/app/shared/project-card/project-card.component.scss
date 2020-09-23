@@ -8,11 +8,13 @@ $disabled-dark: #4d4d4d;
   width: 100%;
   margin-bottom: 2rem;
   min-height: 25rem;
-  box-shadow: inset 0px 0px 8px 0px #0000005c;
+  box-shadow: inset 0px 0px 8px 0px #00000017;
+
   h2 {
     font-size: 3rem;
     font-weight: 500;
     font-variant: all-petite-caps;
+    color: #000;
   }
   h5 {
     font-weight: 300;

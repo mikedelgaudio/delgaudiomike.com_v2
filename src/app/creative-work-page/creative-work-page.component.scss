@@ -1,0 +1,38 @@
+@import "../globals.scss";
+.main {
+  background-color: $app-background;
+  background: url("../../assets/creative-work/creative-work-banner.svg") no-repeat;
+  background-size: 100%;
+  background-position: right 40% center;
+}
+
+.container {
+  padding-top: 4rem;
+}
+
+.behance-container {
+  background-color: red;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+.card-group {
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 960px) {
+  h1 {
+    font-size: 3rem;
+  }
+  i {
+    display: none;
+  }
+  .main {
+    background-size: 380%;
+    background-position: top;
+  }
+}

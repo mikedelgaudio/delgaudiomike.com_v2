@@ -1,38 +1,66 @@
 @import "../globals.scss";
 .main {
   background-color: $app-background;
-  background: url("../../assets/creative-work/creative-work-banner.svg") no-repeat;
+  background: url("../../assets/creative-work/creative-work-bg.svg") no-repeat;
   background-size: 100%;
-  background-position: right 40% center;
+  background-position: bottom center;
 }
 
 .container {
   padding-top: 4rem;
 }
 
+.card-group {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  background-color: $app-background;
+  box-shadow: inset 0px 0px 8px 0px #00000017;
+}
+
+iframe {
+  height: auto;
+  width: 100%;
+  max-height: 500px;
+}
+
+img {
+  height: auto;
+  width: 100%;
+  max-width: 500px;
+  object-fit: contain;
+}
+
 .behance-container {
-  background-color: red;
+  background-color: $app-background;
+  border-radius: 10px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: inset 0px 0px 8px 0px #00000017;
+}
+
+i {
+  font-size: 3rem;
+}
+
+.img-fluid {
+  max-width: 300px;
 }
 
 h1 {
   font-size: 4rem;
   font-weight: bold;
 }
-.card-group {
-  display: -webkit-flex;
-  display: flex;
-  flex-wrap: wrap;
-}
 
 @media screen and (max-width: 960px) {
   h1 {
     font-size: 3rem;
   }
-  i {
+  i.fa-paint-brush {
     display: none;
   }
   .main {
     background-size: 380%;
-    background-position: top;
+    //background-position: top;
   }
 }

@@ -1,8 +1,6 @@
 /* SMOOTH SCROLLING */
 declare const $: any;
-export function getSmoothScroll() {
-  return this.smoothScroll.bind(this);
-}
+
 export function smoothScroll() {
   const $root = $("html, body");
 
@@ -11,10 +9,7 @@ export function smoothScroll() {
       {
         scrollTop: $("#about").offset().top,
       },
-      800,
-      () => {
-        window.location.hash = "#about";
-      }
+      800
     );
   });
 

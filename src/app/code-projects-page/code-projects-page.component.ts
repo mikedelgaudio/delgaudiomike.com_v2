@@ -1,14 +1,18 @@
 import { Component, OnInit } from "@angular/core";
 import { Project } from "../models/projects/project";
 import { ListOfCodeProjects } from "../models/projects/code-projects";
+import { Title } from "@angular/platform-browser";
 @Component({
   selector: "app-code-projects-page",
   templateUrl: "./code-projects-page.component.html",
   styleUrls: ["./code-projects-page.component.scss"],
 })
 export class CodeProjectsPageComponent implements OnInit {
-  constructor() {}
   public codeProjects: Project[] = ListOfCodeProjects;
 
-  ngOnInit(): void {}
+  constructor(private titleService: Title) {}
+
+  ngOnInit(): void {
+    this.titleService.setTitle("Code Projects - Mike DelGaudio");
+  }
 }

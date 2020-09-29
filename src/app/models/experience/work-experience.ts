@@ -8,7 +8,7 @@ export const ListOfWorkExperience: Experience[] = [
     endDate: "Present",
     jobTitle: "Application & Software Developer",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque laoreet semper velit nec porta. Nam mauris dolor, fermentum nec varius ac, interdum quis lectus. Nullam lacus felis, feugiat in ligula nec, vulputate sodales augue. Maecenas quis accumsan elit. Morbi tristique risus eu urna congue, consequat semper justo aliquet. Aenean blandit arcu enim, sit amet rutrum ante commodo id. ",
+      "I work apart of the Hill's B2B eCommerce frontend development team utilizing Angular 9 & SAP Spartacus components to develop numerous user interfaces with SCSS, HTML, and TypeScript. Additionally, I was able to research and develop solutions in the Selenium automated testing framework for the deployment of the project.",
     asset: "../../../assets/work-experience/colgate.jpg",
     assetAlt: "Code Backsplash",
   },
@@ -19,7 +19,7 @@ export const ListOfWorkExperience: Experience[] = [
     endDate: "Decemember 2019",
     jobTitle: "Peer Tutor",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque laoreet semper velit nec porta. Nam mauris dolor, fermentum nec varius ac, interdum quis lectus. Nullam lacus felis, feugiat in ligula nec, vulputate sodales augue. Maecenas quis accumsan elit. Morbi tristique risus eu urna congue, consequat semper justo aliquet. Aenean blandit arcu enim, sit amet rutrum ante commodo id. ",
+      "Tutored numerous students for the Stevens Academic Support Center in computer science classes, providing me the opportunity to reinforce my knowledge in the field and public speaking skills.",
     asset: "../../../assets/work-experience/stevens.jpg",
     assetAlt: "Stevens Campus",
   },
@@ -30,7 +30,7 @@ export const ListOfWorkExperience: Experience[] = [
     endDate: "August 2019",
     jobTitle: "Web Developer",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque laoreet semper velit nec porta. Nam mauris dolor, fermentum nec varius ac, interdum quis lectus. Nullam lacus felis, feugiat in ligula nec, vulputate sodales augue. Maecenas quis accumsan elit. Morbi tristique risus eu urna congue, consequat semper justo aliquet. Aenean blandit arcu enim, sit amet rutrum ante commodo id. ",
+      "I worked closely with the Division of Information Technology and the senior web developer on designing and developing two new full websites in PHP. Additionally, I was able to relocate and document all existing programming projects and in-house applications to a local git server for version control.",
     asset: "../../../assets/work-experience/courts.jpg",
     assetAlt: "",
   },

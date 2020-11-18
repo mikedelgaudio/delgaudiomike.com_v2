@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - master
+      - develop
 
 jobs:
   web-deploy:
@@ -25,7 +26,7 @@ jobs:
           rm -rf src
 
       - name: 📂 Sync files
-        uses: SamKirkland/FTP-Deploy-Action@beta-v4
+        uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
           server: ${{ secrets.FTPS_SERVER }}
           username: ${{ secrets.FTPS_USER }}
@@ -33,4 +34,4 @@ jobs:
           protocol: ftps
           port: 21
           security: loose
-          #local-dir: ./dist/delgaudiomike/
+          local-dir: ./dist/delgaudiomike/

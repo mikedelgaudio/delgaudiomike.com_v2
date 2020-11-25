@@ -14,6 +14,7 @@ export class ProjectCardComponent implements OnInit {
   @Input("bgColor") bgColor: string;
   @Input("textColor") textColor: string;
   @Input("borderColor") borderColor: string;
+  @Input("demoUrl") demoUrl: string;
 
   constructor() {}
 

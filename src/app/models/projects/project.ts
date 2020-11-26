@@ -7,4 +7,5 @@ export interface Project {
   bgColor?: string;
   textColor?: string;
   borderColor?: string;
+  demoUrl?: string;
 }

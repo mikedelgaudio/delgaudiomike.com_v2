@@ -20,6 +20,13 @@
             {{ description }}
           </h5>
         </div>
+        <ng-container *ngIf="demoUrl?.length > 0">
+          <div class="d-flex pt-3 pb-3 justify-content-center">
+            <a href="{{ demoUrl }}" target="_blank" rel="noreferrer">
+              <button class="btn btn-primary">DEMO</button>
+            </a>
+          </div>
+        </ng-container>
       </div>
       <div class="col-md-6 col-12 d-flex justify-content-center align-content-center align-items-start">
         <img src="{{ asset }}" alt="{{ assetAlt }}" />

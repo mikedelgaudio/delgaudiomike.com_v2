@@ -4,19 +4,25 @@
 
   <a [routerLink]="['/code-projects']" class="grid-item post-preview personal-projects">
     <span class="grid-item-button grid-item-button-left">
-      <span class="grid-item-button-label">Read more</span>
+      <span class="grid-item-button-label">All things code!</span>
     </span>
     <h1><i class="fas fa-code"></i></h1>
     <h1 class="grid-item-header">Code Projects</h1>
+    <div class="hyperlink-wrapper">
+      <span class="hyperlink">Learn more</span>&nbsp;<i class="fas fa-chevron-right"></i>
+    </div>
   </a>
   <div class="row">
     <div class="col-md-6">
       <a [routerLink]="['/work-experience']" class="grid-item post-preview work-expereince">
         <h1><i class="fas fa-briefcase"></i></h1>
         <h1 class="grid-item-header">Work Experience</h1>
+        <div class="hyperlink-wrapper">
+          <span class="hyperlink">Learn more</span>&nbsp;<i class="fas fa-chevron-right"></i>
+        </div>
 
         <span class="grid-item-button grid-item-button-left">
-          <span class="grid-item-button-label">Read more</span>
+          <span class="grid-item-button-label">Professional experience with code!</span>
         </span>
       </a>
     </div>
@@ -24,9 +30,12 @@
       <a [routerLink]="['/creative-work']" class="grid-item post-preview creative-projects">
         <h1><i class="fas fa-paint-brush"></i></h1>
         <h1 class="grid-item-header">Creative&nbsp; Work</h1>
+        <div class="hyperlink-wrapper">
+          <span class="hyperlink">Learn more</span>&nbsp;<i class="fas fa-chevron-right"></i>
+        </div>
 
         <span class="grid-item-button grid-item-button-left">
-          <span class="grid-item-button-label">Read more</span>
+          <span class="grid-item-button-label">Having fun with Photoshop!</span>
         </span>
       </a>
     </div>

@@ -5,6 +5,11 @@
   height: 100%;
 }
 
+h2,
+h3 {
+  font-size: 1.5rem;
+}
+
 header {
   background-color: black;
 }
@@ -25,7 +30,7 @@ header {
   margin: 20px;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1200px) {
   .mike-pic {
     width: 20rem;
     height: 20rem;
@@ -37,7 +42,7 @@ header {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .mike-pic-container,
   .header-text {
     justify-content: center;
@@ -53,6 +58,13 @@ header {
       width: 15rem;
       height: 15rem;
     }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  h2,
+  h3 {
+    font-size: 1.25rem;
   }
 }
 

@@ -6,9 +6,13 @@
   border: none;
 }
 
-.list-group-item:hover {
-  text-decoration: none;
+a:hover {
   cursor: pointer;
+  text-decoration: underline;
+}
+
+i {
+  padding-left: 0.5rem;
 }
 
 .drop-shadow {

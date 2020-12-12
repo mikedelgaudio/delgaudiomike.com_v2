@@ -25,13 +25,16 @@
       name="keywords"
       content="michaeldelgaudio,delgaudio,mikedelgaudio,delgaudiomike,portfolio,computerscience,personalportfolio,student"
     />
-
+    <meta name="fragment" content="!" />
     <link
       rel="preload"
       as="style"
       onload="this.rel='stylesheet'"
       href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
     />
+    <noscript>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" />
+    </noscript>
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
@@ -46,9 +49,31 @@
 
       gtag('config', 'UA-119776312-1');
     </script>
+    <style>
+      .loader {
+        margin: 50px auto 0;
+        border: 16px solid #000000;
+        border-top: 16px solid #ffffff;
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+        animation: spin 2s linear infinite;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
   </head>
   <body>
-    <app-root></app-root>
+    <app-root>
+      <div class="loader"></div>
+    </app-root>
     <noscript>Your browser does not support JavaScript! Please change browsers to either Chrome or Firefox.</noscript>
     <!--[if lt IE 10]>
       <div

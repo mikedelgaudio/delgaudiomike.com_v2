@@ -6,8 +6,13 @@
   border: none;
 }
 
-.list-group-item:hover {
+a:hover {
   cursor: pointer;
+  text-decoration: underline;
+}
+
+i {
+  padding-left: 0.5rem;
 }
 
 .drop-shadow {

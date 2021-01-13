@@ -29,13 +29,13 @@ jobs:
     #      restore-keys: |
     #        ${{ runner.os }}-node-
       - name: Node ${{ env.node-version }}
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2
         with:
           node-version: ${{ env.node-version }}
-      - name: npm ci
+      - name: yarn install
      #   if: steps.cache-node.outputs.cache-hit != 'true'
         run: |
-          npm ci
-      - name: npm run build
+          yarn install
+      - name: yarn run build
         run: |
-          npm run build
+          yarn run build

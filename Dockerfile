@@ -2,9 +2,8 @@
 FROM node:12-alpine AS build
 WORKDIR /usr/src/app
 COPY . .
-RUN npm install -g @angular/cli@latest
-RUN npm install
-RUN ng build --prod
+RUN yarn install
+RUN yarn build
 
 ### STAGE 2: Apache ###
 FROM httpd:alpine

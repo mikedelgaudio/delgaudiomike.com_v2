@@ -7,8 +7,8 @@
       <div class="col-md-6">
         <h4 class="text-black text-left">
           I’m a co-op computer science student at Stevens Institute of Technology in Hoboken, NJ. Primarily, I focus on
-          front-end development and dev-ops. Occasionally, I do like to utilize Java and come up with some neat
-          applications in my free time.
+          front-end development, technical writing, and dev-ops. Occasionally, I do like to utilize Java and come up
+          with some neat applications in my free time.
         </h4>
         <h5 class="text-black text-right font-weight-light">Hoboken, NJ</h5>
         <h5 class="text-black text-right font-weight-light">Bachelor of Science in Computer Science</h5>
@@ -30,11 +30,11 @@
       </div>
     </div>
     <div class="row justify-content-center parent-badge-container">
-      <div class="vertical-bottom above-particle" [style.visibility]="!scrolled ? 'visible' : 'hidden'">
+      <!-- <div class="vertical-bottom above-particle" [style.visibility]="!scrolled ? 'visible' : 'hidden'">
         <div class="arrow bounce">
           <a class="fa fa-chevron-down fa-2x sscroller"></a>
         </div>
-      </div>
+      </div> -->
       <div class="badge-container" *ngFor="let skill of skills">
         <span class="badge" style="border: 6px solid {{ skill.color }}; color: {{ skill.color }};">{{
           skill.name

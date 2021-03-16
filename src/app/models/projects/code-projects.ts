@@ -40,6 +40,6 @@ export const ListOfCodeProjects: Project[] = [
       "Created a responsive website with roommate to access any given stock by pulling financial data from company SEC Filings. Through the use of an API, financial data is called for, then used a variety of calculations to produce a score.",
     asset: "../../../assets/code-projects/desktop_bullish_bay.gif",
     assetAlt: "Bullish Bay Desktop View GIF",
-    demoUrl: "https://bullishbay.com",
+    demoUrl: "https://bullishbay.delgaudiomike.com",
   },
 ];

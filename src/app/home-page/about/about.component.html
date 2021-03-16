@@ -30,11 +30,11 @@
       </div>
     </div>
     <div class="row justify-content-center parent-badge-container">
-      <div class="vertical-bottom above-particle" [style.visibility]="!scrolled ? 'visible' : 'hidden'">
+      <!-- <div class="vertical-bottom above-particle" [style.visibility]="!scrolled ? 'visible' : 'hidden'">
         <div class="arrow bounce">
           <a class="fa fa-chevron-down fa-2x sscroller"></a>
         </div>
-      </div>
+      </div> -->
       <div class="badge-container" *ngFor="let skill of skills">
         <span class="badge" style="border: 6px solid {{ skill.color }}; color: {{ skill.color }};">{{
           skill.name

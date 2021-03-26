@@ -1,4 +1,4 @@
-@import "../globals.scss";
+@import "globals";
 
 footer {
   background-color: #000;
@@ -28,6 +28,19 @@ footer a:hover {
   color: #6a99bc;
   text-decoration: none;
 }
+
+.footer--copyright-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@include media-breakpoint-up(lg) {
+  .footer--copyright-wrapper {
+    justify-content: start;
+  }
+}
+
 .footer-links {
   padding-left: 0;
   list-style: none;
@@ -122,14 +135,14 @@ footer .social-icons a {
 .social-icons a.github:hover {
   background-color: $github-color;
 }
-.social-icons a.email:hover {
-  background-color: $email-color;
-}
 .social-icons a.youtube:hover {
   background-color: $youtube-color;
 }
 .social-icons a.linkedin:hover {
   background-color: $linkedin-color;
+}
+.social-icons a.twitter:hover {
+  background-color: $twitter-color;
 }
 
 .mobile {

@@ -24,7 +24,10 @@
             "tsConfig": "tsconfig.app.json",
             "aot": true,
             "assets": ["src/favicon.ico", "src/assets"],
-            "styles": ["node_modules/bootstrap/dist/css/bootstrap.min.css", "src/styles.scss"],
+            "styles": ["node_modules/bootstrap/scss/bootstrap.scss", "src/app/globals.scss", "src/styles.scss"],
+            "stylePreprocessorOptions": {
+              "includePaths": ["src/app"]
+            },
             "scripts": ["./node_modules/jquery/dist/jquery.js", "./node_modules/bootstrap/dist/js/bootstrap.js"]
           },
           "configurations": {
@@ -84,7 +87,10 @@
             "karmaConfig": "karma.conf.js",
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": ["src/styles.scss"],
-            "scripts": []
+            "scripts": [],
+            "stylePreprocessorOptions": {
+              "includePaths": ["src/app"]
+            }
           }
         },
         "lint": {

@@ -117,25 +117,25 @@ a:hover:after {
   }
 }
 
-@include media-breakpoint-up(xl) {
-}
-
 @include media-breakpoint-up(lg) {
   .navigation__links {
     position: relative;
     opacity: 1;
+    visibility: visible;
     background: inherit;
-  }
-  .navigation__wrapper {
-    padding: 1rem 0;
+    margin: auto 0;
+    padding: 0;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    & li {
+      padding: 0.3rem 1rem;
+    }
   }
   .navigation__toggle {
     display: none;
   }
   .navigation__header {
-    justify-content: space-between;
-  }
-  .navigation--placeholder {
-    display: none;
+    justify-content: space-around;
   }
 }

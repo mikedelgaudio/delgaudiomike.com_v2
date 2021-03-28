@@ -1,8 +1,6 @@
 @import "globals";
 
-nav {
-  width: 100%;
-}
+$background-color: rgba(0, 0, 0, 0.9);
 
 .navigation__header {
   margin: auto 0;
@@ -10,7 +8,7 @@ nav {
   list-style: none;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 li {
@@ -47,61 +45,57 @@ a:hover:after {
 }
 
 .navigation__wrapper {
-  background: rgba(0, 0, 0, 0.9);
+  background: $background-color;
   max-width: 100%;
   padding: 1rem;
 }
 
 .navigation__links {
-  display: flex;
+  position: absolute;
+  background: $background-color;
+  width: 100%;
   flex-direction: column;
   list-style: none;
-  margin: auto 0;
-  padding: 0.5rem 0 0 0;
+  margin: 11.8rem auto auto 0;
+  padding: 0 1rem 1rem;
   justify-content: center;
   font-size: 1.5rem;
-  display: none;
+  opacity: 0;
+  visibility: hidden;
 
   & li {
     padding: 0.3rem 0;
   }
 }
 
+.navigation--show {
+  opacity: 1;
+  visibility: visible;
+}
+
 .navigation__toggle {
-  & input {
-    width: 32px;
-    height: 32px;
-    position: absolute;
-    cursor: pointer;
-    opacity: 0; /* hide this */
-    z-index: 2; /* and place it over the hamburger */
-    -webkit-touch-callout: none;
+  position: absolute;
+  cursor: pointer;
+  margin-top: 0.25rem;
 
-    &:checked ~ span {
-      opacity: 1;
-      transform: rotate(45deg) translate(-2px, -7px);
-      background: white;
-    }
-    &:checked ~ span:nth-last-child(2) {
-      opacity: 0;
-      transform: rotate(0deg) scale(0.2, 0.2);
-    }
-    &:checked ~ span:nth-last-child(3) {
-      transform: rotate(-45deg) translate(-10px, 22px);
-    }
+  &.navigation--show span {
+    background: white;
+    opacity: 1;
 
-    &:checked .navigation__links {
-      display: block;
+    &:nth-child(1) {
+      transform: rotate(45deg) translate(-1px, -6px);
+    }
+    &:nth-child(2) {
+      transform: rotate(-45deg) translate(-2px, 6px);
     }
   }
 
   & span {
     display: block;
-    width: 33px;
-    height: 4px;
-    margin-bottom: 5px;
+    width: 1.7rem;
+    height: 0.1rem;
+    margin: 0.4rem auto;
     position: relative;
-
     background: rgb(107, 107, 107);
     z-index: 1;
 
@@ -127,4 +121,21 @@ a:hover:after {
 }
 
 @include media-breakpoint-up(lg) {
+  .navigation__links {
+    position: relative;
+    opacity: 1;
+    background: inherit;
+  }
+  .navigation__wrapper {
+    padding: 1rem 0;
+  }
+  .navigation__toggle {
+    display: none;
+  }
+  .navigation__header {
+    justify-content: space-between;
+  }
+  .navigation--placeholder {
+    display: none;
+  }
 }

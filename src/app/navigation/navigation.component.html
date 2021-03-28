@@ -1,39 +1,17 @@
 <nav class="navigation fixed-top" id="page-top">
   <div class="navigation__wrapper">
-    <div class="navigation__header">
-      <div class="navigation__toggle">
-        <input type="checkbox" />
-
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <li><a routerLink="/" fragment="home" class="navigation--text-heavy">Mike DelGaudio</a></li>
-      <div></div>
+    <div class="navigation__toggle" [ngClass]="{ 'navigation--show': menuShow }" (click)="toggleMenu()">
+      <span></span>
+      <span></span>
     </div>
-    <ul class="navigation__links">
-      <li><a routerLink="/" fragment="about">About</a></li>
-      <li><a routerLink="/" fragment="work">Work</a></li>
-      <li><a routerLink="/" fragment="contact">Contact</a></li>
+    <ul class="navigation__header">
+      <li><a routerLink="/" fragment="home" class="navigation--text-heavy">Mike DelGaudio</a></li>
+
+      <div class="navigation__links" [ngClass]="{ 'navigation--show': menuShow }">
+        <li><a routerLink="/" fragment="about">About</a></li>
+        <li><a routerLink="/" fragment="work">Work</a></li>
+        <li><a routerLink="/" fragment="contact">Contact</a></li>
+      </div>
     </ul>
   </div>
 </nav>
-
-<!--refactor to use only once-->
-<!-- 
-<nav role="navigation" class="mobile fixed-top">
-  <div id="menuToggle">
-    <input type="checkbox" />
-
-    <span></span>
-    <span></span>
-    <span></span>
-
-    <ul id="menu">
-      <a routerLink="/" fragment="home"><li class="home-heading">Mike DelGaudio</li></a>
-      <a routerLink="/" fragment="about"><li>About</li></a>
-      <a routerLink="/" fragment="work"><li>Work</li></a>
-      <a routerLink="/" fragment="contact"><li>Contact</li></a>
-    </ul>
-  </div>
-</nav> -->

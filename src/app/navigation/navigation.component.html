@@ -1,14 +1,26 @@
-<nav class="navbar fixed-top navbar-dark bg-darken desktop" id="page-top">
-  <ul class="">
-    <li><a routerLink="/" fragment="home" class="home-heading">Mike DelGaudio</a></li>
-    <li><a routerLink="/" fragment="about">About</a></li>
-    <li><a routerLink="/" fragment="work">Work</a></li>
-    <li><a routerLink="/" fragment="contact">Contact</a></li>
-  </ul>
+<nav class="navigation fixed-top" id="page-top">
+  <div class="navigation__wrapper">
+    <div class="navigation__header">
+      <div class="navigation__toggle">
+        <input type="checkbox" />
+
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <li><a routerLink="/" fragment="home" class="navigation--text-heavy">Mike DelGaudio</a></li>
+      <div></div>
+    </div>
+    <ul class="navigation__links">
+      <li><a routerLink="/" fragment="about">About</a></li>
+      <li><a routerLink="/" fragment="work">Work</a></li>
+      <li><a routerLink="/" fragment="contact">Contact</a></li>
+    </ul>
+  </div>
 </nav>
 
 <!--refactor to use only once-->
-
+<!-- 
 <nav role="navigation" class="mobile fixed-top">
   <div id="menuToggle">
     <input type="checkbox" />
@@ -24,4 +36,4 @@
       <a routerLink="/" fragment="contact"><li>Contact</li></a>
     </ul>
   </div>
-</nav>
+</nav> -->

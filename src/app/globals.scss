@@ -1,10 +1,14 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
 $link-hover: rgba(59, 59, 59, 0.658);
 
 $github-color: #494f57;
-$email-color: #48cfff;
+$twitter-color: #48cfff;
 $youtube-color: #ff0000;
 $linkedin-color: #007bb6;
-$hue: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+$hue: -webkit-slinear-gradient(92deg, #f35626, #feab3a);
 $app-background: #fafafa;
 
 @-webkit-keyframes hue {

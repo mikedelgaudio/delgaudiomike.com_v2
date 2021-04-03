@@ -15,7 +15,7 @@ import { WorkExperiencePageModule } from "./work-experience-page/work-experience
 @NgModule({
   declarations: [AppComponent, NavigationComponent, FooterComponent],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: "serverApp" }),
     HomePageModule,
     CreativeWorkPageModule,
     WorkExperiencePageModule,

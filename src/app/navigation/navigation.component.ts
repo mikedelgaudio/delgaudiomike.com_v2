@@ -7,10 +7,15 @@ import { Component, OnInit, Input } from "@angular/core";
 })
 export class NavigationComponent implements OnInit {
   @Input("smoothScroll") smoothScroll: Function;
+  public menuShow: boolean = false;
 
   constructor() {}
 
   ngOnInit(): void {
     this.smoothScroll();
+  }
+
+  toggleMenu(): void {
+    this.menuShow = !this.menuShow;
   }
 }

@@ -1,3 +1,5 @@
+@import "globals";
+
 .header-text {
   display: flex;
   justify-content: flex-start;
@@ -7,11 +9,15 @@
 
 h2,
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 header {
   background-color: black;
+}
+
+.display-1 {
+  font-size: 2rem;
 }
 
 .mike-pic-container {
@@ -24,47 +30,26 @@ header {
 .mike-pic {
   object-fit: cover;
   object-position: center;
-  width: 25rem;
-  height: 25rem;
+  width: 15rem;
+  height: 15rem;
   border-radius: 50%;
-  margin: 20px;
+  //margin: 1.25rem;
 }
 
-@media screen and (max-width: 1200px) {
+.mike-pic-container,
+.header-text {
+  justify-content: center;
+}
+.header-text {
+  align-items: flex-start;
+  padding-bottom: 7rem;
+}
+
+.mike-pic-container {
+  align-items: flex-end;
   .mike-pic {
-    width: 20rem;
-    height: 20rem;
-  }
-  .header-text {
-    .display-1 {
-      font-size: 3rem;
-    }
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .mike-pic-container,
-  .header-text {
-    justify-content: center;
-  }
-  .header-text {
-    align-items: flex-start;
-    padding-bottom: 10rem;
-  }
-
-  .mike-pic-container {
-    align-items: flex-end;
-    .mike-pic {
-      width: 15rem;
-      height: 15rem;
-    }
-  }
-}
-
-@media screen and (max-width: 576px) {
-  h2,
-  h3 {
-    font-size: 1.25rem;
+    width: 15rem;
+    height: 15rem;
   }
 }
 
@@ -146,5 +131,53 @@ header {
   }
   50% {
     color: #fff;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .mike-pic-container {
+    justify-content: flex-end;
+  }
+  .header-text {
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 0;
+  }
+
+  .display-1 {
+    font-size: 3rem;
+  }
+
+  .mike-pic-container {
+    align-items: center;
+    .mike-pic {
+      width: 19rem;
+      height: 19rem;
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .display-1 {
+    font-size: 4rem;
+  }
+
+  // .mike-pic {
+  //   width: 20rem;
+  //   height: 20rem;
+  // }
+}
+
+@include media-breakpoint-up(xl) {
+  h2,
+  h3 {
+    font-size: 1.5rem;
+  }
+  .mike-pic {
+    width: 25rem;
+    height: 25rem;
+  }
+  .display-1 {
+    font-size: 4.5rem;
   }
 }

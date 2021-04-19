@@ -33,7 +33,6 @@ header {
   width: 15rem;
   height: 15rem;
   border-radius: 50%;
-  //margin: 1.25rem;
 }
 
 .mike-pic-container,
@@ -161,11 +160,6 @@ header {
   .display-1 {
     font-size: 4rem;
   }
-
-  // .mike-pic {
-  //   width: 20rem;
-  //   height: 20rem;
-  // }
 }
 
 @include media-breakpoint-up(xl) {

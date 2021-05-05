@@ -11,6 +11,7 @@ import { TypesOfErrorsModule } from "./errors/types-of-errors.module";
 import { SharedModule } from "./shared/shared.module";
 import { CodeProjectsPageModule } from "./code-projects-page/code-projects-page.module";
 import { WorkExperiencePageModule } from "./work-experience-page/work-experience-page.module";
+import { GoogleAnalyticsService } from "../app/google-analytics/google-analytics.service";
 
 @NgModule({
   declarations: [AppComponent, NavigationComponent, FooterComponent],
@@ -24,7 +25,7 @@ import { WorkExperiencePageModule } from "./work-experience-page/work-experience
     SharedModule,
     CodeProjectsPageModule,
   ],
-  providers: [{ provide: ErrorHandler, useClass: AppErrorHandler }],
+  providers: [{ provide: ErrorHandler, useClass: AppErrorHandler }, GoogleAnalyticsService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

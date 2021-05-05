@@ -2,7 +2,11 @@
 <div class="section grid-items grid-items-feature-first grid-items-peak">
   <h2 class="section-header section-header-right">work.</h2>
 
-  <a [routerLink]="['/code-projects']" class="grid-item post-preview personal-projects">
+  <a
+    [routerLink]="['/code-projects']"
+    (click)="sendClickEvent('code-projects')"
+    class="grid-item post-preview personal-projects"
+  >
     <span class="grid-item-button grid-item-button-left">
       <span class="grid-item-button-label">All things code!</span>
     </span>
@@ -14,7 +18,11 @@
   </a>
   <div class="row">
     <div class="col-md-6">
-      <a [routerLink]="['/work-experience']" class="grid-item post-preview work-expereince">
+      <a
+        [routerLink]="['/work-experience']"
+        (click)="sendClickEvent('work-experience')"
+        class="grid-item post-preview work-expereince"
+      >
         <h1><i class="fas fa-briefcase"></i></h1>
         <h1 class="grid-item-header">Work Experience</h1>
         <div class="hyperlink-wrapper">
@@ -27,7 +35,11 @@
       </a>
     </div>
     <div class="col-md-6">
-      <a [routerLink]="['/creative-work']" class="grid-item post-preview creative-projects">
+      <a
+        [routerLink]="['/creative-work']"
+        (click)="sendClickEvent('creative-work')"
+        class="grid-item post-preview creative-projects"
+      >
         <h1><i class="fas fa-paint-brush"></i></h1>
         <h1 class="grid-item-header">Creative&nbsp; Work</h1>
         <div class="hyperlink-wrapper">

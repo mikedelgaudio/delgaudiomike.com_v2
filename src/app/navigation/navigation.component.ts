@@ -15,7 +15,11 @@ export class NavigationComponent implements OnInit {
     this.smoothScroll();
   }
 
-  toggleMenu(): void {
-    this.menuShow = !this.menuShow;
+  toggleMenu(location?: string): void {
+    if (location !== undefined) {
+      this.menuShow = false;
+    } else {
+      this.menuShow = !this.menuShow;
+    }
   }
 }

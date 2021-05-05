@@ -1,5 +1,7 @@
 import { Component, ViewEncapsulation } from "@angular/core";
+import { NavigationEnd, Router } from "@angular/router";
 declare var $: any;
+declare let gtag: Function;
 
 @Component({
   selector: "app-root",
@@ -8,6 +10,16 @@ declare var $: any;
   encapsulation: ViewEncapsulation.None,
 })
 export class AppComponent {
+  constructor(public router: Router) {
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        gtag("config", "UA-119776312-1", {
+          page_path: event.urlAfterRedirects,
+        });
+      }
+    });
+  }
+
   /* SMOOTH SCROLLING */
 
   get getSmoothScroll() {

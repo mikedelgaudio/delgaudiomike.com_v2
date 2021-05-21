@@ -8,20 +8,20 @@ export const ListOfWorkExperience: Experience[] = [
     endDate: "Present",
     jobTitle: "Technical Writer",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam venenatis metus et ex molestie dictum. Maecenas justo arcu, efficitur vitae pellentesque eu, varius vitae libero. Mauris lacinia, lacus in sagittis semper, tortor magna tincidunt ligula, sit amet eleifend nisi est eu lacus. Proin egestas mattis nisl sit amet tincidunt. Morbi eget neque eu lacus hendrerit interdum in at quam. Cras sed dapibus mauris. Aliquam at turpis sit amet turpis elementum varius.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam venenatis metus et ex molestie dictum. Maecenas justo arcu, efficitur vitae pellentesque eu, varius vitae libero. Mauris lacinia, lacus in sagittis semper, tortor magna tincidunt ligula, sit amet eleifend nisi est eu lacus. Proin egestas mattis nisl sit amet tincidunt. ",
     asset: "assets/work-experience/google.jpg",
-    assetAlt: "Code Backsplash",
+    assetAlt: "Google Logo",
   },
   {
     heading: "Colgate Palmolive",
     location: "Piscataway, NJ",
     startDate: "Jan 2020",
     endDate: "May 2021",
-    jobTitle: "Application & Software Developer",
+    jobTitle: "App & Software Developer",
     description:
       "I worked with Hill's B2B eCommerce front-end development team utilizing Angular 9 & SAP Spartacus components to develop numerous user interfaces with SCSS, HTML, and TypeScript. Additionally, I was able to research and develop solutions in the Selenium automated testing framework for the deployment of the project.",
     asset: "assets/work-experience/colgate.jpg",
-    assetAlt: "Code Backsplash",
+    assetAlt: "Colgate Campus",
   },
   {
     heading: "Stevens Institute of Technology",
@@ -43,6 +43,6 @@ export const ListOfWorkExperience: Experience[] = [
     description:
       "I worked closely with the Division of Information Technology and the senior web developer on designing and developing two new full websites in PHP. Additionally, I was able to relocate and document all existing programming projects and in-house applications to a local git server for version control.",
     asset: "assets/work-experience/courts.jpg",
-    assetAlt: "",
+    assetAlt: "Courts Image",
   },
 ];

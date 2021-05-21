@@ -1,31 +1,50 @@
-.experience {
+@import "globals";
+
+.n-card-wrapper {
+  display: flex;
   border-radius: 10px;
-  width: 100%;
+  flex-wrap: wrap;
   margin-bottom: 2rem;
-  padding: 2rem 0.5rem;
-  min-height: 25rem;
+  padding: 2rem 1rem;
+  min-height: 9rem;
   background-color: #fafafade;
   box-shadow: inset 0px 0px 8px 0px #00000017;
-  h2 {
-    font-size: 3rem;
-    font-weight: 500;
-    font-variant: all-petite-caps;
+  border: 4px solid black;
+  & .n-card--company {
+    font-size: 2.5rem;
+    text-align: center;
+    @include media-breakpoint-up(md) {
+      text-align: start;
+      font-size: 3rem;
+    }
   }
-  h5 {
-    font-weight: 300;
-  }
-  img {
+  & img {
     height: auto;
     width: 100%;
     max-width: 500px;
     object-fit: contain;
     border-radius: 10px;
   }
-
-  div.text-center {
-    p {
-      font-weight: 500;
-      margin: 0;
+  & .n-card-main-details {
+    padding: 0 1rem;
+  }
+  & .n-card-info {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0.25rem;
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: center;
+    @include media-breakpoint-up(md) {
+      text-align: start;
+      font-size: 1.15rem;
     }
+    span {
+      font-weight: inherit;
+      font-size: inherit;
+    }
+  }
+  & .n-card-description {
+    max-width: 75ch;
   }
 }

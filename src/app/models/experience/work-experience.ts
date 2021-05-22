@@ -17,7 +17,7 @@ export const ListOfWorkExperience: Experience[] = [
     location: "Piscataway, NJ",
     startDate: "Jan 2020",
     endDate: "May 2021",
-    jobTitle: "App & Software Developer",
+    jobTitle: "Software Developer",
     description:
       "I worked with Hill's B2B eCommerce front-end development team utilizing Angular 9 & SAP Spartacus components to develop numerous user interfaces with SCSS, HTML, and TypeScript. Additionally, I was able to research and develop solutions in the Selenium automated testing framework for the deployment of the project.",
     asset: "assets/work-experience/colgate.jpg",
@@ -41,7 +41,7 @@ export const ListOfWorkExperience: Experience[] = [
     endDate: "Aug 2019",
     jobTitle: "Web Developer",
     description:
-      "I worked closely with the Division of Information Technology and the senior web developer on designing and developing two new full websites in PHP. Additionally, I was able to relocate and document all existing programming projects and in-house applications to a local git server for version control.",
+      "I worked closely with the Division of Information Technology and the senior web developer on designing and developing two new full websites in PHP. Additionally, I relocated and document all existing programming projects and in-house applications to a local git server for version control.",
     asset: "assets/work-experience/courts.jpg",
     assetAlt: "Courts Image",
   },

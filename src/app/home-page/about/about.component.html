@@ -31,9 +31,7 @@
     </div>
     <div class="row justify-content-center parent-badge-container">
       <div class="badge-container" *ngFor="let skill of skills">
-        <span class="badge" style="border: 6px solid {{ skill.color }}; color: {{ skill.color }};">{{
-          skill.name
-        }}</span>
+        <span class="badge" style="border-color: {{ skill.color }}; color: {{ skill.color }};">{{ skill.name }}</span>
       </div>
     </div>
   </div>

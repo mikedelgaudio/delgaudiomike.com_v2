@@ -1,3 +1,4 @@
+@import "globals";
 .personal-projects {
   background: url("../../../assets/code-projects/code-projects-banner.svg") no-repeat;
   -webkit-box-pack: center;
@@ -11,7 +12,7 @@
   -webkit-box-pack: center;
   justify-content: center;
   background-position: right;
-  background-size: 350%;
+  background-size: 310%;
 }
 
 .creative-projects {
@@ -44,7 +45,7 @@
 
 .grid-item-header {
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 .grid-item:hover {
   text-decoration-color: #000;
@@ -66,7 +67,13 @@
   padding-left: 0;
 }
 
-@media screen and (min-width: 768px) {
+@include media-breakpoint-up(sm) {
+  .work-expereince {
+    background-size: 220%;
+  }
+}
+
+@include media-breakpoint-up(md) {
   .col-md-6:nth-child(1) {
     padding-right: 0;
     padding-left: 15px;
@@ -77,7 +84,7 @@
   }
 
   .grid-item-header {
-    font-size: 3rem;
+    font-size: 2.9rem;
   }
 
   .personal-projects {
@@ -90,14 +97,17 @@
   }
 
   .work-expereince {
-    background-size: 200%;
-    background-position: center;
+    background-size: 220%;
+    background-position: right;
   }
 }
 
-@media screen and (min-width: 1140px) {
+@include media-breakpoint-up(xl) {
   .grid-item-header {
     font-size: 4rem;
+  }
+  .work-expereince {
+    background-size: 170%;
   }
 }
 

@@ -8,7 +8,7 @@ export const ListOfWorkExperience: Experience[] = [
     endDate: "Present",
     jobTitle: "Technical Writer",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam venenatis metus et ex molestie dictum. Maecenas justo arcu, efficitur vitae pellentesque eu, varius vitae libero. Mauris lacinia, lacus in sagittis semper, tortor magna tincidunt ligula, sit amet eleifend nisi est eu lacus. Proin egestas mattis nisl sit amet tincidunt. ",
+      "I work as a technical writer for Google to plan, create, and maintain educational content as an integral part of the engineering or user experience. Separately, I leverage my prior experience in software engineering to provide insightful changes to potential code changes and fix numerous styling issues across the documentation UX.",
     asset: "assets/work-experience/google.jpg",
     assetAlt: "Google Logo",
   },

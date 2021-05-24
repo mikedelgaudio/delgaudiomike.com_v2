@@ -10,7 +10,7 @@ export const ListOfWorkExperience: Experience[] = [
     description:
       "I work as a technical writer for Google to plan, create, and maintain educational content as an integral part of the engineering or user experience. Separately, I leverage my prior experience in software engineering to provide insightful changes to potential code changes and fix numerous styling issues across the documentation UX.",
     asset: "assets/work-experience/google.jpg",
-    assetAlt: "Google Logo",
+    assetAlt: "Google Company Logo",
   },
   {
     heading: "Colgate Palmolive",

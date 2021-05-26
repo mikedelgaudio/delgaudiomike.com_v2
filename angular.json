@@ -26,7 +26,7 @@
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": ["node_modules/bootstrap/scss/bootstrap.scss", "src/styles.scss"],
             "stylePreprocessorOptions": {
-              "includePaths": ["src/app"]
+              "includePaths": ["src/app", "assets"]
             },
             "scripts": ["./node_modules/jquery/dist/jquery.js", "./node_modules/bootstrap/dist/js/bootstrap.js"]
           },
@@ -89,7 +89,7 @@
             "styles": ["src/styles.scss"],
             "scripts": ["node_modules/jquery/dist/jquery.js"],
             "stylePreprocessorOptions": {
-              "includePaths": ["src/app"]
+              "includePaths": ["src/app", "assets"]
             }
           }
         },

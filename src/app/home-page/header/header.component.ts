@@ -1,7 +1,4 @@
-import { Component, OnInit, HostListener, Input } from "@angular/core";
-import { smoothScroll } from "../../shared/smooth-scroll";
-
-declare var $: any;
+import { Component, OnInit, HostListener } from "@angular/core";
 
 @Component({
   selector: "app-header",
@@ -12,9 +9,7 @@ export class HeaderComponent implements OnInit {
   public scrolled: boolean = false;
   constructor() {}
 
-  ngOnInit(): void {
-    smoothScroll();
-  }
+  ngOnInit(): void {}
 
   @HostListener("window:scroll", ["$event"])
   onWindowScroll($event) {

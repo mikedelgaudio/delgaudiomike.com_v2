@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 
 @Component({
   selector: "app-navigation",
@@ -6,14 +6,11 @@ import { Component, OnInit, Input } from "@angular/core";
   styleUrls: ["./navigation.component.scss"],
 })
 export class NavigationComponent implements OnInit {
-  @Input("smoothScroll") smoothScroll: Function;
   public menuShow: boolean = false;
 
   constructor() {}
 
-  ngOnInit(): void {
-    this.smoothScroll();
-  }
+  ngOnInit(): void {}
 
   toggleMenu(location?: string): void {
     if (location !== undefined) {

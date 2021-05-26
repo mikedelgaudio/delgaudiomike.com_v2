@@ -1,6 +1,5 @@
-<a class="anchor pt-5" id="about"></a>
-<div class="section grid-items grid-items-feature-first grid-items-peak pt-5">
-  <h2 class="section-header section-header-left">about.</h2>
+<div id="about" class="section grid-items grid-items-feature-first grid-items-peak pt-5">
+  <h2 class="section-header section-header-left pt-5">about.</h2>
 
   <div class="grid-item post-preview" style="background-color: #f4f4f9">
     <div class="row align-items-center">
@@ -31,9 +30,7 @@
     </div>
     <div class="row justify-content-center parent-badge-container">
       <div class="badge-container" *ngFor="let skill of skills">
-        <span class="badge" style="border: 6px solid {{ skill.color }}; color: {{ skill.color }};">{{
-          skill.name
-        }}</span>
+        <span class="badge" style="border-color: {{ skill.color }}; color: {{ skill.color }};">{{ skill.name }}</span>
       </div>
     </div>
   </div>

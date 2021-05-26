@@ -2,8 +2,15 @@
 .main {
   background-color: $app-background;
   background: url("../../assets/work-experience/work-exp-banner.svg") no-repeat;
-  background-size: 100%;
-  background-position: right 40% center;
+  background-size: 380%;
+  background-position: top;
+  @include media-breakpoint-up(md) {
+    background-size: 220%;
+    background-position: center;
+  }
+  @include media-breakpoint-up(xl) {
+    background-size: 150%;
+  }
 }
 
 .container {
@@ -11,8 +18,11 @@
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: bold;
+  @include media-breakpoint-up(lg) {
+    font-size: 4rem;
+  }
 }
 .card-group {
   display: -webkit-flex;
@@ -21,19 +31,9 @@ h1 {
   max-width: 100vw;
 }
 
-.source-link {
-  display: none !important;
-}
-
-@media screen and (max-width: 960px) {
-  h1 {
-    font-size: 3rem;
-  }
-  i {
-    display: none;
-  }
-  .main {
-    background-size: 380%;
-    background-position: top;
+i {
+  display: none;
+  @include media-breakpoint-up(lg) {
+    display: block;
   }
 }

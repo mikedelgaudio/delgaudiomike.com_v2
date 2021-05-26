@@ -6,7 +6,7 @@
     </div>
     <ul class="navigation__header">
       <li>
-        <a routerLink="." (click)="toggleMenu('home')" class="navigation--text-heavy">Mike DelGaudio</a>
+        <a routerLink="." fragment="home" (click)="toggleMenu('home')" class="navigation--text-heavy">Mike DelGaudio</a>
       </li>
 
       <div class="navigation__links" [ngClass]="{ 'navigation--show': menuShow }">

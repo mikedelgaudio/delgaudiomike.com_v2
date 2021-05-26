@@ -46,10 +46,10 @@ header {
 
 .mike-pic-container {
   align-items: flex-end;
-  .mike-pic {
-    width: 15rem;
-    height: 15rem;
-  }
+}
+.mike-pic {
+  width: 15rem;
+  height: 15rem;
 }
 
 .arrow {
@@ -149,10 +149,10 @@ header {
 
   .mike-pic-container {
     align-items: center;
-    .mike-pic {
-      width: 19rem;
-      height: 19rem;
-    }
+  }
+  .mike-pic {
+    width: 19rem;
+    height: 19rem;
   }
 }
 
@@ -165,13 +165,13 @@ header {
 @include media-breakpoint-up(xl) {
   h2,
   h3 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   .mike-pic {
     width: 25rem;
     height: 25rem;
   }
   .display-1 {
-    font-size: 4.5rem;
+    font-size: 6rem;
   }
 }

@@ -6,13 +6,13 @@
     </div>
     <ul class="navigation__header">
       <li>
-        <a routerLink="/" fragment="home" (click)="toggleMenu('home')" class="navigation--text-heavy">Mike DelGaudio</a>
+        <a routerLink="." fragment="home" (click)="toggleMenu('home')" class="navigation--text-heavy">Mike DelGaudio</a>
       </li>
 
       <div class="navigation__links" [ngClass]="{ 'navigation--show': menuShow }">
-        <li><a routerLink="/" fragment="about" (click)="toggleMenu()">About</a></li>
-        <li><a routerLink="/" fragment="work" (click)="toggleMenu()">Work</a></li>
-        <li><a routerLink="/" fragment="contact" (click)="toggleMenu()">Contact</a></li>
+        <li><a routerLink="." fragment="about" (click)="toggleMenu()">About</a></li>
+        <li><a routerLink="." fragment="work" (click)="toggleMenu()">Work</a></li>
+        <li><a routerLink="." fragment="contact" (click)="toggleMenu()">Contact</a></li>
       </div>
     </ul>
   </div>

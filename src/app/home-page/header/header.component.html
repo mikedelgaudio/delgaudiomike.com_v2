@@ -1,22 +1,39 @@
-<header class="row ml-0 mr-0" id="home">
-  <div class="col-md col-xl-6">
-    <div class="mike-pic-container">
-      <img class="mike-pic" src="../../../assets/home/pf_pic.jpg" alt="Mike's Profile Picture" />
-    </div>
-  </div>
+<header class="row m-0" id="home">
   <div class="col-md col-xl-6">
     <div class="header-text">
       <div>
-        <h1 class="m-0 text-white display-1 font-weight-bolder p-0">Mike<br />DelGaudio</h1>
+        <div class="header-text--wrapper">
+          <h1 class="title">👋 HELLO, MY NAME IS <span class="title--name">MIKE</span></h1>
+          <h2 class="subtitle">I'm a Computer Science Student from NYC!</h2>
+        </div>
 
-        <h2 class="text-hue subtitle">Computer Science Student</h2>
+        <div class="header__section-2">
+          <div class="divider"></div>
+          <div>
+            <h3>I develop websites that focus on user experience and write technical documentation.</h3>
+          </div>
+          <div class="call-to-action__container">
+            <a
+              href="https://github.com/mikedelgaudio/resume/blob/master/michael_delgaudio_resume.pdf"
+              target="_blank"
+              rel="noreferrer nofollow"
+            >
+              <button class="call-to-action__btn" type="button"><span>REVIEW MY RESUME</span></button>
+            </a>
+          </div>
+        </div>
+
+        <div class="header__section-3">
+          <h3>Experience:</h3>
+          <img class="header__section-3--logo" src="../../../assets/home/google-logo.svg" />
+          <img class="header__section-3--logo" src="../../../assets/home/colgate-logo.svg" />
+        </div>
       </div>
     </div>
   </div>
-
-  <div class="vertical-bottom above-particle" [style.visibility]="!scrolled ? 'visible' : 'hidden'">
-    <div class="arrow bounce">
-      <a class="fa fa-chevron-down fa-2x text-white scroller"></a>
+  <div class="col-md col-xl-6">
+    <div class="mike-pic-container">
+      <img class="mike-pic" src="../../../assets/home/m.jpg" alt="Mike's Profile Picture" />
     </div>
   </div>
 </header>

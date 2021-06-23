@@ -1,16 +1,18 @@
-<header class="row m-0" id="home">
+<header class="home" id="home">
   <div class="col-md col-xl-6">
-    <div class="header-text">
+    <div class="header-text__container">
       <div>
-        <div class="header-text--wrapper">
-          <h1 class="title">👋 HELLO, MY NAME IS <span class="title--name">MIKE</span></h1>
-          <h2 class="subtitle">I'm a Computer Science Student from NYC!</h2>
+        <div class="header-text__wrapper">
+          <h1 class="header-text--title">👋 HELLO, MY NAME IS <span class="header-text--title-name">MIKE</span></h1>
+          <h2 class="header-text--subtitle">I'm a Computer Science Student from NYC!</h2>
         </div>
 
-        <div class="header__section-2">
+        <div class="header-section-2">
           <div class="divider"></div>
           <div>
-            <h3>I develop websites that focus on user experience and write technical documentation.</h3>
+            <h3 class="header-section-2--motto">
+              I develop websites that focus on user experience and write technical documentation.
+            </h3>
           </div>
           <div class="call-to-action__container">
             <a
@@ -23,17 +25,25 @@
           </div>
         </div>
 
-        <div class="header__section-3">
+        <!-- <div class="header__section-3">
           <h3>Experience:</h3>
           <img class="header__section-3--logo" src="../../../assets/home/google-logo.svg" />
           <img class="header__section-3--logo" src="../../../assets/home/colgate-logo.svg" />
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
   <div class="col-md col-xl-6">
-    <div class="mike-pic-container">
-      <img class="mike-pic" src="../../../assets/home/m.jpg" alt="Mike's Profile Picture" />
+    <div class="profile-pic__container">
+      <div class="profile-pic__wrapper">
+        <img
+          class="profile-pic__img"
+          src="../../../assets/home/m.jpg"
+          alt="Mike's Profile Picture"
+          width="240"
+          height="296"
+        />
+      </div>
     </div>
   </div>
 </header>

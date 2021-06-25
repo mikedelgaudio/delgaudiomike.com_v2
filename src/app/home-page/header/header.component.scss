@@ -15,10 +15,11 @@ $header-max-width: 35rem;
 .profile-pic__container {
   display: flex;
   justify-content: center;
+  padding-top: 3rem;
 }
 
 .profile-pic__wrapper {
-  max-width: 15rem;
+  max-width: 11rem;
 }
 
 .profile-pic__img {
@@ -89,20 +90,20 @@ $header-max-width: 35rem;
   }
 }
 
-@include media-breakpoint-up(md) {
-  .mike-pic-container {
-    justify-content: flex-start;
-  }
-  .header-text {
-    justify-content: flex-end;
-    align-items: center;
-    padding-bottom: 0;
-  }
+// @include media-breakpoint-up(md) {
+//   .mike-pic-container {
+//     justify-content: flex-start;
+//   }
+//   .header-text {
+//     justify-content: flex-end;
+//     align-items: center;
+//     padding-bottom: 0;
+//   }
 
-  .mike-pic-container {
-    align-items: center;
-  }
-}
+//   .mike-pic-container {
+//     align-items: center;
+//   }
+// }
 
 .header__section-3 {
   display: flex;

@@ -12,6 +12,13 @@ $header-max-width: 35rem;
   }
 }
 
+.col-md {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
 .profile-pic__container {
   display: flex;
   justify-content: center;
@@ -133,11 +140,11 @@ $header-max-width: 35rem;
 }
 
 .call-to-action__btn {
-  padding: 1.4em 2.07em 1.3em;
+  padding: 1.4em 2.07em;
   border: 3px solid #000;
   background-color: #000;
   color: #fff;
   font-size: 0.94em;
-  font-weight: 800;
+  font-weight: 500;
   letter-spacing: 2px;
 }

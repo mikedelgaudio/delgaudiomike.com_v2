@@ -5,7 +5,7 @@ $header-max-width: 35rem;
 .home {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column-reverse;
+  block-size: 100vh;
   background-color: #fff;
   @include media-breakpoint-up(md) {
     flex-direction: row;
@@ -19,21 +19,28 @@ $header-max-width: 35rem;
 }
 
 .profile-pic__wrapper {
-  max-width: 11rem;
+  display: flex;
+  height: 100%;
+  align-items: flex-end;
+  justify-content: center;
 }
 
 .profile-pic__img {
   width: 100%;
   height: auto;
   display: block;
+  max-width: 11rem;
+  @include media-breakpoint-up(sm) {
+    max-width: 15rem;
+  }
 }
 
 .header-text__container {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  height: 100%;
-  padding-top: 1rem;
+  //height: 100%;
+  //padding-top: 1rem;
 }
 
 .header-text__wrapper {
@@ -52,14 +59,14 @@ $header-max-width: 35rem;
 }
 
 .header-text--subtitle {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 600;
-  letter-spacing: -2px;
-  word-spacing: -4px;
+  letter-spacing: -1px;
+  word-spacing: -2px;
 }
 
 .header-section-2--motto {
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 
 .mike-pic-container {
@@ -83,7 +90,7 @@ $header-max-width: 35rem;
 
 .divider {
   height: 2px;
-  margin: 1.08em 0;
+  margin: 0.28em 0;
   background-color: #299cb9;
   @include media-breakpoint-up(md) {
     margin: 2.08em 0;
@@ -119,7 +126,10 @@ $header-max-width: 35rem;
 }
 
 .call-to-action__container {
-  margin: 2.08em 0;
+  margin: 1.08em 0;
+  @include media-breakpoint-up(md) {
+    margin: 2.08em 0;
+  }
 }
 
 .call-to-action__btn {

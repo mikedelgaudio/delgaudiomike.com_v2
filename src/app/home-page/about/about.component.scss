@@ -1,9 +1,7 @@
 @import "globals";
 
 .about {
-  min-block-size: 100vh;
   display: flex;
-
   @include media-breakpoint-up(md) {
     align-items: center;
   }
@@ -59,6 +57,11 @@
   width: 100%;
   height: auto;
   padding: 0.5rem;
+  @media screen and (prefers-reduced-motion: no-preference) {
+    animation: fade-in ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
 }
 
 .about-section-2__skills {
@@ -80,7 +83,8 @@
   line-height: 1;
   text-align: center;
   vertical-align: baseline;
-  border-color: #2a9cb9;
+  border-color: #006e8a;
+  box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.05);
   @include media-breakpoint-up(md) {
     font-size: 1em;
   }

@@ -27,7 +27,7 @@
   justify-content: center;
   max-width: 11rem;
   @include media-breakpoint-up(xs) {
-    max-width: 17rem;
+    max-width: 15rem;
   }
   @include media-breakpoint-up(lg) {
     max-width: 27rem;
@@ -44,6 +44,11 @@
   width: 100%;
   height: auto;
   display: block;
+  @media screen and (prefers-reduced-motion: no-preference) {
+    animation: fade-in ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
 }
 
 .header-text__container {
@@ -59,7 +64,10 @@
     justify-content: flex-end;
   }
   @media screen and (prefers-reduced-motion: no-preference) {
-    animation: slide-up 0.75s ease-out;
+    // animation: slide-up 0.75s ease-out;
+    animation: fade-in ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
   }
 }
 
@@ -81,11 +89,15 @@
 
 .header-text--subtitle {
   margin: 0;
-  font-size: 2rem;
   font-weight: 600;
   letter-spacing: -1px;
   word-spacing: -2px;
-  line-height: 2rem;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  @include media-breakpoint-up(xs) {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
   @include media-breakpoint-up(md) {
     line-height: 2.5rem;
   }

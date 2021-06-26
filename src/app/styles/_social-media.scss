@@ -1,0 +1,58 @@
+$github-color: #494f57;
+$twitter-color: #48cfff;
+$youtube-color: #ff0000;
+$linkedin-color: #007bb6;
+$app-background: #fafafa;
+$link-hover: rgba(59, 59, 59, 0.658);
+
+.social-icons {
+  text-align: center;
+  margin: 0;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.social-icons a {
+  width: 2.5rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  margin: 0.2em;
+  border-radius: 100%;
+  background-color: transparent;
+  color: #818a91;
+  font-size: 1rem;
+  display: inline-block;
+  line-height: 2.75rem;
+  width: 2.75rem;
+  height: 2.75rem;
+  text-align: center;
+  margin-right: 8px;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.social-icons a:active,
+.social-icons a:focus,
+.social-icons a:hover {
+  color: #fff;
+}
+
+.social-icons a.github:hover {
+  background-color: $github-color;
+}
+.social-icons a.youtube:hover {
+  background-color: $youtube-color;
+}
+.social-icons a.linkedin:hover {
+  background-color: $linkedin-color;
+}
+.social-icons a.twitter:hover {
+  background-color: $twitter-color;
+}

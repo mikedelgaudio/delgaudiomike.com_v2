@@ -1,11 +1,16 @@
 @import "globals";
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   letter-spacing: 1px;
   word-wrap: break-word;
   scroll-behavior: smooth;
-  box-sizing: border-box;
 }
 
 // ::-webkit-scrollbar {
@@ -35,6 +40,7 @@
 
 html {
   min-width: 320px !important;
+  box-sizing: border-box;
 }
 
 body {

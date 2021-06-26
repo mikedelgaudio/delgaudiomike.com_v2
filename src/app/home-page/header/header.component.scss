@@ -1,31 +1,13 @@
 @import "globals";
 
-$header-max-width: 35rem;
-
 .home {
-  display: flex;
-  flex-wrap: wrap;
   block-size: 100vh;
   background-color: #fff;
   flex-direction: column;
+  justify-content: center;
   @include media-breakpoint-up(lg) {
     flex-direction: row-reverse;
     padding: 0 4rem;
-  }
-}
-
-.col-md,
-.col-lg-6 {
-  position: relative;
-  width: 100%;
-}
-
-.col-lg-6 {
-  @include media-breakpoint-up(lg) {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-    max-width: 50%;
   }
 }
 
@@ -96,13 +78,12 @@ $header-max-width: 35rem;
 
 .header-text--subtitle {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 600;
   letter-spacing: -1px;
   word-spacing: -2px;
-  line-height: 1.5rem;
+  line-height: 2rem;
   @include media-breakpoint-up(md) {
-    font-size: 2rem;
     line-height: 2.5rem;
   }
   @include media-breakpoint-up(lg) {
@@ -130,7 +111,7 @@ $header-max-width: 35rem;
   height: 2px;
   margin: 0.28em 0;
   background-color: #299cb9;
-  @include media-breakpoint-up(sm) {
+  @include media-breakpoint-up(xs) {
     margin: 1.08em 0;
   }
   @include media-breakpoint-up(lg) {
@@ -143,14 +124,4 @@ $header-max-width: 35rem;
   @include media-breakpoint-up(lg) {
     margin: 2.08em 0;
   }
-}
-
-.call-to-action__btn {
-  padding: 1.4em 2.07em;
-  border: 3px solid #000;
-  background-color: #000;
-  color: #fff;
-  font-size: 0.94em;
-  font-weight: 500;
-  letter-spacing: 2px;
 }

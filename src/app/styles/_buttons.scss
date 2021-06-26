@@ -1,0 +1,26 @@
+:root {
+  --border-color: #000;
+  --background-color: #000;
+  --font-color: #fff;
+  --background-color-hover: #fff;
+  --border-color-hover: #2a9cb9;
+  --font-color-hover: #000;
+}
+
+.btn--primary {
+  padding: 1.4em 2.07em;
+  border: 3px solid var(--border-color);
+  background-color: var(--background-color);
+  color: var(--font-color);
+  font-size: 0.94em;
+  font-weight: 500;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: 0.26s ease-in-out background-color, color, border;
+}
+
+.btn--primary:hover {
+  border: 3px solid var(--border-color-hover);
+  background-color: var(--background-color-hover);
+  color: var(--font-color-hover);
+}

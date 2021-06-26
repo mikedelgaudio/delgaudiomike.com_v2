@@ -1,0 +1,30 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.col,
+.col-md,
+.col-sm-6,
+.col-xs-12,
+.col-lg-6 {
+  position: relative;
+  width: 100%;
+}
+
+.col-sm-6 {
+  @include media-breakpoint-up(sm) {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+.col-lg-6 {
+  @include media-breakpoint-up(lg) {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}

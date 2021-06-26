@@ -1,9 +1,5 @@
-@import "./mixins";
-@import "./container";
-
-$link-hover: rgba(59, 59, 59, 0.658);
-$github-color: #494f57;
-$twitter-color: #48cfff;
-$youtube-color: #ff0000;
-$linkedin-color: #007bb6;
-$app-background: #fafafa;
+@import "./styles/mixins";
+@import "./styles/container";
+@import "./styles/grid";
+@import "./styles/social-media";
+@import "./styles/buttons";

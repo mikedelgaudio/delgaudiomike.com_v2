@@ -135,30 +135,6 @@
               "optimization": true
             }
           }
-        },
-        "serve-ssr": {
-          "builder": "@nguniversal/builders:ssr-dev-server",
-          "options": {
-            "browserTarget": "delgaudiomike:build",
-            "serverTarget": "delgaudiomike:server"
-          },
-          "configurations": {
-            "production": {
-              "browserTarget": "delgaudiomike:build:production",
-              "serverTarget": "delgaudiomike:server:production"
-            }
-          }
-        },
-        "prerender": {
-          "builder": "@nguniversal/builders:prerender",
-          "options": {
-            "browserTarget": "delgaudiomike:build:production",
-            "serverTarget": "delgaudiomike:server:production",
-            "routes": ["/"]
-          },
-          "configurations": {
-            "production": {}
-          }
         }
       }
     }

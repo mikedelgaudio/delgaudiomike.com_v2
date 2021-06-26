@@ -10,6 +10,7 @@ $header-max-width: 35rem;
   flex-direction: column;
   @include media-breakpoint-up(lg) {
     flex-direction: row-reverse;
+    padding: 0 4rem;
   }
 }
 
@@ -42,8 +43,8 @@ $header-max-width: 35rem;
   display: flex;
   align-items: flex-end;
   justify-content: center;
-
   max-width: 11rem;
+  transition: 0.5s ease-in-out max-width;
   @include media-breakpoint-up(xs) {
     max-width: 17rem;
   }
@@ -74,6 +75,7 @@ $header-max-width: 35rem;
   padding-top: 1rem;
   @include media-breakpoint-up(lg) {
     padding: 0;
+    justify-content: flex-end;
   }
 }
 
@@ -99,17 +101,19 @@ $header-max-width: 35rem;
   font-weight: 600;
   letter-spacing: -1px;
   word-spacing: -2px;
+  line-height: 1.5rem;
   @include media-breakpoint-up(md) {
     font-size: 2rem;
+    line-height: 2.5rem;
   }
   @include media-breakpoint-up(lg) {
     font-size: 2.5rem;
     letter-spacing: -2px;
     word-spacing: -4px;
-    line-height: 3.5rem;
   }
   @include media-breakpoint-up(xl) {
     font-size: 3rem;
+    line-height: 3rem;
   }
 }
 
@@ -127,6 +131,9 @@ $header-max-width: 35rem;
   height: 2px;
   margin: 0.28em 0;
   background-color: #299cb9;
+  @include media-breakpoint-up(xs) {
+    margin: 1.08em 0;
+  }
   @include media-breakpoint-up(lg) {
     margin: 2.08em 0;
   }

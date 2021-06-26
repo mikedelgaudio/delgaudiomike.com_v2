@@ -1,37 +1,58 @@
-<div id="about" class="section grid-items grid-items-feature-first grid-items-peak pt-5">
-  <h2 class="section-header section-header-left pt-5">about.</h2>
-
-  <div class="grid-item post-preview" style="background-color: #f4f4f9">
-    <div class="row align-items-center">
-      <div class="col-md-6">
-        <h4 class="text-black text-left">
-          I’m a co-op computer science student at Stevens Institute of Technology in Hoboken, NJ. Primarily, I focus on
-          front-end development, technical writing, and dev-ops. Occasionally, I do like to utilize Java and come up
-          with some neat applications in my free time.
-        </h4>
-        <h5 class="text-black text-right font-weight-light">Hoboken, NJ</h5>
-        <h5 class="text-black text-right font-weight-light">Bachelor of Science in Computer Science</h5>
-        <h5 class="text-black text-right font-weight-light">Expected Graduation in May 2023</h5>
-        <div class="d-flex justify-content-end">
-          <a href="mailto:mike@delgaudiomike.com">
-            <button type="button" class="btn btn-lg grow btn-dark">
-              Let's Work Together <i class="far fa-paper-plane"></i>
-            </button>
-          </a>
+<section class="about">
+  <a id="about" class="anchor"></a>
+  <div class="container">
+    <div class="about-section about-section-1">
+      <h4 class="about-section--title">Previously at</h4>
+      <div class="about-section-1__logos">
+        <div class="about-section-1--logo-wrapper">
+          <img
+            class="about-section-1--logo"
+            loading="lazy"
+            src="../../../assets/home/google-logo.svg"
+            alt="This is a logo of Google representing my internship at the company starting on June 2021."
+          />
+        </div>
+        <div class="about-section-1--logo-wrapper">
+          <img
+            class="about-section-1--logo"
+            loading="lazy"
+            src="../../../assets/home/colgate-logo.svg"
+            alt="This is a logo of Colgate representing my previous 18 month internship at the company from January 2020 through May 2021."
+          />
+        </div>
+        <div class="about-section-1--logo-wrapper">
+          <img
+            class="about-section-1--logo"
+            loading="lazy"
+            src="../../../assets/home/stevens.svg"
+            alt="This is a logo of Stevens Institute of Technology representing my prior experience as an academic peer tutor from August 2019 through December 2019."
+          />
         </div>
       </div>
-      <div class="col-md-6 mobile-friendly-spacer">
-        <picture>
-          <source class="img-fluid" srcset="../../../assets/home/memoji_mike.webp" type="image/webp" />
-          <source class="img-fluid" srcset="../../../assets/home/memoji_mike.png" type="image/png" />
-          <img class="img-fluid" src="../../../assets/home/memoji_mike.png" alt="Mike's Memoji" />
-        </picture>
+    </div>
+
+    <div class="about-section about-section-2">
+      <h4 class="about-section--title">Working with</h4>
+      <div class="row about-section-2__skills">
+        <div class="badge-container" *ngFor="let skill of skills">
+          <span class="badge">{{ skill.name }}</span>
+        </div>
       </div>
     </div>
-    <div class="row justify-content-center parent-badge-container">
-      <div class="badge-container" *ngFor="let skill of skills">
-        <span class="badge" style="border-color: {{ skill.color }}; color: {{ skill.color }};">{{ skill.name }}</span>
+
+    <div class="about-section about-section-3">
+      <h4 class="about-section--title">Using my</h4>
+
+      <div class="row about-section-3__details">
+        <p class="about-section-3--detail"><span>👨‍💻</span> Bachelors of Science in Computer Science</p>
+        <p class="about-section-3--detail"><span>🎓</span> Expected Graduation in May 2023</p>
       </div>
+    </div>
+
+    <div class="about-section about-section-4">
+      <a href="mailto:delgaudiomike@gmail.com">
+        <button class="btn--primary" type="button">Let's Chat! <span>☕</span></button></a
+      >
     </div>
   </div>
-</div>
+</section>

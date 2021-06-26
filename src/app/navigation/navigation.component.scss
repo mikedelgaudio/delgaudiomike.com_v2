@@ -28,6 +28,10 @@ a {
   letter-spacing: 0.15em;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 a:after {
   content: "";
   display: block;

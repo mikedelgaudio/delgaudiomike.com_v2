@@ -1,113 +1,113 @@
-@import "globals";
-.personal-projects {
-  background: url("../../../assets/code-projects/code-projects-banner.svg") no-repeat;
-  -webkit-box-pack: center;
-  justify-content: center;
-  background-position: right;
-  background-size: 350%;
-}
+// @import "globals";
+// .personal-projects {
+//   background: url("../../../assets/code-projects/code-projects-banner.svg") no-repeat;
+//   -webkit-box-pack: center;
+//   justify-content: center;
+//   background-position: right;
+//   background-size: 350%;
+// }
 
-.work-expereince {
-  background: url("../../../assets/work-experience/work-exp-banner.svg") no-repeat;
-  -webkit-box-pack: center;
-  justify-content: center;
-  background-position: right;
-  background-size: 310%;
-}
+// .work-expereince {
+//   background: url("../../../assets/work-experience/work-exp-banner.svg") no-repeat;
+//   -webkit-box-pack: center;
+//   justify-content: center;
+//   background-position: right;
+//   background-size: 310%;
+// }
 
-.creative-projects {
-  background: url("../../../assets/creative-work/creative-work-banner.svg") no-repeat;
-  -webkit-box-pack: center;
-  justify-content: center;
-  background-size: 350%;
-}
+// .creative-projects {
+//   background: url("../../../assets/creative-work/creative-work-banner.svg") no-repeat;
+//   -webkit-box-pack: center;
+//   justify-content: center;
+//   background-size: 350%;
+// }
 
-.hyperlink-wrapper {
-  color: #06c;
-  font-weight: 400;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  i {
-    font-size: 11px;
-  }
-}
-.hyperlink:hover {
-  text-decoration: underline;
-}
+// .hyperlink-wrapper {
+//   color: #06c;
+//   font-weight: 400;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   i {
+//     font-size: 11px;
+//   }
+// }
+// .hyperlink:hover {
+//   text-decoration: underline;
+// }
 
-.grid-item:nth-child(2) {
-  border: 0;
-}
+// .grid-item:nth-child(2) {
+//   border: 0;
+// }
 
-.grid-item-header {
-  font-size: 2rem;
-  font-weight: 500;
-}
-.grid-item:hover {
-  text-decoration-color: #000;
-}
-.grid-item-button {
-  background-color: #000;
-  color: #fff;
-}
+// .grid-item-header {
+//   font-size: 2rem;
+//   font-weight: 500;
+// }
+// .grid-item:hover {
+//   text-decoration-color: #000;
+// }
+// .grid-item-button {
+//   background-color: #000;
+//   color: #fff;
+// }
 
-.grid-item-text {
-  font-size: 1.2rem;
-  font-weight: 400;
-}
+// .grid-item-text {
+//   font-size: 1.2rem;
+//   font-weight: 400;
+// }
 
-.col-md-6:nth-child(1) {
-  padding-left: 0;
-}
-.col-md-6:nth-child(2) {
-  padding-left: 0;
-}
+// .col-md-6:nth-child(1) {
+//   padding-left: 0;
+// }
+// .col-md-6:nth-child(2) {
+//   padding-left: 0;
+// }
 
-@include media-breakpoint-up(sm) {
-  .work-expereince {
-    background-size: 220%;
-  }
-}
+// @include media-breakpoint-up(sm) {
+//   .work-expereince {
+//     background-size: 220%;
+//   }
+// }
 
-@include media-breakpoint-up(md) {
-  .col-md-6:nth-child(1) {
-    padding-right: 0;
-    padding-left: 15px;
-  }
-  .col-md-6:nth-child(2) {
-    padding-left: 0;
-    padding-right: 15px;
-  }
+// @include media-breakpoint-up(md) {
+//   .col-md-6:nth-child(1) {
+//     padding-right: 0;
+//     padding-left: 15px;
+//   }
+//   .col-md-6:nth-child(2) {
+//     padding-left: 0;
+//     padding-right: 15px;
+//   }
 
-  .grid-item-header {
-    font-size: 2.9rem;
-  }
+//   .grid-item-header {
+//     font-size: 2.9rem;
+//   }
 
-  .personal-projects {
-    background-size: 100%;
-    background-position: right 40% center;
-  }
-  .creative-projects {
-    background-size: 100%;
-    background-position: top -5% center;
-  }
+//   .personal-projects {
+//     background-size: 100%;
+//     background-position: right 40% center;
+//   }
+//   .creative-projects {
+//     background-size: 100%;
+//     background-position: top -5% center;
+//   }
 
-  .work-expereince {
-    background-size: 220%;
-    background-position: right;
-  }
-}
+//   .work-expereince {
+//     background-size: 220%;
+//     background-position: right;
+//   }
+// }
 
-@include media-breakpoint-up(xl) {
-  .grid-item-header {
-    font-size: 4rem;
-  }
-  .work-expereince {
-    background-size: 170%;
-  }
-}
+// @include media-breakpoint-up(xl) {
+//   .grid-item-header {
+//     font-size: 4rem;
+//   }
+//   .work-expereince {
+//     background-size: 170%;
+//   }
+// }
 
-h1 {
-  color: #000;
-}
+// h1 {
+//   color: #000;
+// }

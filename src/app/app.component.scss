@@ -5,6 +5,7 @@
   letter-spacing: 1px;
   word-wrap: break-word;
   scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
 // ::-webkit-scrollbar {
@@ -38,6 +39,7 @@ html {
 
 body {
   background-color: #fff;
+  margin: 0;
 }
 
 a {

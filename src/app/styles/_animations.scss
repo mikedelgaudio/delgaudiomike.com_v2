@@ -11,3 +11,25 @@
     opacity: 1;
   }
 }
+
+.fade-in {
+  @media screen and (prefers-reduced-motion: no-preference) {
+    // animation: slide-up 0.75s ease-out;
+    animation: fade-in ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+}
+
+.slide-up {
+  @media screen and (prefers-reduced-motion: no-preference) {
+    // animation: slide-up 0.75s ease-out;
+    animation: slide-up ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+}
+
+.hidden {
+  visibility: hidden;
+}

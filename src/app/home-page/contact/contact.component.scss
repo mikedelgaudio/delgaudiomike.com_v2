@@ -3,13 +3,10 @@
 .contact {
   min-block-size: 100vh; //delete this
 }
-.contact-section--title {
-  font-size: 2em;
-  margin: 0 0 1em 0;
-  font-weight: 600;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  white-space: nowrap;
+
+.container {
+  padding: 0 4rem;
+  align-items: center;
 }
 
 .list-group-item {

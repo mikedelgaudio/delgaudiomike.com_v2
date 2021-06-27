@@ -2,8 +2,10 @@
 
 .about {
   display: flex;
+  overflow: hidden;
   @include media-breakpoint-up(md) {
     align-items: center;
+    min-block-size: 100vh;
   }
 }
 
@@ -12,20 +14,16 @@
   align-items: center;
 }
 
+.divider {
+  margin: 0.25em 0;
+  width: 2rem;
+}
+
 .about-section {
   margin: 0 0 1em 0;
   @include media-breakpoint-up(md) {
     margin: 0 0 2em 0;
   }
-}
-
-.about-section--header {
-  font-size: 2em;
-  margin: 0;
-  font-weight: 600;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  white-space: nowrap;
 }
 
 .about-section--title {

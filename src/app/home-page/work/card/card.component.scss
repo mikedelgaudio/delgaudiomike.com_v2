@@ -1,0 +1,31 @@
+@import "globals";
+
+.card {
+  display: flex;
+  flex-direction: column;
+  min-height: 10rem;
+  border-radius: 8px;
+  background: #f0f0f0;
+  border: 3px solid #000;
+
+  max-width: 20rem;
+}
+
+.card-figure {
+  max-width: 20rem;
+}
+
+.card-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  @media screen and (prefers-reduced-motion: no-preference) {
+    animation: fade-in ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+}
+
+.card-dialog {
+  padding: 1rem;
+}

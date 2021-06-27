@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
-import { GoogleAnalyticsService } from "../../google-analytics/google-analytics.service";
+import { ListOfCodeProjects } from "src/app/models/projects/code-projects";
+import { Project } from "src/app/models/projects/project";
 
 @Component({
   selector: "app-work",
@@ -7,11 +8,9 @@ import { GoogleAnalyticsService } from "../../google-analytics/google-analytics.
   styleUrls: ["./work.component.scss"],
 })
 export class WorkComponent implements OnInit {
-  constructor(private googleAnalyticsService: GoogleAnalyticsService) {}
+  constructor() {}
 
   ngOnInit(): void {}
 
-  sendClickEvent(sectionName: string) {
-    this.googleAnalyticsService.eventEmitter("page_click", "work", sectionName, "click", 10);
-  }
+  public codeProjects: Project[] = ListOfCodeProjects;
 }

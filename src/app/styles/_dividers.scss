@@ -1,0 +1,11 @@
+.divider {
+  height: 2px;
+  margin: 0.28em 0;
+  background-color: #299cb9;
+  @include media-breakpoint-up(xs) {
+    margin: 1.08em 0;
+  }
+  @include media-breakpoint-up(lg) {
+    margin: 2.08em 0;
+  }
+}

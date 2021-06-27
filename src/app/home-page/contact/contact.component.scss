@@ -1,5 +1,17 @@
 @import "globals";
 
+.contact {
+  min-block-size: 100vh; //delete this
+}
+.contact-section--title {
+  font-size: 2em;
+  margin: 0 0 1em 0;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
 .list-group-item {
   background-color: transparent;
   font-size: 1.7rem;
@@ -16,10 +28,11 @@ i {
 }
 
 .drop-shadow {
-  background: url("../../../assets/home/nyc.svg") repeat-x, black;
+  background: url("../../../assets/home/nyc.svg") repeat-x, #fff;
   background-size: 100%;
   background-position: bottom;
   //animation: ani 30s linear infinite;
+  min-height: 100vh;
 }
 
 @keyframes ani {

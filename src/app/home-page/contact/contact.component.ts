@@ -18,7 +18,7 @@ export class ContactComponent implements OnInit {
   public action(event: any) {
     if (event === "VISIBLE") {
       this.section.nativeElement.classList.remove("hidden");
-      this.section.nativeElement.classList.add("slide-up");
+      this.section.nativeElement.classList.add("fade-in");
     }
   }
 }

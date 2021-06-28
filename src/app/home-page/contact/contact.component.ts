@@ -1,7 +1,7 @@
 import { ElementRef } from "@angular/core";
 import { ViewChild } from "@angular/core";
 import { Component, OnInit } from "@angular/core";
-
+import { SocialMedia, ListOfSocialMedia } from "src/app/models/social-media";
 @Component({
   selector: "app-contact",
   templateUrl: "./contact.component.html",
@@ -12,6 +12,8 @@ export class ContactComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+
+  public socialMedias: SocialMedia[] = ListOfSocialMedia;
 
   public action(event: any) {
     if (event === "VISIBLE") {

@@ -2,6 +2,7 @@
 
 .work {
   min-block-size: 100vh; //remove this
+  overflow: hidden;
   @include media-breakpoint-up(lg) {
     padding: 0 4rem;
   }
@@ -21,9 +22,10 @@
 }
 
 .work-section {
-  padding: 2rem 0;
+  padding: 2em 0;
 }
 
 .card-row {
   justify-content: space-around;
+  margin: 1em 0;
 }

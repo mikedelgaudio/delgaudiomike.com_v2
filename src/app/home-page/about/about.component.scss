@@ -16,11 +16,6 @@
   align-items: center;
 }
 
-.divider {
-  margin: 0.25em 0;
-  width: 2rem;
-}
-
 .scroll-downs__wrapper {
   visibility: hidden;
   @include media-breakpoint-up(md) {

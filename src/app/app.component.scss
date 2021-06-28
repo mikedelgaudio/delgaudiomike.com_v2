@@ -22,7 +22,7 @@ body {
   background-color: #fff;
   margin: 0;
   overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
+  position: relative;
 }
 
 a {

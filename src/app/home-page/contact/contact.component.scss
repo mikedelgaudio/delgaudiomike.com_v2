@@ -2,6 +2,8 @@
 
 .contact {
   min-block-size: 100vh; //delete this
+  overflow: hidden;
+  position: relative;
   @include media-breakpoint-up(lg) {
     padding: 0 4rem;
   }
@@ -11,52 +13,33 @@
   align-items: center;
 }
 
-.list-group-item {
-  background-color: transparent;
-  font-size: 1.7rem;
-  border: none;
+.contact-section__links {
+  padding-inline-start: 0;
 }
 
-a:hover {
-  cursor: pointer;
-  text-decoration: underline;
-}
-
-i {
-  padding-left: 0.5rem;
-}
-
-// .drop-shadow {
-//   background: url("../../../assets/home/nyc.svg") repeat-x, #fff;
-//   background-size: 100%;
-//   background-position: bottom;
-//   min-height: 100vh;
-// }
-
-@keyframes ani {
-  0% {
-    background-position: 0;
+.contact-section__hero-wrapper {
+  bottom: 11rem;
+  position: absolute;
+  width: 100%;
+  max-width: inherit;
+  @media screen and (min-width: 393px) {
+    bottom: 8rem;
   }
-  100% {
-    background-position: 100vw;
+  @include media-breakpoint-up(md) {
+    bottom: 5rem;
+  }
+  @include media-breakpoint-up(lg) {
+    bottom: 3rem;
   }
 }
 
-@media (max-width: 1140px) {
-  .drop-shadow {
-    background-size: 200%;
-    background-position: bottom right;
-    animation: none;
-    background-repeat: none;
-  }
+.contact-section__hero-img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
-.bg {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-.section-header {
-  text-shadow: 7px 7px 0px #000000;
-  color: #ffffff;
-  padding-top: 5rem;
+.btn__wrapper {
+  flex-basis: 50%;
+  flex-grow: 1;
 }

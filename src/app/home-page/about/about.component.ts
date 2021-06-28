@@ -8,7 +8,8 @@ import { ListOfSkills, Skill } from "../../models/skill";
   styleUrls: ["./about.component.scss"],
 })
 export class AboutComponent implements OnInit {
-  @ViewChild("container") el: ElementRef;
+  @ViewChild("about_container") section: ElementRef;
+  @ViewChild("scroller") scroller: ElementRef;
 
   constructor() {}
 
@@ -16,10 +17,11 @@ export class AboutComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  public _visibilityChangeHandler(event: any) {
+  public action(event: any) {
     if (event === "VISIBLE") {
-      this.el.nativeElement.classList.remove("hidden");
-      this.el.nativeElement.classList.add("slide-up");
+      this.section.nativeElement.classList.remove("hidden");
+      this.section.nativeElement.classList.add("slide-up");
+      this.scroller.nativeElement.classList.add("fade-out");
     }
   }
 }

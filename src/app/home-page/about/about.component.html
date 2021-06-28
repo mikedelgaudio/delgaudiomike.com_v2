@@ -1,10 +1,12 @@
+<div class="scroll-downs__wrapper" #scroller>
+  <div class="scroll-downs">
+    <div class="mousey">
+      <div class="scroller"></div>
+    </div>
+  </div>
+</div>
 <section class="about">
-  <div
-    class="container hidden"
-    #container
-    (visibilityChange)="_visibilityChangeHandler($event)"
-    enterTheViewportNotifier
-  >
+  <div class="container hidden" #about_container (visibilityChange)="action($event)" enterTheViewportNotifier>
     <a id="about" class="anchor"></a>
     <h3 class="section--header">about</h3>
     <div class="divider"></div>

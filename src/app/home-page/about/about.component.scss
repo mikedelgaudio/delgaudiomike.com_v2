@@ -7,16 +7,55 @@
     align-items: center;
     min-block-size: 100vh;
   }
+  @include media-breakpoint-up(lg) {
+    padding: 0 4rem;
+  }
 }
 
 .container {
-  padding: 0 4rem;
   align-items: center;
 }
 
 .divider {
   margin: 0.25em 0;
   width: 2rem;
+}
+
+.scroll-downs__wrapper {
+  visibility: hidden;
+  @include media-breakpoint-up(md) {
+    visibility: visible;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.scroll-downs {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+
+  width: 34px;
+  height: 55px;
+}
+.mousey {
+  width: 3px;
+  padding: 10px 15px;
+  height: 35px;
+  border: 2px solid #000;
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box;
+}
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: #000;
 }
 
 .about-section {

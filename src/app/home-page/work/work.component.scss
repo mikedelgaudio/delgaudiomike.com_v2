@@ -2,10 +2,12 @@
 
 .work {
   min-block-size: 100vh; //remove this
+  @include media-breakpoint-up(lg) {
+    padding: 0 4rem;
+  }
 }
 
 .container {
-  padding: 0 4em;
   align-items: center;
 }
 

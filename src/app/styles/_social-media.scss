@@ -2,8 +2,25 @@ $github-color: #494f57;
 $twitter-color: #48cfff;
 $youtube-color: #ff0000;
 $linkedin-color: #007bb6;
-$app-background: #fafafa;
-$link-hover: rgba(59, 59, 59, 0.658);
+$medium-color: #6a727c;
+
+.icon {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.icon__wrapper {
+  position: absolute;
+  top: 0.65rem;
+  left: 0.65rem;
+  max-width: 1.5rem;
+}
+.YouTube {
+  .icon__wrapper {
+    max-width: 1.75rem;
+    left: 0.5rem;
+  }
+}
 
 .social-icons {
   text-align: center;
@@ -19,23 +36,18 @@ $link-hover: rgba(59, 59, 59, 0.658);
 }
 
 .social-icons a {
-  width: 2.5rem;
-  height: 2.5rem;
-  line-height: 2.5rem;
+  width: 2.75rem;
+  height: 2.75rem;
+  line-height: 2.75rem;
   margin: 0.2em;
   border-radius: 100%;
   background-color: transparent;
   color: #818a91;
   font-size: 1rem;
   display: inline-block;
-  line-height: 2.75rem;
-  width: 2.75rem;
-  height: 2.75rem;
   text-align: center;
-  margin-right: 8px;
-  -webkit-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
+  position: relative;
 }
 
 .social-icons a:active,
@@ -44,15 +56,18 @@ $link-hover: rgba(59, 59, 59, 0.658);
   color: #fff;
 }
 
-.social-icons a.github:hover {
+.social-icons a.GitHub:hover {
   background-color: $github-color;
 }
-.social-icons a.youtube:hover {
+.social-icons a.YouTube:hover {
   background-color: $youtube-color;
 }
-.social-icons a.linkedin:hover {
+.social-icons a.LinkedIn:hover {
   background-color: $linkedin-color;
 }
-.social-icons a.twitter:hover {
+.social-icons a.Twitter:hover {
   background-color: $twitter-color;
+}
+.social-icons a.Medium:hover {
+  background-color: $medium-color;
 }

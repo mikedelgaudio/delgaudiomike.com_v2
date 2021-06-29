@@ -3,13 +3,37 @@ export interface SocialMedia {
   link: string;
   icon?: string;
   iconAlt?: string;
-  color?: string;
 }
 
 export const ListOfSocialMedia: SocialMedia[] = [
-  { name: "GitHub", link: "https://github.com/mikedelgaudio", color: "#494f57" },
-  { name: "LinkedIn", link: "https://github.com/mikedelgaudio", color: "#494f57" },
-  { name: "YouTube", link: "https://github.com/mikedelgaudio", color: "#494f57" },
-  { name: "Medium", link: "https://github.com/mikedelgaudio", color: "#494f57" },
-  { name: "Twitter", link: "https://github.com/mikedelgaudio", color: "#48cfff" },
+  {
+    name: "GitHub",
+    link: "https://github.com/mikedelgaudio",
+    icon: "../../assets/icons/github-alt-brands.svg",
+    iconAlt: "An icon of the GitHub logo that links to Mike's GitHub.",
+  },
+  {
+    name: "LinkedIn",
+    link: "https://www.linkedin.com/in/michael-delgaudio/",
+    icon: "../../assets/icons/linkedin-in-brands.svg",
+    iconAlt: "An icon of the LinkedIn logo that links to Mike's LinkedIn.",
+  },
+  {
+    name: "YouTube",
+    link: "https://www.youtube.com/c/MikeDelGaudio",
+    icon: "../../assets/icons/youtube-brands.svg",
+    iconAlt: "An icon of the YouTube logo that links to Mike's YouTube.",
+  },
+  {
+    name: "Medium",
+    link: "https://medium.com/@mikedelgaudio",
+    icon: "../../assets/icons/medium-m-brands.svg",
+    iconAlt: "An icon of the Medium logo that links to Mike's Medium.",
+  },
+  {
+    name: "Twitter",
+    link: "https://twitter.com/DelgaudioMike",
+    icon: "../../assets/icons/twitter-brands.svg",
+    iconAlt: "An icon of the Twitter logo that links to Mike's Twitter.",
+  },
 ];

@@ -7,19 +7,30 @@
 
       <div class="col-sm-6 col footer--social-media-wrapper">
         <ul class="social-icons" aria-label="Social Media Links">
-          <li>
-            <a class="github" rel="noreferrer nofollow" href="https://github.com/mikedelgaudio" aria-label="GitHub"
-              ><i class="fab fa-github-alt"></i
-            ></a>
+          <li *ngFor="let social of socialMedias">
+            <a class="{{ social.name }}" rel="noreferrer nofollow" href="{{ social.link }}">
+              <div class="icon__wrapper">
+                <img class="icon" loading="lazy" src="{{ social?.icon }}" alt="{{ social?.iconAlt }}" />
+              </div>
+            </a>
           </li>
-          <li>
+
+          <!-- <li>
             <a
               class="linkedin"
               rel="noreferrer nofollow"
               href="https://www.linkedin.com/in/michael-delgaudio/"
               aria-label="LinkedIn"
-              ><i class="fab fa-linkedin-in"></i
-            ></a>
+            >
+              <div class="icon__wrapper">
+                <img
+                  class="icon"
+                  loading="lazy"
+                  src="../../assets/icons/linkedin-in-brands.svg"
+                  alt="An icon of the LinkedIn logo that links to Mike's LinkedIn."
+                />
+              </div>
+            </a>
           </li>
           <li>
             <a
@@ -44,7 +55,7 @@
             <a class="email" rel="noreferrer nofollow" href="mailto:mike@delgaudiomike.com" aria-label="Email"
               ><i class="fas fa-at"></i
             ></a>
-          </li>
+          </li> -->
         </ul>
       </div>
     </div>

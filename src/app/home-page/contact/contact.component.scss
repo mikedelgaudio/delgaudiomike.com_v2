@@ -1,9 +1,12 @@
 @import "globals";
 
 .contact {
-  min-block-size: 100vh; //delete this
+  display: flex;
   overflow: hidden;
-  position: relative;
+  @include media-breakpoint-up(md) {
+    align-items: center;
+    min-block-size: 100vh;
+  }
   @include media-breakpoint-up(lg) {
     padding: 0 4rem;
   }
@@ -15,21 +18,11 @@
 
 .contact-section__links {
   padding-inline-start: 0;
-}
-
-.contact-section__hero-wrapper {
-  bottom: 11rem;
-  position: absolute;
-  width: 100%;
-  max-width: inherit;
-  @media screen and (min-width: 393px) {
-    bottom: 8rem;
-  }
-  @include media-breakpoint-up(md) {
-    bottom: 5rem;
-  }
-  @include media-breakpoint-up(lg) {
-    bottom: 3rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  @include media-breakpoint-up(sm) {
+    display: block;
   }
 }
 
@@ -39,7 +32,32 @@
   height: auto;
 }
 
-.btn__wrapper {
-  flex-basis: 50%;
-  flex-grow: 1;
+.btn--primary {
+  min-width: 10rem;
+  margin: 0.2em;
+}
+
+a.anchor {
+  top: 25rem;
+}
+
+.contact-section__links-wrapper {
+  padding-top: 1rem;
+}
+
+.contact-section__info {
+  padding-top: 1rem;
+  text-align: center;
+  @include media-breakpoint-up(sm) {
+    text-align: left;
+  }
+}
+
+.contact-section--info-title {
+  font-weight: 500;
+}
+
+.contact-section--info-link {
+  font-weight: 800;
+  text-decoration: underline;
 }

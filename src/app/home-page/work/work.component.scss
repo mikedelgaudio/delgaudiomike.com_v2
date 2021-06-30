@@ -1,8 +1,14 @@
 @import "globals";
 
 .work {
-  min-block-size: 100vh; //remove this
   overflow: hidden;
+  position: relative;
+  display: flex;
+
+  @include media-breakpoint-up(md) {
+    align-items: center;
+    min-block-size: 100vh;
+  }
   @include media-breakpoint-up(lg) {
     padding: 0 4rem;
   }

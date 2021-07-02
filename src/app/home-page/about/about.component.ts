@@ -11,7 +11,7 @@ export class AboutComponent implements OnInit {
   @ViewChild("about_container") section: ElementRef;
   @ViewChild("scroller") scroller: ElementRef;
 
-  constructor() {}
+  constructor(private renderer: Renderer2) {}
 
   public skills: Skill[] = ListOfSkills;
 
@@ -19,9 +19,9 @@ export class AboutComponent implements OnInit {
 
   public action(event: any) {
     if (event === "VISIBLE") {
-      this.section.nativeElement.classList.remove("hidden");
-      this.section.nativeElement.classList.add("fade-in");
-      this.scroller.nativeElement.classList.add("fade-out");
+      this.renderer.removeClass(this.section.nativeElement, "hidden");
+      this.renderer.addClass(this.section.nativeElement, "fade-in");
+      this.renderer.addClass(this.scroller.nativeElement, "fade-out");
     }
   }
 }

@@ -1,4 +1,4 @@
-import { ViewChild } from "@angular/core";
+import { Renderer2, ViewChild } from "@angular/core";
 import { ElementRef } from "@angular/core";
 import { Component, OnInit } from "@angular/core";
 import { ListOfCodeProjects } from "src/app/models/projects/code-projects";
@@ -11,7 +11,7 @@ import { Project } from "src/app/models/projects/project";
 })
 export class WorkComponent implements OnInit {
   @ViewChild("work_container") section: ElementRef;
-  constructor() {}
+  constructor(private renderer: Renderer2) {}
 
   ngOnInit(): void {}
 
@@ -19,8 +19,8 @@ export class WorkComponent implements OnInit {
 
   public action(event: any) {
     if (event === "VISIBLE") {
-      this.section.nativeElement.classList.remove("hidden");
-      this.section.nativeElement.classList.add("fade-in");
+      this.renderer.removeClass(this.section.nativeElement, "hidden");
+      this.renderer.addClass(this.section.nativeElement, "fade-in");
     }
   }
 }

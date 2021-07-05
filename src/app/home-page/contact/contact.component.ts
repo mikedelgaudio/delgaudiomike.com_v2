@@ -1,6 +1,7 @@
-import { ElementRef } from "@angular/core";
+import { ElementRef, Renderer2 } from "@angular/core";
 import { ViewChild } from "@angular/core";
 import { Component, OnInit } from "@angular/core";
+import { FormControl, FormGroup } from "@angular/forms";
 import { SocialMedia, ListOfSocialMedia } from "src/app/models/social-media";
 @Component({
   selector: "app-contact",
@@ -9,7 +10,7 @@ import { SocialMedia, ListOfSocialMedia } from "src/app/models/social-media";
 })
 export class ContactComponent implements OnInit {
   @ViewChild("contact_container") section: ElementRef;
-  constructor() {}
+  constructor(private renderer: Renderer2) {}
 
   ngOnInit(): void {}
 
@@ -17,8 +18,14 @@ export class ContactComponent implements OnInit {
 
   public action(event: any) {
     if (event === "VISIBLE") {
-      this.section.nativeElement.classList.remove("hidden");
-      this.section.nativeElement.classList.add("fade-in");
+      this.renderer.removeClass(this.section.nativeElement, "hidden");
+      this.renderer.addClass(this.section.nativeElement, "fade-in");
     }
   }
+
+  contactForm = new FormGroup({
+    name: new FormControl(""),
+    subject: new FormControl(""),
+    message: new FormControl(""),
+  });
 }

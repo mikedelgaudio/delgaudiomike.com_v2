@@ -22,10 +22,4 @@ export class ContactComponent implements OnInit {
       this.renderer.addClass(this.section.nativeElement, "fade-in");
     }
   }
-
-  contactForm = new FormGroup({
-    name: new FormControl(""),
-    subject: new FormControl(""),
-    message: new FormControl(""),
-  });
 }

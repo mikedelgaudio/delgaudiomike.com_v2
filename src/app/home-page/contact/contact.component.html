@@ -5,69 +5,44 @@
     <h4 class="section--subtitle">Let's Work Together!</h4>
     <div class="divider divider--sm"></div>
     <p class="section--description">Let's start a new project together.</p>
-
-    <div class="contact-section__form-container">
-      <form [formGroup]="contactForm">
-        <div class="contact-section--form-item">
-          <label>Name</label>
-          <input formControlName="name" type="text" class="contact-section--form-input" />
-        </div>
-        <div class="contact-section--form-item">
-          <label>Subject</label>
-          <input formControlName="subject" type="text" class="contact-section--form-input" />
-        </div>
-        <div class="contact-section--form-item">
-          <label>Message</label>
-          <input formControlName="message" type="text" class="contact-section--form-input" />
-        </div>
-
-        <!-- <a
-          [href]="
-            mailto: delgaudiomike@gmail.com?Subject={{contactForm.value.subject}}&body={{contactForm.value.message}}. Thanks, {{contactForm.value.name}}
-          "
-          target="_top"
-        > -->
-        <button class="btn--primary">Send Message</button>
-        <!-- </a> -->
-
-        {{ contactForm.value | json }}
-      </form>
-    </div>
-    <div class="contact-section__img-container">
-      <img
-        class="contact-section--img"
-        src="../../../assets/home/contact/mike_contact.jpg"
-        loading="lazy"
-        width="416"
-        height="555"
-      />
-    </div>
-
-    <!-- <div class="contact-section__links-wrapper">
-      <div class="">
-        <div class="contact-section__links" aria-label="Contact Me Links">
-          <a
-            class="btn__wrapper"
-            *ngFor="let social of socialMedias"
-            href="social.link"
-            target="_blank"
-            rel="noreferrer nofollow"
-            ><button class="btn--primary" type="button">{{ social.name }}</button></a
-          >
+    <div class="contact-section__content">
+      <div class="contact-section__form-container">
+        <div class="contact-section__links-wrapper">
+          <div class="">
+            <div class="contact-section__links" aria-label="Contact Me Links">
+              <a
+                class="btn__wrapper"
+                *ngFor="let social of socialMedias"
+                href="social.link"
+                target="_blank"
+                rel="noreferrer nofollow"
+                ><button class="btn--primary" type="button">{{ social.name }}</button></a
+              >
+            </div>
+          </div>
+          <div class="contact-section__info">
+            <span class="contact-section--info-title">
+              If you have any questions, please
+              <a
+                class="contact-section--info-link"
+                href="mailto:delgaudiomike@gmail.com"
+                rel="noreferrer nofollow"
+                aria-label="email me"
+                >email me</a
+              >.
+            </span>
+          </div>
         </div>
       </div>
-      <div class="contact-section__info">
-        <span class="contact-section--info-title">
-          If you have any questions, please
-          <a
-            class="contact-section--info-link"
-            href="mailto:delgaudiomike@gmail.com"
-            rel="noreferrer nofollow"
-            aria-label="email me"
-            >email me</a
-          >.
-        </span>
+      <div class="contact-section__img-container">
+        <img
+          class="contact-section--img"
+          src="../../../assets/home/contact/mike_contact.jpg"
+          loading="lazy"
+          width="416"
+          height="555"
+        />
       </div>
-    </div> -->
+    </div>
   </div>
 </section>

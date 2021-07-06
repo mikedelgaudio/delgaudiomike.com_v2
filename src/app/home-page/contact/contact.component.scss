@@ -21,7 +21,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  @include media-breakpoint-up(sm) {
+  @include media-breakpoint-up(lg) {
     display: block;
   }
 }
@@ -41,14 +41,17 @@ a.anchor {
   top: 25rem;
 }
 
-.contact-section__links-wrapper {
+.contact-section__content {
+  display: flex;
+  position: relative;
+  margin-bottom: 1rem;
   padding-top: 1rem;
 }
 
 .contact-section__info {
   padding-top: 1rem;
   text-align: center;
-  @include media-breakpoint-up(sm) {
+  @include media-breakpoint-up(lg) {
     text-align: left;
   }
 }
@@ -63,7 +66,39 @@ a.anchor {
 }
 
 .contact-section__img-container {
-  max-width: 25rem;
+  max-width: 10rem;
+  align-self: center;
+  z-index: -1;
+  transition: top ease-in-out 0.75s;
+  position: absolute;
+  top: -5rem;
+  right: 0;
+
+  @include media-breakpoint-up(xs) {
+    top: -4rem;
+  }
+
+  @include media-breakpoint-up(sm) {
+    position: relative;
+    max-width: 25rem;
+    top: 0;
+  }
+
+  @include media-breakpoint-up(lg) {
+    position: absolute;
+    top: -19rem;
+  }
+
+  @include media-breakpoint-up(xl) {
+    top: -9rem;
+  }
+}
+
+.contact-section__form-container {
+  padding: 0 3rem;
+  @include media-breakpoint-up(lg) {
+    padding: 0;
+  }
 }
 
 .contact-section--img {

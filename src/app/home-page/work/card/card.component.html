@@ -1,16 +1,12 @@
-<div class="card grow">
-  <div class="card-figure">
-    <img class="card-img" loading="lazy" src="{{ asset }}" alt="{{ assetAlt }}" width="200" height="200" />
+<a href="{{ demoUrl }}" target="_blank">
+  <div class="card grow">
+    <div class="card-figure">
+      <img class="card-img" loading="lazy" src="{{ asset }}" alt="{{ assetAlt }}" width="200" height="200" />
+    </div>
+    <div class="card-dialog">
+      <h5 class="card-heading">{{ heading }}</h5>
+      <span class="card-subheading">{{ typeOfWork }}</span>
+      <p class="card-description">{{ subDescription }}</p>
+    </div>
   </div>
-  <div class="card-dialog">
-    <h5 class="card-heading">{{ heading }}</h5>
-
-    <ng-container *ngIf="demoUrl?.length > 0">
-      <div class="d-flex pt-3 pb-3 justify-content-center">
-        <a href="{{ demoUrl }}" target="_blank" rel="noreferrer">
-          <button class="btn btn--primary">DEMO</button>
-        </a>
-      </div>
-    </ng-container>
-  </div>
-</div>
+</a>

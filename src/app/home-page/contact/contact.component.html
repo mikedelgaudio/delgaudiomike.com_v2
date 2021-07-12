@@ -13,7 +13,7 @@
               <a
                 class="btn__wrapper"
                 *ngFor="let social of socialMedias"
-                href="social.link"
+                href="{{ social?.link }}"
                 target="_blank"
                 rel="noreferrer nofollow"
                 ><button class="btn--primary" type="button">{{ social.name }}</button></a
@@ -22,14 +22,14 @@
           </div>
           <div class="contact-section__info">
             <span class="contact-section--info-title">
-              If you have any questions, please
+              Have a direct question?
               <a
                 class="contact-section--info-link"
                 href="mailto:delgaudiomike@gmail.com"
                 rel="noreferrer nofollow"
                 aria-label="email me"
                 >email me</a
-              >.
+              >
             </span>
           </div>
         </div>

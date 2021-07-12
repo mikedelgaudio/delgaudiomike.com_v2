@@ -10,8 +10,9 @@ export class CardComponent implements OnInit {
   @Input("description") description: string;
   @Input("asset") asset: string;
   @Input("assetAlt") assetAlt: string;
-  @Input("srcUrl") srcUrl: string;
   @Input("demoUrl") demoUrl: string;
+  @Input("typeOfWork") typeOfWork: string;
+  @Input("subDescription") subDescription: string;
   constructor() {}
 
   ngOnInit(): void {}

@@ -14,22 +14,9 @@
           description="{{ codeProject.description }}"
           asset="{{ codeProject.asset }}"
           assetAlt="{{ codeProject.assetAlt }}"
-          srcUrl="{{ codeProject.srcUrl }}"
           demoUrl="{{ codeProject.demoUrl }}"
-        ></app-card>
-      </div>
-    </div>
-
-    <div class="work-section work-section-2">
-      <div class="row card-row">
-        <app-card
-          *ngFor="let codeProject of codeProjects"
-          heading="{{ codeProject.heading }}"
-          description="{{ codeProject.description }}"
-          asset="{{ codeProject.asset }}"
-          assetAlt="{{ codeProject.assetAlt }}"
-          srcUrl="{{ codeProject.srcUrl }}"
-          demoUrl="{{ codeProject.demoUrl }}"
+          typeOfWork="{{ codeProject.typeOfWork }}"
+          subDescription="{{ codeProject.subDescription }}"
         ></app-card>
       </div>
     </div>

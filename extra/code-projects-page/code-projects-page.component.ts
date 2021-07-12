@@ -1,6 +1,6 @@
 import { Component, OnInit } from "@angular/core";
-import { Project } from "../models/projects/project";
-import { ListOfCodeProjects } from "../models/projects/code-projects";
+import { Project } from "../../src/app/models/projects/project";
+import { ListOfCodeProjects } from "../../src/app/models/projects/code-projects";
 import { Title } from "@angular/platform-browser";
 @Component({
   selector: "app-code-projects-page",

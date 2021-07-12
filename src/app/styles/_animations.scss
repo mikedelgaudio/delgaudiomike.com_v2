@@ -1,0 +1,87 @@
+@keyframes slide-up {
+  from {
+    transform: translateY(100%);
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes scroll {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+}
+
+.scroller {
+  @media screen and (prefers-reduced-motion: no-preference) {
+    animation-name: scroll;
+    animation-duration: 2.2s;
+    animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
+    animation-iteration-count: infinite;
+  }
+}
+
+.fade-in {
+  @media screen and (prefers-reduced-motion: no-preference) {
+    animation: fade-in ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+}
+
+.fade-out {
+  @media screen and (prefers-reduced-motion: no-preference) {
+    animation: fade-out ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+}
+
+.slide-up {
+  @media screen and (prefers-reduced-motion: no-preference) {
+    animation: slide-up ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+    //safari fallback
+    @media not all and (min-resolution: 0.001dpcm) {
+      @supports (-webkit-appearance: none) {
+        animation: fade-in ease 2s;
+      }
+    }
+  }
+}
+
+.grow {
+  transition: transform 0.2s ease-in-out;
+  &:hover {
+    @media screen and (prefers-reduced-motion: no-preference) {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.hidden {
+  visibility: hidden;
+}

@@ -15,26 +15,17 @@
     <meta property="og:title" content="Mike DelGaudio - Computer Science Student" />
     <meta
       property="og:description"
-      content="Mike DelGaudio, a computer science student from Stevens Institute of Technology and passionate about full stack development."
+      content="Hello, my name is Mike. I'm a Computer Science Student from NYC! I develop websites that focus on user experience and write technical documentation."
     />
     <meta
       name="description"
-      content="Mike DelGaudio, a computer science student from Stevens Institute of Technology and passionate about full stack development."
+      content="Hello, my name is Mike. I'm a Computer Science Student from NYC! I develop websites that focus on user experience and write technical documentation."
     />
     <meta
       name="keywords"
-      content="michaeldelgaudio,delgaudio,mikedelgaudio,delgaudiomike,portfolio,computerscience,personalportfolio,student"
+      content="michaeldelgaudio,delgaudio,mikedelgaudio,delgaudiomike,portfolio,computerscience,personalportfolio,student,web developer, web, front end developer, frontend, css, html, web design, web dev, full stack, full stack developer"
     />
     <meta name="fragment" content="!" />
-    <link
-      rel="preload"
-      as="style"
-      onload="this.rel='stylesheet'"
-      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
-    />
-    <noscript>
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" />
-    </noscript>
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -45,19 +36,30 @@
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
-
-      //gtag('config', 'UA-119776312-1');
     </script>
 
     <style>
       .loader {
         margin: 50px auto 0;
-        border: 16px solid #000000;
-        border-top: 16px solid #ffffff;
+        border: 8px solid #000000;
+        border-top: 8px solid #ffffff;
         border-radius: 50%;
         width: 120px;
         height: 120px;
         animation: spin 2s linear infinite;
+      }
+
+      .loading__container {
+        position: relative;
+        min-block-size: 100vh;
+      }
+
+      .loading__wrapper {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
       }
 
       @keyframes spin {
@@ -70,9 +72,13 @@
       }
     </style>
   </head>
-  <body>
+  <body ontouchstart>
     <app-root>
-      <div class="loader"></div>
+      <div class="loading__container">
+        <div class="loading__wrapper">
+          <div class="loader"></div>
+        </div>
+      </div>
     </app-root>
     <noscript>Your browser does not support JavaScript! Please change browsers to either Chrome or Firefox.</noscript>
     <!--[if lt IE 10]>

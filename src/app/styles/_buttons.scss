@@ -1,0 +1,18 @@
+.btn--primary {
+  padding: 1.4em 2.07em;
+  border: 3px solid var(--black);
+  background-color: var(--black);
+  color: var(--white);
+  font-size: 0.94em;
+  font-weight: 900;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: 0.26s ease-in-out background-color, color, border;
+  text-transform: uppercase;
+}
+
+.btn--primary:hover {
+  border: 3px solid var(--primary-blue);
+  background-color: var(--white);
+  color: var(--black);
+}

@@ -1,0 +1,27 @@
+.section--header {
+  font-size: 2em;
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--primary-blue);
+  opacity: 0.75;
+}
+
+.section--subtitle {
+  font-size: 3em;
+  margin: 0;
+  letter-spacing: 2px;
+  margin: -10px 0 0px -2px;
+  @include media-breakpoint-up(md) {
+    font-size: 6em;
+  }
+}
+
+.section--description {
+  margin: 0;
+  font-size: 1.67em;
+  line-height: 1.25;
+  font-weight: 400;
+}

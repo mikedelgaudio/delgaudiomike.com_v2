@@ -1,55 +1,24 @@
-<a class="anchor" id="work"></a>
-<div class="section grid-items grid-items-feature-first grid-items-peak">
-  <h2 class="section-header section-header-right">work.</h2>
+<section class="work">
+  <div class="container hidden" #work_container (visibilityChange)="action($event)" enterTheViewportNotifier>
+    <a id="work" class="anchor"></a>
+    <div class="work-section work-section-1">
+      <h3 class="section--header">projects</h3>
+      <h4 class="section--subtitle">From Design to Code</h4>
+      <div class="divider divider--sm"></div>
+      <p class="section--description">Transforming your ideas into reality.</p>
 
-  <a
-    [routerLink]="['/code-projects']"
-    (click)="sendClickEvent('code-projects')"
-    class="grid-item post-preview personal-projects"
-  >
-    <span class="grid-item-button grid-item-button-left">
-      <span class="grid-item-button-label">All things code!</span>
-    </span>
-    <h1><i class="fas fa-code"></i></h1>
-    <h1 class="grid-item-header">Code Projects</h1>
-    <div class="hyperlink-wrapper">
-      <span class="hyperlink">Learn more</span>&nbsp;<i class="fas fa-chevron-right"></i>
-    </div>
-  </a>
-  <div class="row">
-    <div class="col-md-6">
-      <a
-        [routerLink]="['/work-experience']"
-        (click)="sendClickEvent('work-experience')"
-        class="grid-item post-preview work-expereince"
-      >
-        <h1><i class="fas fa-briefcase"></i></h1>
-        <h1 class="grid-item-header">Work Experience</h1>
-        <div class="hyperlink-wrapper">
-          <span class="hyperlink">Learn more</span>&nbsp;<i class="fas fa-chevron-right"></i>
-        </div>
-
-        <span class="grid-item-button grid-item-button-left">
-          <span class="grid-item-button-label">Professional experience with code!</span>
-        </span>
-      </a>
-    </div>
-    <div class="col-md-6">
-      <a
-        [routerLink]="['/creative-work']"
-        (click)="sendClickEvent('creative-work')"
-        class="grid-item post-preview creative-projects"
-      >
-        <h1><i class="fas fa-paint-brush"></i></h1>
-        <h1 class="grid-item-header">Creative Work</h1>
-        <div class="hyperlink-wrapper">
-          <span class="hyperlink">Learn more</span>&nbsp;<i class="fas fa-chevron-right"></i>
-        </div>
-
-        <span class="grid-item-button grid-item-button-left">
-          <span class="grid-item-button-label">Having fun with Photoshop!</span>
-        </span>
-      </a>
+      <div class="row card-row">
+        <app-card
+          *ngFor="let codeProject of codeProjects"
+          heading="{{ codeProject.heading }}"
+          description="{{ codeProject.description }}"
+          asset="{{ codeProject.asset }}"
+          assetAlt="{{ codeProject.assetAlt }}"
+          demoUrl="{{ codeProject.demoUrl }}"
+          typeOfWork="{{ codeProject.typeOfWork }}"
+          subDescription="{{ codeProject.subDescription }}"
+        ></app-card>
+      </div>
     </div>
   </div>
-</div>
+</section>

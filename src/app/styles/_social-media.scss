@@ -1,0 +1,73 @@
+$github-color: #494f57;
+$twitter-color: #48cfff;
+$youtube-color: #ff0000;
+$linkedin-color: #007bb6;
+$medium-color: #6a727c;
+
+.icon {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.icon__wrapper {
+  position: absolute;
+  top: 0.65rem;
+  left: 0.65rem;
+  max-width: 1.5rem;
+}
+.YouTube {
+  .icon__wrapper {
+    max-width: 1.75rem;
+    left: 0.5rem;
+  }
+}
+
+.social-icons {
+  text-align: center;
+  margin: 0;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.social-icons a {
+  width: 2.75rem;
+  height: 2.75rem;
+  line-height: 2.75rem;
+  margin: 0.2em;
+  border-radius: 100%;
+  background-color: transparent;
+  color: #818a91;
+  font-size: 1rem;
+  display: inline-block;
+  text-align: center;
+  transition: all 0.2s linear;
+  position: relative;
+}
+
+.social-icons a:active,
+.social-icons a:focus,
+.social-icons a:hover {
+  color: #fff;
+}
+
+.social-icons a.GitHub:hover {
+  background-color: $github-color;
+}
+.social-icons a.YouTube:hover {
+  background-color: $youtube-color;
+}
+.social-icons a.LinkedIn:hover {
+  background-color: $linkedin-color;
+}
+.social-icons a.Twitter:hover {
+  background-color: $twitter-color;
+}
+.social-icons a.Medium:hover {
+  background-color: $medium-color;
+}

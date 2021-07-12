@@ -24,11 +24,11 @@
             "tsConfig": "tsconfig.app.json",
             "aot": true,
             "assets": ["src/favicon.ico", "src/assets"],
-            "styles": ["node_modules/bootstrap/scss/bootstrap.scss", "src/styles.scss"],
+            "styles": ["src/styles.scss"],
             "stylePreprocessorOptions": {
               "includePaths": ["src/app", "assets"]
             },
-            "scripts": ["./node_modules/jquery/dist/jquery.js", "./node_modules/bootstrap/dist/js/bootstrap.js"]
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -87,7 +87,7 @@
             "karmaConfig": "karma.conf.js",
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": ["src/styles.scss"],
-            "scripts": ["node_modules/jquery/dist/jquery.js"],
+            "scripts": [],
             "stylePreprocessorOptions": {
               "includePaths": ["src/app", "assets"]
             }
@@ -134,30 +134,6 @@
               "sourceMap": false,
               "optimization": true
             }
-          }
-        },
-        "serve-ssr": {
-          "builder": "@nguniversal/builders:ssr-dev-server",
-          "options": {
-            "browserTarget": "delgaudiomike:build",
-            "serverTarget": "delgaudiomike:server"
-          },
-          "configurations": {
-            "production": {
-              "browserTarget": "delgaudiomike:build:production",
-              "serverTarget": "delgaudiomike:server:production"
-            }
-          }
-        },
-        "prerender": {
-          "builder": "@nguniversal/builders:prerender",
-          "options": {
-            "browserTarget": "delgaudiomike:build:production",
-            "serverTarget": "delgaudiomike:server:production",
-            "routes": ["/"]
-          },
-          "configurations": {
-            "production": {}
           }
         }
       }

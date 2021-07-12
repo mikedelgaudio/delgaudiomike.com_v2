@@ -1,12 +1,10 @@
 import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
-import { CallToActionButtonsComponent } from "./call-to-action-buttons/call-to-action-buttons.component";
-import { ProjectCardComponent } from "./project-card/project-card.component";
-import { ExperienceCardComponent } from "./experience-card/experience-card.component";
+import { EnterTheViewportNotifierDirective } from "./enter-viewport.directive";
 
 @NgModule({
-  declarations: [CallToActionButtonsComponent, ProjectCardComponent, ExperienceCardComponent],
+  declarations: [EnterTheViewportNotifierDirective],
   imports: [CommonModule],
-  exports: [CallToActionButtonsComponent, ProjectCardComponent, ExperienceCardComponent],
+  exports: [EnterTheViewportNotifierDirective],
 })
 export class SharedModule {}

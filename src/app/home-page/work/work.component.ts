@@ -1,5 +1,8 @@
+import { Renderer2, ViewChild } from "@angular/core";
+import { ElementRef } from "@angular/core";
 import { Component, OnInit } from "@angular/core";
-import { GoogleAnalyticsService } from "../../google-analytics/google-analytics.service";
+import { ListOfCodeProjects } from "src/app/models/projects/code-projects";
+import { Project } from "src/app/models/projects/project";
 
 @Component({
   selector: "app-work",
@@ -7,11 +10,17 @@ import { GoogleAnalyticsService } from "../../google-analytics/google-analytics.
   styleUrls: ["./work.component.scss"],
 })
 export class WorkComponent implements OnInit {
-  constructor(private googleAnalyticsService: GoogleAnalyticsService) {}
+  @ViewChild("work_container") section: ElementRef;
+  constructor(private renderer: Renderer2) {}
 
   ngOnInit(): void {}
 
-  sendClickEvent(sectionName: string) {
-    this.googleAnalyticsService.eventEmitter("page_click", "work", sectionName, "click", 10);
+  public codeProjects: Project[] = ListOfCodeProjects;
+
+  public action(event: any) {
+    if (event === "VISIBLE") {
+      this.renderer.removeClass(this.section.nativeElement, "hidden");
+      this.renderer.addClass(this.section.nativeElement, "fade-in");
+    }
   }
 }

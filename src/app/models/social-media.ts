@@ -1,9 +1,39 @@
 export interface SocialMedia {
   name: string;
   link: string;
-  color?: string;
+  icon?: string;
+  iconAlt?: string;
 }
 
 export const ListOfSocialMedia: SocialMedia[] = [
-  { name: "GitHub", link: "https://github.com/mikedelgaudio", color: "#be0e2d" },
+  {
+    name: "GitHub",
+    link: "https://github.com/mikedelgaudio",
+    icon: "../../assets/icons/github-alt-brands.svg",
+    iconAlt: "An icon of the GitHub logo that links to Mike's GitHub.",
+  },
+  {
+    name: "LinkedIn",
+    link: "https://www.linkedin.com/in/michael-delgaudio/",
+    icon: "../../assets/icons/linkedin-in-brands.svg",
+    iconAlt: "An icon of the LinkedIn logo that links to Mike's LinkedIn.",
+  },
+  {
+    name: "YouTube",
+    link: "https://www.youtube.com/c/MikeDelGaudio",
+    icon: "../../assets/icons/youtube-brands.svg",
+    iconAlt: "An icon of the YouTube logo that links to Mike's YouTube.",
+  },
+  {
+    name: "Medium",
+    link: "https://medium.com/@mikedelgaudio",
+    icon: "../../assets/icons/medium-m-brands.svg",
+    iconAlt: "An icon of the Medium logo that links to Mike's Medium.",
+  },
+  {
+    name: "Twitter",
+    link: "https://twitter.com/DelgaudioMike",
+    icon: "../../assets/icons/twitter-brands.svg",
+    iconAlt: "An icon of the Twitter logo that links to Mike's Twitter.",
+  },
 ];

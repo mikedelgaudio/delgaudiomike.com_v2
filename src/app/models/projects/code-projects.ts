@@ -2,44 +2,61 @@ import { Project } from "./project";
 
 export const ListOfCodeProjects: Project[] = [
   {
+    heading: "Bullish Bay Chatbot",
+    typeOfWork: "UX Design + Node.js Development",
+    description:
+      "With the use of NodeJS, Discord's public API and Discord's NPM package, I created a chatbot users can interact with in multiple Discord servers. The bot can provide the latest news stories on Wall Street or display the current price information based on a company stock ticker. The application is containerized using Docker and deploys automatically to my personal hypervisor.",
+    asset: "../../../assets/home/projects/bbay-discord.jpg",
+    subDescription: "Developing a financial Discord bot for users to receive the latest stock market news",
+    assetAlt: "An image of the Bullish Bay logo with a combination of the Discord logo.",
+    demoUrl: "https://github.com/mikedelgaudio/Bullish-Bay-Discord-Bot",
+  },
+  {
     heading: "WeatherFlash",
+    typeOfWork: "UX/UI Design + Front-End Development",
     description:
       "This project is based purely on the technical stack of NextJS, React, and React Hooks. Utilzing an external API and the browser's geolocation, the app will give a minimalistic snapshot of the current weather conditions in your area. The application is containerized using Docker and deploys automatically to my personal hypervisor.",
-    asset: "../../../assets/code-projects/weather_flash_demo.jpg",
+    asset: "../../../assets/home/projects/weatherflash.jpg",
+    subDescription: "Designing and developing a React geolocation weather app",
     assetAlt: "Weather Flash Geolocation Demo View Image",
-    srcUrl: "https://github.com/mikedelgaudio/WeatherFlash",
     demoUrl: "https://weatherflash.delgaudiomike.com",
   },
   {
-    heading: "DelGaudioMike_v2",
-    description:
-      "This project is the one you are currently viewing, the second generation of my personal portfolio website. It is based upon the Angular 10 framework and utilizes SCSS, RxJS, and the continuous deployment methodology. This was done with Docker containers and GitHub Action automated workflows where the repository is located.",
-    asset: "../../../assets/code-projects/delgaudiomike_v2.jpg",
-    assetAlt: "Bullish Bay Desktop View GIF",
-    srcUrl: "https://github.com/mikedelgaudio/delgaudiomike.com_v2",
-  },
-  {
-    heading: "DelGaudioMike",
-    description:
-      "This is my first personal portfolio website I developed initially from basic HTML, CSS, and JavaScript. It has evolved over time since 2018 and was the previous iteration of my website. This project eventually taught me the beginning of dynamic web programming with PHP and CSS libraries such as Bootstrap.",
-    asset: "../../../assets/code-projects/delgaudiomike.jpg",
-    assetAlt: "Bullish Bay Desktop View GIF",
-    srcUrl: "https://github.com/mikedelgaudio/delgaudiomike.com",
-  },
-  {
-    heading: "Bullish Bay Chatbot",
-    description:
-      "With the use of NodeJS, Discord's public API and Discord's NPM package, I created a chatbot users can interact with in multiple Discord servers. The bot can provide the latest news stories on Wall Street or display the current price information based on a company stock ticker. The application is containerized using Docker and deploys automatically to my personal hypervisor.",
-    asset: "../../../assets/code-projects/bullish_bay_bot.gif",
-    assetAlt: "Bullish Bay Discord Chat Bot Demo GIF",
-    srcUrl: "https://github.com/mikedelgaudio/Bullish-Bay-Discord-Bot",
-  },
-  {
     heading: "Bullish Bay",
+    typeOfWork: "UX/UI Design + Front-End Development",
     description:
-      "Created a responsive website with roommate to access any given stock by pulling financial data from company SEC Filings. Through the use of an API, financial data is called for, then used a variety of calculations to produce a score.",
-    asset: "../../../assets/code-projects/desktop_bullish_bay.gif",
-    assetAlt: "Bullish Bay Desktop View GIF",
+      "Created a responsive website to access any given stock by pulling financial data from company SEC Filings. Through the use of an API, financial data is called for, then used a variety of calculations to produce a score.",
+    asset: "../../../assets/home/projects/bbay.jpg",
+    subDescription:
+      "Designing and developing a Robinhood inspired Angular stock market watchlist and automated advisor web app",
+    assetAlt: "An image of the Bullish Bay logo",
     demoUrl: "https://bullishbay.delgaudiomike.com",
+  },
+  {
+    heading: "Neu",
+    typeOfWork: "UX/UI Design + Front-End Development",
+    description: "",
+    asset: "../../../assets/home/projects/neu.jpg",
+    subDescription: "Designing and developing a simplified Pomodoro timer with CSS themes",
+    assetAlt: "Image snippet of the Neu logo clock",
+    demoUrl: "https://github.com/mikedelgaudio/neu",
+  },
+  {
+    heading: "Design Portfolio",
+    typeOfWork: "UX/UI Design",
+    description: "",
+    asset: "../../../assets/home/projects/photoshop.jpg",
+    subDescription: "Designing numerous miscellaneous graphics and user interfaces",
+    assetAlt: "Image of the Adobe Photoshop, Xd, and Creative Cloud logos",
+    demoUrl: "https://www.behance.net/gallery/104849725/Photoshop-Work",
+  },
+  {
+    heading: "YouTube Channel",
+    typeOfWork: "Information Tutorial Guides",
+    description: "",
+    asset: "../../../assets/home/projects/youtube.jpg",
+    subDescription: "Publishing code environment setup videos for beginner users",
+    assetAlt: "Neu time keeping application logo",
+    demoUrl: "https://m.youtube.com/c/MikeDelGaudio",
   },
 ];

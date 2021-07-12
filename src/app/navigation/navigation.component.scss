@@ -1,6 +1,6 @@
 @import "globals";
 
-$background-color: rgba(0, 0, 0, 0.9);
+$background-color: rgba(255, 255, 255, 0.9);
 
 .navigation__header {
   margin: auto 0;
@@ -13,7 +13,7 @@ $background-color: rgba(0, 0, 0, 0.9);
 }
 
 li {
-  color: #fff;
+  color: #000;
   text-transform: uppercase;
   text-decoration: none;
   font-size: 1rem;
@@ -28,13 +28,17 @@ a {
   letter-spacing: 0.15em;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 a:after {
   content: "";
   display: block;
   height: 2px;
   left: 50%;
   position: absolute;
-  background: #fff;
+  background: #000;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
@@ -45,6 +49,11 @@ a:hover:after {
 
 .navigation {
   background: $background-color;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
 }
 
 .navigation__wrapper {
@@ -81,7 +90,7 @@ a:hover:after {
   cursor: pointer;
 
   &.navigation--show span {
-    background: white;
+    background: #000;
     opacity: 1;
 
     &:nth-child(1) {

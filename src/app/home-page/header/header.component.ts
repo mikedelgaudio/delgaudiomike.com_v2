@@ -1,4 +1,4 @@
-import { Component, OnInit, HostListener } from "@angular/core";
+import { AfterViewInit, Component, OnInit } from "@angular/core";
 
 @Component({
   selector: "app-header",
@@ -6,18 +6,7 @@ import { Component, OnInit, HostListener } from "@angular/core";
   styleUrls: ["./header.component.scss"],
 })
 export class HeaderComponent implements OnInit {
-  public scrolled: boolean = false;
   constructor() {}
 
   ngOnInit(): void {}
-
-  @HostListener("window:scroll", ["$event"])
-  onWindowScroll($event) {
-    const yAxis = window.scrollY;
-    if (yAxis >= 80) {
-      this.scrolled = true;
-    } else {
-      this.scrolled = false;
-    }
-  }
 }

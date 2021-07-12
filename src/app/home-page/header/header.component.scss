@@ -1,177 +1,122 @@
 @import "globals";
 
-.header-text {
+.home {
+  min-block-size: 100vh;
+  background-color: #fff;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  @include media-breakpoint-up(lg) {
+    flex-direction: row-reverse;
+    padding: 0 4rem;
+  }
+}
+
+.profile-pic__container {
+  display: flex;
+  justify-content: center;
+  @include media-breakpoint-up(lg) {
+    padding: 0;
+    height: 100%;
+  }
+}
+
+.profile-pic__wrapper {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  max-width: 11rem;
+  @include media-breakpoint-up(sm) {
+    max-width: 15rem;
+  }
+  @include media-breakpoint-up(lg) {
+    max-width: 27rem;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  @include media-breakpoint-up(xl) {
+    max-width: 30rem;
+  }
+}
+
+.profile-pic__img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.header-text__container {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   height: 100%;
-}
+  padding-top: 1rem;
 
-h2,
-h3 {
-  font-size: 1.25rem;
-}
-
-header {
-  background-color: black;
-}
-
-.display-1 {
-  font-size: 2rem;
-}
-
-.mike-pic-container {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  height: 100%;
-}
-
-.mike-pic {
-  object-fit: cover;
-  object-position: center;
-  width: 15rem;
-  height: 15rem;
-  border-radius: 50%;
-}
-
-.mike-pic-container,
-.header-text {
-  justify-content: center;
-}
-.header-text {
-  align-items: flex-start;
-  padding-bottom: 7rem;
-}
-
-.mike-pic-container {
-  align-items: flex-end;
-}
-.mike-pic {
-  width: 15rem;
-  height: 15rem;
-}
-
-.arrow {
-  text-align: center;
-  margin: 8% 0;
-  opacity: 0.7;
-  cursor: pointer;
-}
-.bounce {
-  -moz-animation: bounce 2s infinite;
-  -webkit-animation: bounce 2s infinite;
-  animation: bounce 2s infinite;
-}
-
-@keyframes bounce {
-  0%,
-  20%,
-  50%,
-  80%,
-  100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-30px);
-  }
-  60% {
-    transform: translateY(-15px);
-  }
-}
-
-/*Blinking Cursor Idea*/
-.blinking-cursor {
-  font-weight: 100;
-
-  color: #fff;
-  word-spacing: -2px;
-  -webkit-animation: 1s blink step-end infinite;
-  -moz-animation: 1s blink step-end infinite;
-  -ms-animation: 1s blink step-end infinite;
-  -o-animation: 1s blink step-end infinite;
-  animation: 1s blink step-end infinite;
-}
-
-@keyframes blink {
-  from,
-  to {
-    color: transparent;
-  }
-  50% {
-    color: #fff;
-  }
-}
-
-@-moz-keyframes blink {
-  from,
-  to {
-    color: transparent;
-  }
-  50% {
-    color: #fff;
-  }
-}
-
-@-webkit-keyframes blink {
-  from,
-  to {
-    color: transparent;
-  }
-  50% {
-    color: #fff;
-  }
-}
-
-@-o-keyframes blink {
-  from,
-  to {
-    color: transparent;
-  }
-  50% {
-    color: #fff;
-  }
-}
-
-@include media-breakpoint-up(md) {
-  .mike-pic-container {
+  overflow: hidden;
+  @include media-breakpoint-up(lg) {
+    padding: 0;
     justify-content: flex-end;
   }
-  .header-text {
-    justify-content: flex-start;
-    align-items: center;
-    padding-bottom: 0;
-  }
+}
 
-  .display-1 {
-    font-size: 3rem;
-  }
-
-  .mike-pic-container {
-    align-items: center;
-  }
-  .mike-pic {
-    width: 19rem;
-    height: 19rem;
+.header-text--title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #5f5f5f;
+  text-transform: uppercase;
+  @include media-breakpoint-up(md) {
+    font-size: 1.5rem;
   }
 }
 
-@include media-breakpoint-up(lg) {
-  .display-1 {
-    font-size: 4rem;
-  }
+.header-text--title-name {
+  margin: 0;
+  font-weight: 500;
+  color: #000;
 }
 
-@include media-breakpoint-up(xl) {
-  h2,
-  h3 {
+.header-text--subtitle {
+  margin: 0;
+  font-weight: 800;
+  letter-spacing: -1px;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  @include media-breakpoint-up(xs) {
     font-size: 2rem;
+    line-height: 2rem;
   }
-  .mike-pic {
-    width: 25rem;
-    height: 25rem;
+  @include media-breakpoint-up(md) {
+    line-height: 2.5rem;
   }
-  .display-1 {
-    font-size: 6rem;
+  @include media-breakpoint-up(lg) {
+    font-size: 2.5rem;
+    letter-spacing: -2px;
+    //word-spacing: -4px;
+  }
+  @include media-breakpoint-up(xl) {
+    font-size: 4rem;
+    line-height: 4rem;
+    letter-spacing: -2px;
+    word-spacing: 0.4rem;
+  }
+}
+
+.header-section-2--motto {
+  margin: 0;
+  letter-spacing: 0;
+  line-height: 1.25;
+  font-size: 1rem;
+  font-weight: 500;
+  @include media-breakpoint-up(md) {
+    font-size: 1.5rem;
+  }
+}
+
+.call-to-action__container {
+  margin: 1.08em 0;
+  @include media-breakpoint-up(lg) {
+    margin: 2.08em 0;
   }
 }

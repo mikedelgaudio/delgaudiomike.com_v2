@@ -1,51 +1,108 @@
 @import "globals";
 
-.list-group-item {
-  background-color: transparent;
-  font-size: 1.7rem;
-  border: none;
+.contact {
+  display: flex;
+  overflow: hidden;
+  @include media-breakpoint-up(md) {
+    align-items: center;
+    min-block-size: 100vh;
+  }
+  @include media-breakpoint-up(lg) {
+    padding: 0 4rem;
+  }
 }
 
-a:hover {
-  cursor: pointer;
+.container {
+  align-items: center;
+}
+
+.contact-section__links {
+  padding-inline-start: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  @include media-breakpoint-up(lg) {
+    display: block;
+  }
+}
+
+.contact-section__hero-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.btn--primary {
+  min-width: 10rem;
+  margin: 0.2em;
+}
+
+a.anchor {
+  top: 25rem;
+}
+
+.contact-section__content {
+  display: flex;
+  position: relative;
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.contact-section__info {
+  padding-top: 1rem;
+  text-align: center;
+  @include media-breakpoint-up(lg) {
+    text-align: left;
+  }
+}
+
+.contact-section--info-title {
+  font-weight: 500;
+}
+
+.contact-section--info-link {
+  font-weight: 800;
   text-decoration: underline;
 }
 
-i {
-  padding-left: 0.5rem;
-}
+.contact-section__img-container {
+  max-width: 10rem;
+  align-self: center;
+  z-index: -1;
+  transition: top ease-in-out 0.75s;
+  position: absolute;
+  top: -5rem;
+  right: 0;
 
-.drop-shadow {
-  background: url("../../../assets/home/nyc.svg") repeat-x, black;
-  background-size: 100%;
-  background-position: bottom;
-  //animation: ani 30s linear infinite;
-}
-
-@keyframes ani {
-  0% {
-    background-position: 0;
+  @include media-breakpoint-up(xs) {
+    top: -4rem;
   }
-  100% {
-    background-position: 100vw;
+
+  @include media-breakpoint-up(sm) {
+    position: relative;
+    max-width: 25rem;
+    top: 0;
+  }
+
+  @include media-breakpoint-up(lg) {
+    position: absolute;
+    top: -19rem;
+  }
+
+  @include media-breakpoint-up(xl) {
+    top: -9rem;
   }
 }
 
-@media (max-width: 1140px) {
-  .drop-shadow {
-    background-size: 200%;
-    background-position: bottom right;
-    animation: none;
-    background-repeat: none;
+.contact-section__form-container {
+  padding: 0 3rem;
+  @include media-breakpoint-up(lg) {
+    padding: 0;
   }
 }
 
-.bg {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-.section-header {
-  text-shadow: 7px 7px 0px #000000;
-  color: #ffffff;
-  padding-top: 5rem;
+.contact-section--img {
+  display: block;
+  height: auto;
+  width: 100%;
 }

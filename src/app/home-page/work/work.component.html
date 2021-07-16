@@ -7,7 +7,7 @@
       <div class="divider divider--sm"></div>
       <p class="section--description">Transforming your ideas into reality.</p>
 
-      <div class="row card-row">
+      <div class="row card-row" #work_container_projects>
         <app-card
           *ngFor="let codeProject of codeProjects"
           heading="{{ codeProject.heading }}"

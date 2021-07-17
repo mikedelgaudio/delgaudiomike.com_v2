@@ -44,6 +44,13 @@
   width: 100%;
   height: auto;
   display: block;
+  @media screen and (prefers-reduced-motion: no-preference) {
+    opacity: 0;
+    animation-delay: 0.33s;
+    @include media-breakpoint-up(md) {
+      animation-delay: 0.75s;
+    }
+  }
 }
 
 .header-text__container {
@@ -52,11 +59,17 @@
   align-items: center;
   height: 100%;
   padding-top: 1rem;
-
   overflow: hidden;
   @include media-breakpoint-up(lg) {
     padding: 0;
     justify-content: flex-end;
+  }
+  @media screen and (prefers-reduced-motion: no-preference) {
+    opacity: 0;
+    animation-delay: 0.75s;
+    @include media-breakpoint-up(md) {
+      animation-delay: 0.33s;
+    }
   }
 }
 

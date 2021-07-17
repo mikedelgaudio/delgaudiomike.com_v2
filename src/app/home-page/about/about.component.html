@@ -1,10 +1,3 @@
-<div class="scroll-downs__wrapper" #scroller>
-  <div class="scroll-downs">
-    <div class="mousey">
-      <div class="scroller"></div>
-    </div>
-  </div>
-</div>
 <section class="about">
   <div class="container hidden" #about_container (visibilityChange)="action($event)" enterTheViewportNotifier>
     <a id="about" class="anchor"></a>
@@ -12,7 +5,7 @@
     <h4 class="section--subtitle">Hi, I'm Mike 👋</h4>
     <div class="divider divider--sm"></div>
     <p class="section--description">I’m a co-op computer science student at Stevens Institute of Technology.</p>
-    <div class="about-section about-section-1">
+    <div class="about-section about-section-1" #about_section_1>
       <h4 class="about-section--title">Previously at</h4>
       <div class="about-section-1__logos">
         <div class="about-section-1--logo-wrapper">
@@ -51,7 +44,7 @@
       </div>
     </div>
 
-    <div class="about-section about-section-2">
+    <div class="about-section about-section-2" #about_section_2>
       <h4 class="about-section--title">Working with</h4>
       <div class="row about-section-2__skills">
         <div class="badge-container" *ngFor="let skill of skills">
@@ -60,7 +53,7 @@
       </div>
     </div>
 
-    <div class="about-section about-section-3">
+    <div class="about-section about-section-3" #about_section_3>
       <h4 class="about-section--title">Using my</h4>
 
       <div class="row about-section-3__details">
@@ -69,7 +62,7 @@
       </div>
     </div>
 
-    <div class="about-section about-section-4">
+    <div class="about-section about-section-4" #about_section_4>
       <a href="mailto:delgaudiomike@gmail.com"> <button class="btn--primary" type="button">Let's Chat</button></a>
     </div>
   </div>

@@ -9,7 +9,10 @@ import { ListOfSkills, Skill } from "../../models/skill";
 })
 export class AboutComponent implements OnInit {
   @ViewChild("about_container") section: ElementRef;
-  @ViewChild("scroller") scroller: ElementRef;
+  @ViewChild("about_section_1") aboutSection1: ElementRef;
+  @ViewChild("about_section_2") aboutSection2: ElementRef;
+  @ViewChild("about_section_3") aboutSection3: ElementRef;
+  @ViewChild("about_section_4") aboutSection4: ElementRef;
 
   constructor(private renderer: Renderer2) {}
 
@@ -21,7 +24,10 @@ export class AboutComponent implements OnInit {
     if (event === "VISIBLE") {
       this.renderer.removeClass(this.section.nativeElement, "hidden");
       this.renderer.addClass(this.section.nativeElement, "fade-in");
-      this.renderer.addClass(this.scroller.nativeElement, "fade-out");
+      this.renderer.addClass(this.aboutSection1.nativeElement, "fade-in");
+      this.renderer.addClass(this.aboutSection2.nativeElement, "fade-in");
+      this.renderer.addClass(this.aboutSection3.nativeElement, "fade-in");
+      this.renderer.addClass(this.aboutSection4.nativeElement, "fade-in");
     }
   }
 }

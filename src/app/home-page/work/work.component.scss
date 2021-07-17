@@ -35,4 +35,8 @@
   justify-content: space-around;
   margin: 2em 0 0 0;
   row-gap: 2em;
+  @media screen and (prefers-reduced-motion: no-preference) {
+    opacity: 0;
+    animation-delay: 0.75s;
+  }
 }

@@ -10,6 +10,8 @@ import { SocialMedia, ListOfSocialMedia } from "src/app/models/social-media";
 })
 export class ContactComponent implements OnInit {
   @ViewChild("contact_container") section: ElementRef;
+  @ViewChild("contact_container_links") contactContainerLinks: ElementRef;
+  @ViewChild("contact_container_img") contactContainerImg: ElementRef;
   constructor(private renderer: Renderer2) {}
 
   ngOnInit(): void {}
@@ -20,6 +22,8 @@ export class ContactComponent implements OnInit {
     if (event === "VISIBLE") {
       this.renderer.removeClass(this.section.nativeElement, "hidden");
       this.renderer.addClass(this.section.nativeElement, "fade-in");
+      this.renderer.addClass(this.contactContainerLinks.nativeElement, "fade-in");
+      this.renderer.addClass(this.contactContainerImg.nativeElement, "fade-in");
     }
   }
 }

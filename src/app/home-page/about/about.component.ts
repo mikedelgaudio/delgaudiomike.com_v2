@@ -22,7 +22,6 @@ export class AboutComponent implements OnInit {
 
   public action(event: any) {
     if (event === "VISIBLE") {
-      console.log(event);
       this.renderer.removeClass(this.section.nativeElement, "hidden");
       this.renderer.addClass(this.section.nativeElement, "fade-in");
       this.renderer.addClass(this.aboutSection1.nativeElement, "fade-in");

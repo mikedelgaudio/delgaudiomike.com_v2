@@ -6,35 +6,34 @@
     <div class="divider divider--sm"></div>
     <p class="section--description">Let's start a new project together.</p>
     <div class="contact-section__content">
-      <div class="contact-section__form-container">
-        <div class="contact-section__links-wrapper">
-          <div class="">
-            <div class="contact-section__links" aria-label="Contact Me Links">
-              <a
-                class="btn__wrapper"
-                *ngFor="let social of socialMedias"
-                href="{{ social?.link }}"
-                target="_blank"
-                rel="noreferrer nofollow"
-                ><button class="btn--primary" type="button">{{ social.name }}</button></a
-              >
-            </div>
-          </div>
-          <div class="contact-section__info">
-            <span class="contact-section--info-title">
-              Have a direct question?
-              <a
-                class="contact-section--info-link"
-                href="mailto:delgaudiomike@gmail.com"
-                rel="noreferrer nofollow"
-                aria-label="email me"
-                >email me</a
-              >
-            </span>
+      <div class="contact-section__links-wrapper" #contact_container_links>
+        <div class=".contact-section__links-container">
+          <div class="contact-section__links" aria-label="Contact Me Links">
+            <a
+              class="btn__wrapper"
+              *ngFor="let social of socialMedias"
+              href="{{ social?.link }}"
+              target="_blank"
+              rel="noreferrer nofollow"
+              ><button class="btn--primary" type="button">{{ social.name }}</button></a
+            >
           </div>
         </div>
+        <div class="contact-section__info" #contact_container_email>
+          <span class="contact-section--info-title">
+            Have a direct question?
+            <a
+              class="contact-section--info-link"
+              href="mailto:delgaudiomike@gmail.com"
+              rel="noreferrer nofollow"
+              aria-label="email me"
+              >email me</a
+            >
+          </span>
+        </div>
       </div>
-      <div class="contact-section__img-container">
+
+      <div class="contact-section__img-container" #contact_container_img>
         <img
           class="contact-section--img"
           src="../../../assets/home/contact/mike_contact.jpg"

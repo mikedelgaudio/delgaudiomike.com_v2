@@ -17,6 +17,7 @@ export class EnterTheViewportNotifierDirective implements AfterViewInit, OnDestr
     this._observer.disconnect();
   }
 
+  // refactor in future: https://stackoverflow.com/questions/53214116/intersectionobserver-callback-firing-immediately-on-page-load
   private _callback = (entries, observer) => {
     entries.forEach((entry) => this.visibilityChange.emit(entry.isIntersecting ? "VISIBLE" : "HIDDEN"));
   };

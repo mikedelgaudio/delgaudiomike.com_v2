@@ -39,7 +39,7 @@ export const ListOfCodeProjects: Project[] = [
     asset: "../../../assets/home/projects/neu.jpg",
     subDescription: "Designing and developing a simplified Pomodoro timer with CSS themes",
     assetAlt: "Image snippet of the Neu logo clock",
-    demoUrl: "https://github.com/mikedelgaudio/neu",
+    demoUrl: "https://neu.delgaudiomike.com",
   },
   {
     heading: "Design Portfolio",

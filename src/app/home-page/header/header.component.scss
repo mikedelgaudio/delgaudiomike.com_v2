@@ -46,9 +46,9 @@
   display: block;
   @media screen and (prefers-reduced-motion: no-preference) {
     opacity: 0;
-    animation-delay: 0.33s;
-    @include media-breakpoint-up(md) {
-      animation-delay: 0.75s;
+    animation-delay: 0.1s;
+    @include media-breakpoint-up(lg) {
+      animation-delay: 0.5s;
     }
   }
 }
@@ -66,9 +66,9 @@
   }
   @media screen and (prefers-reduced-motion: no-preference) {
     opacity: 0;
-    animation-delay: 0.75s;
-    @include media-breakpoint-up(md) {
-      animation-delay: 0.33s;
+    animation-delay: 0.5s;
+    @include media-breakpoint-up(lg) {
+      animation-delay: 0.1s;
     }
   }
 }

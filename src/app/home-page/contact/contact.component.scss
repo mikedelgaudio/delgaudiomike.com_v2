@@ -42,6 +42,9 @@
 .btn--primary {
   min-width: 10rem;
   margin: 0.2em;
+  &:first-child {
+    margin-left: 0;
+  }
 }
 
 a.anchor {
@@ -69,7 +72,6 @@ a.anchor {
 
 .contact-section--info-link {
   font-weight: 800;
-  text-decoration: underline;
 }
 
 .contact-section__img-container {

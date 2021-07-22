@@ -12,6 +12,19 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  @include media-breakpoint-up(lg) {
+    text-align: left;
+  }
+}
+
+.footer--social-media-wrapper {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  @include media-breakpoint-up(lg) {
+    justify-content: flex-end;
+  }
 }
 
 @include media-breakpoint-up(lg) {

@@ -51,12 +51,12 @@ export const ListOfCodeProjects: Project[] = [
     demoUrl: "https://www.behance.net/gallery/104849725/Photoshop-Work",
   },
   {
-    heading: "YouTube Channel",
+    heading: "Medium Blog",
     typeOfWork: "Information Tutorial Guides",
     description: "",
-    asset: "../../../assets/home/projects/youtube.jpg",
-    subDescription: "Publishing code environment setup videos for beginner users",
-    assetAlt: "Neu time keeping application logo",
-    demoUrl: "https://m.youtube.com/c/MikeDelGaudio",
+    asset: "../../../assets/home/projects/medium.jpg",
+    subDescription: "Publishing blog posts with guides on web performance and security",
+    assetAlt: "Medium.com three dot logo",
+    demoUrl: "https://mikedelgaudio.medium.com/",
   },
 ];

@@ -77,7 +77,7 @@
   transition: transform 0.2s ease-in-out;
   &:hover {
     @media screen and (prefers-reduced-motion: no-preference) {
-      transform: scale(1.1);
+      transform: translateY(-2px);
     }
   }
 }

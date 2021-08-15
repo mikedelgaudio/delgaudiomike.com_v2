@@ -5,7 +5,6 @@ import { WorkModule } from "./work/work.module";
 import { HeaderModule } from "./header/header.module";
 import { AboutModule } from "./about/about.module";
 import { ContactModule } from "./contact/contact.module";
-import { RouterModule } from "@angular/router";
 
 @NgModule({
   declarations: [HomePageComponent],

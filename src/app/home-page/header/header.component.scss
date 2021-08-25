@@ -1,8 +1,10 @@
 @import "globals";
 
 .home {
-  min-height: -webkit-fill-available;
   min-height: 100vh;
+  @supports (-webkit-touch-callout: none) {
+    min-height: -webkit-fill-available;
+  }
   flex-direction: column;
   justify-content: center;
   overflow: hidden;
@@ -75,7 +77,7 @@
 
 .header-text--title {
   margin: 0;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 300;
   color: #5f5f5f;
   text-transform: uppercase;
@@ -120,7 +122,7 @@
   margin: 0;
   letter-spacing: 0;
   line-height: 1.25;
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-weight: 500;
   @include media-breakpoint-up(md) {
     font-size: 1.5rem;

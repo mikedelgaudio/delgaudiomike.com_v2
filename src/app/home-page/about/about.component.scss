@@ -3,9 +3,10 @@
 .about {
   display: flex;
   overflow: hidden;
+  min-height: -webkit-fill-available;
   @include media-breakpoint-up(md) {
     align-items: center;
-    min-block-size: 100vh;
+    min-height: 100vh;
   }
   @include media-breakpoint-up(lg) {
     padding: 0 4rem;
@@ -146,14 +147,4 @@
 .about-section-3--detail {
   margin: 0;
   letter-spacing: 0px;
-}
-
-.about-section-4 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  @media screen and (prefers-reduced-motion: no-preference) {
-    opacity: 0;
-    animation-delay: 2s;
-  }
 }

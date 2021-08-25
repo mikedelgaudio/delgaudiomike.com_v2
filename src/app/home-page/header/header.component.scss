@@ -1,7 +1,8 @@
 @import "globals";
 
 .home {
-  min-block-size: 100vh;
+  min-height: -webkit-fill-available;
+  min-height: 100vh;
   flex-direction: column;
   justify-content: center;
   overflow: hidden;

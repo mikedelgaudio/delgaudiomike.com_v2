@@ -12,7 +12,6 @@ export class AboutComponent implements OnInit {
   @ViewChild("about_section_1") aboutSection1: ElementRef;
   @ViewChild("about_section_2") aboutSection2: ElementRef;
   @ViewChild("about_section_3") aboutSection3: ElementRef;
-  @ViewChild("about_section_4") aboutSection4: ElementRef;
 
   constructor(private renderer: Renderer2) {}
 
@@ -27,7 +26,6 @@ export class AboutComponent implements OnInit {
       this.renderer.addClass(this.aboutSection1.nativeElement, "fade-in");
       this.renderer.addClass(this.aboutSection2.nativeElement, "fade-in");
       this.renderer.addClass(this.aboutSection3.nativeElement, "fade-in");
-      this.renderer.addClass(this.aboutSection4.nativeElement, "fade-in");
     }
   }
 }

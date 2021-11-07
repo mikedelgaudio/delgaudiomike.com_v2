@@ -8,7 +8,7 @@ export const ListOfCodeProjects: Project[] = [
       "With the use of NodeJS, Discord's public API and Discord's NPM package, I created a chatbot users can interact with in multiple Discord servers. The bot can provide the latest news stories on Wall Street or display the current price information based on a company stock ticker. The application is containerized using Docker and deploys automatically to my personal hypervisor.",
     asset: "../../../assets/home/projects/bbay-discord.jpg",
     subDescription: "Developing a financial Discord bot for users to receive the latest stock market news",
-    assetAlt: "An image of the Bullish Bay logo with a combination of the Discord logo.",
+    assetAlt: "Bullish Bay logo with a combination of the Discord logo.",
     demoUrl: "https://github.com/mikedelgaudio/Bullish-Bay-Discord-Bot",
   },
   {
@@ -18,7 +18,7 @@ export const ListOfCodeProjects: Project[] = [
       "This project is based purely on the technical stack of NextJS, React, and React Hooks. Utilzing an external API and the browser's geolocation, the app will give a minimalistic snapshot of the current weather conditions in your area. The application is containerized using Docker and deploys automatically to my personal hypervisor.",
     asset: "../../../assets/home/projects/weatherflash.jpg",
     subDescription: "Designing and developing a React geolocation weather app",
-    assetAlt: "Weather Flash Geolocation Demo View Image",
+    assetAlt: "Weather Flash Geolocation Demo View Snippet",
     demoUrl: "https://weatherflash.delgaudiomike.com",
   },
   {
@@ -29,7 +29,7 @@ export const ListOfCodeProjects: Project[] = [
     asset: "../../../assets/home/projects/bbay.jpg",
     subDescription:
       "Designing and developing a Robinhood inspired Angular stock market watchlist and automated advisor web app",
-    assetAlt: "An image of the Bullish Bay logo",
+    assetAlt: "Bullish Bay logo",
     demoUrl: "https://bullishbay.delgaudiomike.com",
   },
   {
@@ -38,7 +38,7 @@ export const ListOfCodeProjects: Project[] = [
     description: "",
     asset: "../../../assets/home/projects/neu.jpg",
     subDescription: "Designing and developing a simplified Pomodoro timer with CSS themes",
-    assetAlt: "Image snippet of the Neu logo clock",
+    assetAlt: "Neu logo clock",
     demoUrl: "https://neu.delgaudiomike.com",
   },
   {
@@ -47,7 +47,7 @@ export const ListOfCodeProjects: Project[] = [
     description: "",
     asset: "../../../assets/home/projects/photoshop.jpg",
     subDescription: "Designing numerous miscellaneous graphics and user interfaces",
-    assetAlt: "Image of the Adobe Photoshop, Xd, and Creative Cloud logos",
+    assetAlt: "Adobe Photoshop, Xd, and Creative Cloud logos",
     demoUrl: "https://www.behance.net/gallery/104849725/Photoshop-Work",
   },
   {

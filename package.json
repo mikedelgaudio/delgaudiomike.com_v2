@@ -6,7 +6,7 @@
     "start": "ng serve",
     "build": "ng build --configuration production",
     "test": "ng test",
-    "lint": "npx stylelint '**/*.scss'",
+    "lint": "yarn run stylelint '**/*.scss'",
     "e2e": "ng e2e"
   },
   "private": true,

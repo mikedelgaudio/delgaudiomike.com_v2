@@ -1,6 +1,6 @@
-import { NgModule } from "@angular/core";
-import { CommonModule } from "@angular/common";
-import { EnterTheViewportNotifierDirective } from "./enter-viewport.directive";
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { EnterTheViewportNotifierDirective } from './enter-viewport.directive';
 
 @NgModule({
   declarations: [EnterTheViewportNotifierDirective],

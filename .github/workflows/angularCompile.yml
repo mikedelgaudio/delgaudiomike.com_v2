@@ -27,14 +27,17 @@ jobs:
       #      key: ${{ runner.os }}-node-${{ hashFiles('/package-lock.json') }}
       #      restore-keys: |
       #        ${{ runner.os }}-node-
-      - name: Node ${{ env.node-version }}
+      - name: Setup Node ${{ env.node-version }}
         uses: actions/setup-node@v2
         with:
           node-version: ${{ env.node-version }}
-      - name: yarn install
+      - name: Install node packages
         #   if: steps.cache-node.outputs.cache-hit != 'true'
         run: |
           yarn install
-      - name: yarn run build
+      - name: LINT - Detect Console Logs or Debugger
+        run: |
+          yarn run lint
+      - name: BUILD - Compile Check
         run: |
           yarn run build

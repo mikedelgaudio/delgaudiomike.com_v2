@@ -78,31 +78,39 @@ a.anchor {
 }
 
 .contact-section__img-container {
-  max-width: 10rem;
+  max-width: 5rem;
   align-self: center;
   z-index: -1;
   transition: top ease-in-out 0.75s;
   position: absolute;
-  top: -5rem;
+  top: -12rem;
   right: 0;
 
   @include media-breakpoint-up(xs) {
-    top: -4rem;
+    display: block;
+    position: relative;
+    max-width: 19rem;
+    top: -6rem;
   }
 
   @include media-breakpoint-up(sm) {
-    position: relative;
+    max-width: 7rem;
+    max-width: 19rem;
+    top: -6rem;
+  }
+
+  @include media-breakpoint-up(md) {
     max-width: 25rem;
-    top: 0;
   }
 
   @include media-breakpoint-up(lg) {
     position: absolute;
-    top: -19rem;
+    max-width: 20rem;
+    top: 2rem;
   }
 
   @include media-breakpoint-up(xl) {
-    top: -9rem;
+    top: -14rem;
   }
 
   @media screen and (prefers-reduced-motion: no-preference) {

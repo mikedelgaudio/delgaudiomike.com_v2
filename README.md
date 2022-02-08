@@ -1,3 +1,6 @@
 # delgaudiomike.com_v2 ![Angular Compile](https://github.com/mikedelgaudio/delgaudiomike.com_v2/workflows/Angular%20Compile/badge.svg) ![Build and Deploy](https://github.com/mikedelgaudio/delgaudiomike.com_v2/workflows/Build%20and%20Deploy/badge.svg)
 
-This is the newest design and edition of my personal portfolio website written in Angular.
+The latest design and development of my personal portfolio website.
+
+## Curious to learn more? 
+Check out [![My Resume](https://img.shields.io/website?label=my%20resume&style=for-the-badge&url=https://github.com/mikedelgaudio/resume/blob/master/michael_delgaudio_resume.pdf)](michael_delgaudio_resume.pdf)

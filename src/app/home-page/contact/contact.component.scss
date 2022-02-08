@@ -1,4 +1,4 @@
-@import "globals";
+@import 'globals';
 
 .contact {
   display: flex;
@@ -90,13 +90,13 @@ a.anchor {
     display: block;
     position: relative;
     max-width: 19rem;
-    top: -6rem;
+    top: -3rem;
   }
 
   @include media-breakpoint-up(sm) {
     max-width: 7rem;
     max-width: 19rem;
-    top: -6rem;
+    top: -3rem;
   }
 
   @include media-breakpoint-up(md) {
@@ -110,7 +110,7 @@ a.anchor {
   }
 
   @include media-breakpoint-up(xl) {
-    top: -14rem;
+    top: -12rem;
   }
 
   @media screen and (prefers-reduced-motion: no-preference) {

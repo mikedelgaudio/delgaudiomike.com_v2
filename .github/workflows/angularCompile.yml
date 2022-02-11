@@ -19,19 +19,23 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: Get yarn cache directory path
+        id: yarn-cache-dir-path
+        run: echo "::set-output name=dir::$(yarn cache dir)"
       - name: Cache node modules
         uses: actions/cache@v2
-        id: cache-node
+        id: yarn-cache
         with:
-         path: node_modules
-         key: ${{ runner.os }}-node-${{ hashFiles('yarn.lock') }}
-         restore-keys: ${{ runner.os }}-node-
+         path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+         key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+         restore-keys: |
+           ${{ runner.os }}-yarn-
       - name: Setup Node ${{ env.node-version }}
         uses: actions/setup-node@v2
         with:
           node-version: ${{ env.node-version }}
       - name: Install node packages
-        if: steps.cache-node.outputs.cache-hit != 'true'
+        if: steps.yarn-cache.outputs.cache-hit != 'true'
         run: |
           yarn install
       - name: LINT - Detect Console Logs or Debugger

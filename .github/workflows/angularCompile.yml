@@ -34,10 +34,10 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: ${{ env.node-version }}
-      - name: Install node packages from positive cache-hit
+      - name: Install node packages from cache
         if: steps.yarn-cache.outputs.cache-hit == 'true'
         run: yarn --prefer-offline
-      - name: Install ALL node packages due to cache miss
+      - name: Install node packages from NO CACHE (cache miss)
         if: steps.yarn-cache.outputs.cache-hit != 'true'
         run: |
           yarn install

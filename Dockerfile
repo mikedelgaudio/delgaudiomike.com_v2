@@ -1,9 +1,9 @@
 ### STAGE 1: Build ###
-FROM node:12-alpine AS build
+FROM node:16-alpine AS build
 WORKDIR /usr/src/app
 COPY . .
-RUN yarn install
-RUN yarn build
+RUN npm install
+RUN npm build
 
 ### STAGE 2: Apache ###
 FROM httpd:alpine

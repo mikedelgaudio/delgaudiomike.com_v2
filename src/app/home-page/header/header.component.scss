@@ -1,4 +1,4 @@
-@import "globals";
+@import 'globals';
 
 .home {
   min-height: 100vh;
@@ -10,7 +10,6 @@
   overflow: hidden;
   @include media-breakpoint-up(lg) {
     flex-direction: row-reverse;
-    padding: 0 4rem;
   }
 }
 

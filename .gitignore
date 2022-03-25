@@ -33,6 +33,7 @@ speed-measure-plugin*.json
 .history/*
 
 # misc
+.eslintcache
 /.angular/cache
 /.sass-cache
 /connect.lock

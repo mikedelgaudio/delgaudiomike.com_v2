@@ -8,12 +8,10 @@ import { SocialMedia, ListOfSocialMedia } from 'src/app/models/social-media';
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss'],
 })
-export class ContactComponent implements OnInit {
+export class ContactComponent {
   @ViewChild('contact_container') section: ElementRef;
   @ViewChild('contact_container_links') contactContainerLinks: ElementRef;
   constructor(private renderer: Renderer2) {}
-
-  ngOnInit(): void {}
 
   public socialMedias: SocialMedia[] = ListOfSocialMedia;
 

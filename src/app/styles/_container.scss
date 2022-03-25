@@ -29,3 +29,10 @@
     max-width: 1140px;
   }
 }
+
+.full-height {
+  @supports (height: 100dvh) {
+    min-height: 100dvh;
+  }
+  min-height: 100vh;
+}

@@ -1,14 +1,10 @@
-@import "globals";
+@import 'globals';
 
 .about {
   display: flex;
   overflow: hidden;
-  @supports (-webkit-touch-callout: none) {
-    min-height: -webkit-fill-available;
-  }
   @include media-breakpoint-up(md) {
     align-items: center;
-    min-height: 100vh;
   }
   @include media-breakpoint-up(lg) {
     padding: 0 4rem;

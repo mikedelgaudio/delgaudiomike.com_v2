@@ -1,29 +1,30 @@
 .container {
   width: 100%;
-  padding: 0 1em;
+  padding: 0 2em;
   margin: 0 auto;
   transition: 0.5s ease-in-out max-width;
 }
 
-@media (min-width: 576px) {
+@include media-breakpoint-up(sm) {
   .container {
     max-width: 540px;
+    padding: 0 0.7em;
   }
 }
 
-@media (min-width: 768px) {
+@include media-breakpoint-up(md) {
   .container {
     max-width: 720px;
   }
 }
 
-@media (min-width: 992px) {
+@include media-breakpoint-up(lg) {
   .container {
     max-width: 960px;
   }
 }
 
-@media (min-width: 1200px) {
+@include media-breakpoint-up(xl) {
   .container {
     max-width: 1140px;
   }

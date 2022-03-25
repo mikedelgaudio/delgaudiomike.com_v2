@@ -1,6 +1,6 @@
 {
   "name": "delgaudiomike",
-  "version": "2.0.0",
+  "version": "2.3.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -47,7 +47,6 @@
   },
   "volta": {
     "yarn": "1.22.17",
-    "node": "16.14.0",
-    "@angular/cli": "12.2.13"
+    "node": "16.14.0"
   }
 }

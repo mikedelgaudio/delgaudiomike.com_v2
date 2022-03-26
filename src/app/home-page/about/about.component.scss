@@ -41,11 +41,9 @@
 }
 
 .about-section-1__logos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
 }
 
 .about-section-1--logo-wrapper {
@@ -66,14 +64,12 @@
 }
 
 .about-section-1__company-wrapper {
-  position: absolute;
-  bottom: -2em;
   text-align: center;
 }
 
 .about-section-1--company-name {
-  font-size: 0.23em;
-  opacity: 0.4;
+  font-size: 0.75em;
+  opacity: 0.7;
 }
 
 .about-section-1--logo {

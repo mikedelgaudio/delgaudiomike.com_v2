@@ -31,8 +31,8 @@
 }
 
 .full-height {
-  @supports (height: 100dvh) {
-    min-height: 100dvh;
+  @supports (height: 100lvh) {
+    min-height: 100lvh;
   }
   min-height: 100vh;
 }

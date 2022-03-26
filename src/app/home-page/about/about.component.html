@@ -47,7 +47,12 @@
       <h4 class="about-section--title">Working with</h4>
       <div class="row about-section-2__skills">
         <div class="badge-container" *ngFor="let skill of skills">
-          <span class="badge">{{ skill.name }}</span>
+          <div class="badge">
+            <svg class="badge-icon" xmlns="http://www.w3.org/2000/svg" [attr.viewBox]="skill.svgViewBox">
+              <path fill="currentColor" [attr.d]="skill.svgData" />
+            </svg>
+            <p class="badge-text">{{ skill.name }}</p>
+          </div>
         </div>
       </div>
     </div>
@@ -56,8 +61,7 @@
       <h4 class="about-section--title">Using my</h4>
 
       <div class="row about-section-3__details">
-        <p class="about-section-3--detail">💻 Bachelors of Science in Computer Science</p>
-        <p class="about-section-3--detail">🎓 Expected Graduation in May 2023</p>
+        <p class="about-section-3--detail">Bachelors of Science in Computer Science graduating in May 2023</p>
       </div>
     </div>
   </div>

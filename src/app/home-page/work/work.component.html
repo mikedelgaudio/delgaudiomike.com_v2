@@ -1,23 +1,25 @@
 <section class="work full-height">
-  <div class="container hidden" #work_container (visibilityChange)="action($event)" appEnterTheViewportNotifier>
+  <div class="hidden container" #work_container (visibilityChange)="action($event)" appEnterTheViewportNotifier>
     <div class="work-section work-section-1">
-      <h3 id="work" class="section--header">projects</h3>
-      <h4 class="section--subtitle">From Design to Code</h4>
-      <div class="divider divider--sm"></div>
-      <p class="section--description">Transforming ideas into reality.</p>
+      <header id="work">
+        <h3 class="section--header">projects</h3>
+        <h4 class="section--subtitle">From Design to Code</h4>
+        <div class="divider divider--sm"></div>
+        <p class="section--description">Transforming ideas into reality.</p>
+      </header>
+    </div>
 
-      <div class="gallery" #work_container_projects>
-        <app-card
-          *ngFor="let codeProject of codeProjects"
-          heading="{{ codeProject.heading }}"
-          description="{{ codeProject.description }}"
-          asset="{{ codeProject.asset }}"
-          assetAlt="{{ codeProject.assetAlt }}"
-          demoUrl="{{ codeProject.demoUrl }}"
-          typeOfWork="{{ codeProject.typeOfWork }}"
-          subDescription="{{ codeProject.subDescription }}"
-        ></app-card>
-      </div>
+    <div class="media-scroller with-overscroll snaps-inline snaps--individual" #work_container_projects>
+      <app-card
+        *ngFor="let codeProject of codeProjects"
+        heading="{{ codeProject.heading }}"
+        description="{{ codeProject.description }}"
+        asset="{{ codeProject.asset }}"
+        assetAlt="{{ codeProject.assetAlt }}"
+        demoUrl="{{ codeProject.demoUrl }}"
+        typeOfWork="{{ codeProject.typeOfWork }}"
+        subDescription="{{ codeProject.subDescription }}"
+      ></app-card>
     </div>
   </div>
 </section>

@@ -1,15 +1,17 @@
 @import 'globals';
 
 .work {
-  overflow: hidden;
+  --_pads: 4rem;
+  // overflow: hidden;
   position: relative;
   display: flex;
-  @include media-breakpoint-up(md) {
-    align-items: center;
-  }
-  @include media-breakpoint-up(lg) {
-    padding: 0 4rem;
-  }
+  flex-flow: column nowrap;
+  // @include media-breakpoint-up(md) {
+  //   align-items: center;
+  // }
+  // @include media-breakpoint-up(lg) {
+  //   padding: 0 var(--_pads);
+  // }
 }
 
 .container {
@@ -27,16 +29,4 @@
 
 .work-section {
   padding: 2em 0;
-}
-
-.gallery {
-  margin-top: 2em;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 2em;
-  justify-items: center;
-  @media screen and (prefers-reduced-motion: no-preference) {
-    opacity: 0;
-    animation-delay: 0.75s;
-  }
 }

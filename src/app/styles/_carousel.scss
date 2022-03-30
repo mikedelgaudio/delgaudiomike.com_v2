@@ -1,0 +1,52 @@
+.media-scroller {
+  position: absolute;
+  --_spacer: 1rem;
+  --_pads: 4rem;
+  --_brand: #fdfdfd;
+
+  display: grid;
+  gap: var(--_spacer);
+  grid-auto-flow: column;
+  grid-auto-columns: 36%;
+  transform: translateX(calc(1140px / 2 - 570px));
+  padding: calc(var(--_spacer) + 1rem) 0;
+  overflow-x: auto; /* natural scroll */
+  overscroll-behavior-inline: contain; /* stop overscrolling only inline axis*/
+  @media screen and (prefers-reduced-motion: no-preference) {
+    opacity: 0;
+    animation-delay: 0.75s;
+  }
+}
+
+.media-element {
+  display: grid;
+  grid-template-rows: min-content; /* use the min img size to ensure consistency */
+  gap: var(--_spacer);
+  padding: var(--_spacer);
+  background: var(--_brand);
+  box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+  border-radius: 1em;
+}
+
+.media-element > img {
+  inline-size: 100%;
+  aspect-ratio: 4/2;
+  object-fit: cover;
+  display: block;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+  @media screen and (prefers-reduced-motion: no-preference) {
+    animation: fade-in ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+}
+
+.snaps-inline {
+  scroll-snap-type: inline mandatory;
+  scroll-padding-inline: var(--_pads, 4rem);
+}
+
+.snaps-inline > * {
+  scroll-snap-align: start;
+}

@@ -4,7 +4,7 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm install
 COPY . .
-RUN node_modules/.bin/ng build --prod
+RUN node_modules/.bin/ng build --configuration production
 USER nobody
 ### STAGE 2: NGINX ###
 FROM nginx:1.21.6 as production-stage

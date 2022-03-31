@@ -19,7 +19,7 @@ export const ListOfCodeProjects: Project[] = [
     asset: '../../../assets/home/projects/weatherflash.jpg',
     subDescription: 'Designing and developing a React geolocation weather app',
     assetAlt: 'Weather Flash Geolocation Demo View Snippet',
-    demoUrl: 'https://weatherflash.delgaudiomike.com',
+    demoUrl: 'https://weatherflash.delgaudio.dev',
   },
   {
     heading: 'Bullish Bay',
@@ -30,7 +30,7 @@ export const ListOfCodeProjects: Project[] = [
     subDescription:
       'Designing and developing a Robinhood inspired Angular stock market watchlist and automated advisor web app',
     assetAlt: 'Bullish Bay logo',
-    demoUrl: 'https://bullishbay.delgaudiomike.com',
+    demoUrl: 'https://bullishbay.delgaudio.dev',
   },
   {
     heading: 'Neu',
@@ -39,7 +39,7 @@ export const ListOfCodeProjects: Project[] = [
     asset: '../../../assets/home/projects/neu.jpg',
     subDescription: 'Designing and developing a simplified Pomodoro timer with CSS themes',
     assetAlt: 'Neu logo clock',
-    demoUrl: 'https://neu.delgaudiomike.com',
+    demoUrl: 'https://neu.delgaudio.dev',
   },
   {
     heading: 'Design Portfolio',

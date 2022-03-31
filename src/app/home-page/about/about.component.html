@@ -1,9 +1,16 @@
-<section class="about">
-  <div class="container hidden" #about_container (visibilityChange)="action($event)" enterTheViewportNotifier>
+<section class="about full-height">
+  <div class="container hidden" #about_container (visibilityChange)="action($event)" appEnterTheViewportNotifier>
     <h3 id="about" class="section--header">about</h3>
     <h4 class="section--subtitle">Hi, I'm Mike 👋</h4>
     <div class="divider divider--sm"></div>
-    <p class="section--description">I’m a co-op computer science student at Stevens Institute of Technology.</p>
+    <p class="section--description">
+      I'm a
+      <a
+        href="https://www.stevens.edu/directory/stevens-career-center/gaining-professional-experience/stevens-cooperative-education"
+        target="_blank"
+        >computer science student at Stevens Institute of Technology</a
+      >.
+    </p>
     <div class="about-section about-section-1" #about_section_1>
       <h4 class="about-section--title">Previously at</h4>
       <div class="about-section-1__logos">
@@ -14,9 +21,6 @@
             src="../../../assets/home/google-logo.svg"
             alt="Google representing my internship at the company starting on June 2021."
           />
-          <div class="about-section-1__company-wrapper">
-            <!-- <span class="about-section-1--company-name">Google</span> -->
-          </div>
         </div>
         <div class="about-section-1--logo-wrapper">
           <img
@@ -25,9 +29,6 @@
             src="../../../assets/home/colgate-logo.svg"
             alt="Colgate representing my previous 18 month internship at the company from January 2020 through May 2021."
           />
-          <div class="about-section-1__company-wrapper">
-            <!-- <span class="about-section-1--company-name">Colgate</span> -->
-          </div>
         </div>
         <div class="about-section-1--logo-wrapper">
           <img
@@ -36,9 +37,15 @@
             src="../../../assets/home/stevens.svg"
             alt="Stevens Institute of Technology representing my prior experience as an academic peer tutor from August 2019 through December 2019."
           />
-          <div class="about-section-1__company-wrapper">
-            <!-- <span class="about-section-1--company-name">Stevens Institute of Technology</span> -->
-          </div>
+        </div>
+        <div class="about-section-1__company-wrapper">
+          <p class="about-section-1--company-name">Google</p>
+        </div>
+        <div class="about-section-1__company-wrapper">
+          <p class="about-section-1--company-name">Colgate</p>
+        </div>
+        <div class="about-section-1__company-wrapper">
+          <p class="about-section-1--company-name">Stevens Institute of Technology</p>
         </div>
       </div>
     </div>
@@ -47,7 +54,12 @@
       <h4 class="about-section--title">Working with</h4>
       <div class="row about-section-2__skills">
         <div class="badge-container" *ngFor="let skill of skills">
-          <span class="badge">{{ skill.name }}</span>
+          <div class="badge">
+            <svg class="badge-icon" xmlns="http://www.w3.org/2000/svg" [attr.viewBox]="skill.svgViewBox">
+              <path fill="currentColor" [attr.d]="skill.svgData" />
+            </svg>
+            <p class="badge-text">{{ skill.name }}</p>
+          </div>
         </div>
       </div>
     </div>
@@ -56,8 +68,7 @@
       <h4 class="about-section--title">Using my</h4>
 
       <div class="row about-section-3__details">
-        <p class="about-section-3--detail">💻 Bachelors of Science in Computer Science</p>
-        <p class="about-section-3--detail">🎓 Expected Graduation in May 2023</p>
+        <p class="about-section-3--detail">Bachelors of Science in Computer Science graduating in May 2023</p>
       </div>
     </div>
   </div>

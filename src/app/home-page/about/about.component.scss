@@ -1,14 +1,10 @@
-@import "globals";
+@import 'globals';
 
 .about {
   display: flex;
   overflow: hidden;
-  @supports (-webkit-touch-callout: none) {
-    min-height: -webkit-fill-available;
-  }
   @include media-breakpoint-up(md) {
     align-items: center;
-    min-height: 100vh;
   }
   @include media-breakpoint-up(lg) {
     padding: 0 4rem;
@@ -45,11 +41,9 @@
 }
 
 .about-section-1__logos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
 }
 
 .about-section-1--logo-wrapper {
@@ -70,14 +64,13 @@
 }
 
 .about-section-1__company-wrapper {
-  position: absolute;
-  bottom: -2em;
   text-align: center;
+  margin: 0;
 }
 
 .about-section-1--company-name {
-  font-size: 0.23em;
-  opacity: 0.4;
+  font-size: 0.75em;
+  opacity: 0.7;
 }
 
 .about-section-1--logo {
@@ -103,16 +96,16 @@
 }
 
 .badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
   font-size: 0.9em;
   padding: 1em;
   border-radius: 60px;
   background-color: transparent;
   border: 3px solid #fff;
-  display: inline-block;
   font-weight: 500;
-  line-height: 1;
-  text-align: center;
-  vertical-align: baseline;
   border-color: #006e8a;
   box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.05);
   @include media-breakpoint-up(md) {
@@ -122,9 +115,19 @@
 
 .badge-container {
   padding: 0.5rem 0.25rem;
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
   @include media-breakpoint-up(md) {
     padding: 0.5rem 2rem;
   }
+}
+
+.badge-icon {
+  width: 1.5625em;
+}
+.badge-text {
+  margin: auto;
 }
 
 .about-section-3 {

@@ -1,14 +1,13 @@
-import { Component, OnInit } from "@angular/core";
-import { SocialMedia, ListOfSocialMedia } from "src/app/models/social-media";
+import { Component, OnInit } from '@angular/core';
+import { SocialMedia, ListOfSocialMedia } from 'src/app/models/social-media';
 @Component({
-  selector: "app-footer",
-  templateUrl: "./footer.component.html",
-  styleUrls: ["./footer.component.scss"],
+  selector: 'app-footer',
+  templateUrl: './footer.component.html',
+  styleUrls: ['./footer.component.scss'],
 })
-export class FooterComponent implements OnInit {
+export class FooterComponent {
   constructor() {}
 
-  ngOnInit(): void {}
   public socialMedias: SocialMedia[] = ListOfSocialMedia;
   public currentYear: number = new Date().getFullYear();
 }

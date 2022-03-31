@@ -2,14 +2,14 @@ name: Angular Compile
 on:
   pull_request:
     branches:
-      - master
-      - develop
+      - master_temp
+      - develop_temp
   push:
     branches:
-      - master
+      - master_temp
 
 env:
-  node-version: "14.x"
+  node-version: '14.x'
 defaults:
   run:
     working-directory: ./
@@ -19,20 +19,26 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      #  - name: Cache node modules
-      #    uses: actions/cache@v1
-      #   id: cache-node
-      #   with:
-      #      path: node_modules
-      #      key: ${{ runner.os }}-node-${{ hashFiles('/package-lock.json') }}
-      #      restore-keys: |
-      #        ${{ runner.os }}-node-
+      - name: Get yarn cache directory path
+        id: yarn-cache-dir-path
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+      - name: Cache node modules
+        uses: actions/cache@v2
+        id: yarn-cache
+        with:
+          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
       - name: Setup Node ${{ env.node-version }}
         uses: actions/setup-node@v2
         with:
           node-version: ${{ env.node-version }}
-      - name: Install node packages
-        #   if: steps.cache-node.outputs.cache-hit != 'true'
+      - name: Install node packages from cache
+        if: steps.yarn-cache.outputs.cache-hit == 'true'
+        run: yarn --prefer-offline
+      - name: Install node packages from NO CACHE (cache miss)
+        if: steps.yarn-cache.outputs.cache-hit != 'true'
         run: |
           yarn install
       - name: LINT - Detect Console Logs or Debugger

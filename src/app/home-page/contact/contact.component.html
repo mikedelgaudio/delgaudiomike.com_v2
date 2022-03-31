@@ -1,5 +1,5 @@
-<section class="contact">
-  <div class="container hidden" #contact_container (visibilityChange)="action($event)" enterTheViewportNotifier>
+<section class="contact full-height">
+  <div class="container hidden" #contact_container (visibilityChange)="action($event)" appEnterTheViewportNotifier>
     <h3 id="contact" class="section--header">contact</h3>
     <h4 class="section--subtitle">Let's Work Together!</h4>
     <div class="divider divider--sm"></div>
@@ -23,24 +23,13 @@
             Have a direct question?
             <a
               class="contact-section--info-link"
-              href="mailto:mike@delgaudiomike.com"
+              href="mailto:hello@delgaudio.dev"
               rel="noreferrer nofollow"
               aria-label="email me"
-              >email me</a
+              >hello@delgaudio.dev</a
             >
           </span>
         </div>
-      </div>
-
-      <div class="contact-section__img-container" #contact_container_img>
-        <img
-          class="contact-section--img"
-          src="../../../assets/home/contact/mike_contact.jpg"
-          loading="lazy"
-          width="416"
-          height="555"
-          aria-hidden="true"
-        />
       </div>
     </div>
   </div>

@@ -1,16 +1,11 @@
-@import "globals";
+@import 'globals';
 
 .home {
-  min-height: 100vh;
-  @supports (-webkit-touch-callout: none) {
-    min-height: -webkit-fill-available;
-  }
   flex-direction: column;
   justify-content: center;
   overflow: hidden;
   @include media-breakpoint-up(lg) {
     flex-direction: row-reverse;
-    padding: 0 4rem;
   }
 }
 

@@ -1,15 +1,18 @@
 .media-scroller {
-  position: absolute;
   --_spacer: 1rem;
   --_pads: 4rem;
   --_brand: #fdfdfd;
-
   display: grid;
   gap: var(--_spacer);
   grid-auto-flow: column;
-  grid-auto-columns: 36%;
+  grid-auto-columns: 53%;
+  @include media-breakpoint-up(sm) {
+    grid-auto-columns: 36%;
+  }
   transform: translateX(calc(1140px / 2 - 570px));
-  padding: calc(var(--_spacer) + 1rem) 0;
+  // padding: calc(var(--_spacer) + 1rem) 0;
+  padding-block: 1.5rem;
+  margin-left: 5rem;
   overflow-x: auto; /* natural scroll */
   overscroll-behavior-inline: contain; /* stop overscrolling only inline axis*/
   @media screen and (prefers-reduced-motion: no-preference) {
@@ -21,11 +24,13 @@
 .media-element {
   display: grid;
   grid-template-rows: min-content; /* use the min img size to ensure consistency */
+  min-height: 100%;
   gap: var(--_spacer);
   padding: var(--_spacer);
   background: var(--_brand);
   box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
   border-radius: 1em;
+  border: 1px solid rgb(243, 243, 243);
 }
 
 .media-element > img {
@@ -44,9 +49,21 @@
 
 .snaps-inline {
   scroll-snap-type: inline mandatory;
-  scroll-padding-inline: var(--_pads, 4rem);
+  scroll-padding-inline: 1rem;
 }
 
-.snaps-inline > * {
+// .snaps-inline > * {
+//   scroll-snap-align: start;
+// }
+
+.lisitem {
+  display: inline-block;
   scroll-snap-align: start;
+}
+
+.cards-scroller-itemview {
+  display: flex;
+  height: 500px;
+  margin-right: 20px;
+  transform: translateX(calc(max(1024px, 100vw) / 2 - 490px));
 }

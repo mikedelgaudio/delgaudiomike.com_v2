@@ -6,39 +6,58 @@
   gap: var(--_spacer);
   grid-auto-flow: column;
   grid-auto-columns: 53%;
-  @include media-breakpoint-up(sm) {
-    grid-auto-columns: 36%;
+  @include media-breakpoint-up(md) {
+    grid-auto-columns: 33%;
   }
-  transform: translateX(calc(1140px / 2 - 570px));
-  // padding: calc(var(--_spacer) + 1rem) 0;
-  padding-block: 1.5rem;
-  margin-left: 5rem;
+  @include media-breakpoint-up(lg) {
+    grid-auto-columns: 23%;
+  }
+  @include media-breakpoint-up(xl) {
+    grid-auto-columns: 18%;
+  }
+  padding: var(--_spacer) 0;
+
   overflow-x: auto; /* natural scroll */
   overscroll-behavior-inline: contain; /* stop overscrolling only inline axis*/
   @media screen and (prefers-reduced-motion: no-preference) {
     opacity: 0;
     animation-delay: 0.75s;
   }
+  // & ::-webkit-scrollbar {
+  //   display: none;
+  // }
+}
+
+app-card {
+  display: grid;
+  grid-template-rows: min-content; /* use the min img size to ensure consistency */
+  gap: var(--_spacer);
+  padding: var(--_spacer);
+  box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+  border-radius: 1em;
+  border: 1px solid rgb(243, 243, 243);
+  transform: translateX(calc(max(1024px, 100vw) / 2 - 471px));
+  @include media-breakpoint-up(md) {
+    transform: translateX(calc(max(1024px, 100vw) / 2 - 454px));
+  }
+  @include media-breakpoint-up(lg) {
+    transform: translateX(calc(max(1024px, 100vw) / 2 - 480px));
+  }
+  @include media-breakpoint-up(xl) {
+    transform: translateX(calc(max(1024px, 100vw) / 2 - 577px));
+  }
 }
 
 .media-element {
   display: grid;
-  grid-template-rows: min-content; /* use the min img size to ensure consistency */
-  min-height: 100%;
   gap: var(--_spacer);
-  padding: var(--_spacer);
   background: var(--_brand);
-  box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
-  border-radius: 1em;
-  border: 1px solid rgb(243, 243, 243);
 }
 
-.media-element > img {
+app-card img {
   inline-size: 100%;
   aspect-ratio: 4/2;
   object-fit: cover;
-  display: block;
-  height: auto;
   border-radius: 8px 8px 0 0;
   @media screen and (prefers-reduced-motion: no-preference) {
     animation: fade-in ease 2s;
@@ -56,14 +75,14 @@
 //   scroll-snap-align: start;
 // }
 
-.lisitem {
-  display: inline-block;
-  scroll-snap-align: start;
-}
+// .lisitem {
+//   display: inline-block;
+//   scroll-snap-align: start;
+// }
 
-.cards-scroller-itemview {
-  display: flex;
-  height: 500px;
-  margin-right: 20px;
-  transform: translateX(calc(max(1024px, 100vw) / 2 - 490px));
-}
+// .cards-scroller-itemview {
+//   display: flex;
+//   height: 500px;
+//   margin-right: 20px;
+//   transform: translateX(calc(max(1024px, 100vw) / 2 - 490px));
+// }

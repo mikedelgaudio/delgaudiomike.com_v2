@@ -23,9 +23,10 @@
     opacity: 0;
     animation-delay: 0.75s;
   }
-  // & ::-webkit-scrollbar {
-  //   display: none;
-  // }
+}
+
+.media-scroller::-webkit-scrollbar {
+  display: none;
 }
 
 app-card {
@@ -44,7 +45,7 @@ app-card {
     transform: translateX(calc(max(1024px, 100vw) / 2 - 480px));
   }
   @include media-breakpoint-up(xl) {
-    transform: translateX(calc(max(1024px, 100vw) / 2 - 577px));
+    transform: translateX(calc(max(1024px, 100vw) / 2 - 572px));
   }
 }
 

@@ -9,6 +9,10 @@
   cursor: pointer;
   transition: 0.26s ease-in-out background-color, color, border;
   text-transform: uppercase;
+
+  p {
+    margin: 0;
+  }
 }
 
 .btn--primary:hover {

@@ -26,16 +26,7 @@
   padding-inline-start: 0;
   display: flex;
   align-items: center;
-  flex-direction: column;
-  @include media-breakpoint-up(lg) {
-    display: block;
-  }
-}
-
-.contact-section__hero-img {
-  display: block;
-  width: 100%;
-  height: auto;
+  flex-flow: row wrap;
 }
 
 .btn--primary {
@@ -63,10 +54,6 @@ a.anchor {
 
 .contact-section__info {
   padding-top: 1rem;
-  text-align: center;
-  @include media-breakpoint-up(lg) {
-    text-align: left;
-  }
 }
 
 .contact-section--info-title {

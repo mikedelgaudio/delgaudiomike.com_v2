@@ -21,8 +21,7 @@
 
 .about-section--title {
   display: inline-block;
-  margin-top: 0.7em;
-  margin-bottom: 1em;
+  margin-block: 2em;
   opacity: 0.7;
   font-size: 0.94rem;
   font-weight: 400;
@@ -32,7 +31,7 @@
 }
 
 .about-section-1 {
-  padding-top: 0.5em;
+  padding-top: 1em;
   @media screen and (prefers-reduced-motion: no-preference) {
     opacity: 0;
     animation-delay: 0.5s;

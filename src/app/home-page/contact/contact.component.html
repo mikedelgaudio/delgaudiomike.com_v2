@@ -9,18 +9,18 @@
         <div class=".contact-section__links-container">
           <div class="contact-section__links" aria-label="Contact Me Links">
             <a
-              class="btn__wrapper"
+              class="btn__wrapper btn--primary"
               *ngFor="let social of socialMedias"
               href="{{ social?.link }}"
               target="_blank"
               rel="noreferrer nofollow"
-              ><button class="btn--primary" type="button">{{ social.name }}</button></a
+              >{{ social.name }}</a
             >
           </div>
         </div>
         <div class="contact-section__info">
           <span class="contact-section--info-title">
-            Have a direct question?
+            Send me a message!
             <a
               class="contact-section--info-link"
               href="mailto:hello@delgaudio.dev"

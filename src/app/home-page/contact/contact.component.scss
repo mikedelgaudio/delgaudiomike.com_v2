@@ -27,6 +27,16 @@
   display: flex;
   align-items: center;
   flex-flow: row wrap;
+  justify-content: center;
+  .btn--primary {
+    width: 100%;
+  }
+  @include media-breakpoint-up(sm) {
+    justify-content: flex-start;
+    .btn--primary {
+      width: inherit;
+    }
+  }
 }
 
 .btn--primary {
@@ -54,6 +64,11 @@ a.anchor {
 
 .contact-section__info {
   padding-top: 1rem;
+  text-align: center;
+
+  @include media-breakpoint-up(sm) {
+    text-align: left;
+  }
 }
 
 .contact-section--info-title {

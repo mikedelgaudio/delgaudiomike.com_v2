@@ -124,8 +124,11 @@
 }
 
 .call-to-action__container {
-  margin: 1.08em 0;
-  @include media-breakpoint-up(lg) {
-    margin: 2.08em 0;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 2em;
+
+  .btn--primary {
+    max-width: 16rem;
   }
 }

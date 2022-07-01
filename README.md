@@ -1,4 +1,4 @@
-# delgaudiomike.com_v2 ![Angular Compile](https://github.com/mikedelgaudio/delgaudiomike.com_v2/workflows/Angular%20Compile/badge.svg)
+# delgaudiomike.com_v2
 
 The latest design and development of my personal portfolio website.
 

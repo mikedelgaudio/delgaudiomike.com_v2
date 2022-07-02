@@ -27,13 +27,13 @@
     max-width: 15rem;
   }
   @include media-breakpoint-up(lg) {
-    max-width: 27rem;
+    max-width: 23rem;
     height: 100%;
     align-items: center;
     justify-content: flex-start;
   }
   @include media-breakpoint-up(xl) {
-    max-width: 30rem;
+    max-width: 25rem;
   }
 }
 
@@ -103,11 +103,10 @@
   @include media-breakpoint-up(lg) {
     font-size: 2.5rem;
     letter-spacing: -2px;
-    //word-spacing: -4px;
   }
   @include media-breakpoint-up(xl) {
-    font-size: 4rem;
-    line-height: 4rem;
+    font-size: clamp(3.2rem, 1vw, 4rem);
+    line-height: clamp(3.2rem, 1vw, 4rem);
     letter-spacing: -2px;
     word-spacing: 0.4rem;
   }
@@ -125,8 +124,11 @@
 }
 
 .call-to-action__container {
-  margin: 1.08em 0;
-  @include media-breakpoint-up(lg) {
-    margin: 2.08em 0;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 2em;
+
+  .btn--primary {
+    max-width: 16rem;
   }
 }

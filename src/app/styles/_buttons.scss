@@ -5,10 +5,15 @@
   color: var(--white);
   font-size: 0.94em;
   font-weight: 900;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   cursor: pointer;
   transition: 0.26s ease-in-out background-color, color, border;
   text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  p {
+    margin: 0;
+  }
 }
 
 .btn--primary:hover {

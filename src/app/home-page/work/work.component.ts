@@ -1,6 +1,4 @@
-import { Renderer2, ViewChild } from '@angular/core';
-import { ElementRef } from '@angular/core';
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, Renderer2, ViewChild } from '@angular/core';
 import { ListOfCodeProjects } from 'src/app/models/projects/code-projects';
 import { Project } from 'src/app/models/projects/project';
 

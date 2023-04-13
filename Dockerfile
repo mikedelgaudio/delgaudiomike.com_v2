@@ -1,9 +1,8 @@
 ### STAGE 1: Build ###
-FROM node:18-alpine AS build
+FROM node:18 AS build
 WORKDIR /app
-COPY package*.json ./
-RUN npm install
 COPY . .
+RUN npm install
 RUN node_modules/.bin/ng build --configuration production
 
 ### STAGE 2: NGINX ###

@@ -11,36 +11,64 @@
 
 .profile-pic__container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  position: relative;
+  align-items: center;
+  @include media-breakpoint-up(sm) {
+    align-items: baseline;
+  }
   @include media-breakpoint-up(lg) {
     padding: 0;
     height: 100%;
   }
 }
 
-.profile-pic__wrapper {
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  max-width: 11rem;
-  @include media-breakpoint-up(sm) {
-    max-width: 15rem;
-  }
-  @include media-breakpoint-up(lg) {
-    max-width: 23rem;
-    height: 100%;
-    align-items: center;
-    justify-content: flex-start;
-  }
-  @include media-breakpoint-up(xl) {
-    max-width: 25rem;
-  }
-}
-
 .profile-pic__img {
+  clip-path: circle();
   width: 100%;
+  max-width: 15rem;
   height: auto;
   display: block;
+  transition: all ease-in-out 500ms;
+  @include media-breakpoint-up(sm) {
+    position: absolute;
+  }
+  @include media-breakpoint-up(md) {
+    max-width: 21rem;
+  }
+  @include media-breakpoint-up(lg) {
+    max-width: 19rem;
+  }
+  @include media-breakpoint-up(xl) {
+    max-width: 23rem;
+  }
+
+  &:nth-child(1) {
+    top: 8rem;
+    right: 0;
+    display: none;
+    @include media-breakpoint-up(lg) {
+      display: block;
+    }
+  }
+
+  &:nth-child(2) {
+    right: 0;
+    @include media-breakpoint-up(lg) {
+      right: inherit;
+    }
+  }
+
+  &:nth-child(3) {
+    bottom: 8rem;
+    right: 0;
+    display: none;
+    z-index: -1;
+    @include media-breakpoint-up(lg) {
+      display: block;
+    }
+  }
   @media screen and (prefers-reduced-motion: no-preference) {
     opacity: 0;
     animation-delay: 0.1s;

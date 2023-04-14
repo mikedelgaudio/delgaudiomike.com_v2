@@ -1,9 +1,11 @@
 ### STAGE 1: Build ###
-FROM node:18 AS build
+FROM node:18-bullseye AS build
 WORKDIR /app
-COPY . .
+COPY package*.json ./
 RUN npm install
-RUN node_modules/.bin/ng build --configuration production
+COPY . .
+RUN npm run build
+
 
 ### STAGE 2: NGINX ###
 FROM nginx:1.23 as production
